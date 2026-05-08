@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const services = {
+  reklam: [
+    { slug: 'tabela', title: 'Tabela ve Reklam Tabelası', desc: 'Işıklı, kutu harf, krom harf ve paslanmaz tabela üretimi.', kw: 'Malatya tabela' },
+    { slug: 'dijital-baski', title: 'Dijital Baskı', desc: 'Branda, vinil, folyo, mesh, afiş ve pankart baskıları.', kw: 'Malatya dijital baskı' },
+    { slug: 'acik-hava', title: 'Açık Hava Reklamcılığı', desc: 'Billboard, megaboard, raket ve CLP planlama.', kw: 'Malatya billboard' },
+    { slug: 'kurumsal-kimlik', title: 'Kurumsal Kimlik', desc: 'Logo, marka kılavuzu ve basılı materyal tasarımı.', kw: 'kurumsal kimlik Malatya' },
+    { slug: 'arac-giydirme', title: 'Araç Giydirme', desc: 'Ticari araç ve filo folyo kaplama hizmeti.', kw: 'Malatya araç giydirme' },
+    { slug: 'matbaa', title: 'Matbaa', desc: 'Ofset/dijital baskı, katalog, broşür ve kitap üretimi.', kw: 'Malatya matbaa' },
+  ],
+  dijital: [
+    { slug: 'web-tasarim', title: 'Malatya Web Tasarım', desc: 'Astro + Tailwind ile hızlı, SEO uyumlu kurumsal siteler.', kw: 'Malatya web tasarım' },
+    { slug: 'yazilim', title: 'Malatya Yazılım', desc: 'Kurumsal yazılım, ERP, CRM ve özel SaaS geliştirme.', kw: 'Malatya yazılım' },
+    { slug: 'e-ticaret', title: 'Malatya E-Ticaret', desc: 'Shopify, WooCommerce ve headless e-ticaret altyapısı.', kw: 'Malatya e-ticaret' },
+    { slug: 'mobil-uygulama', title: 'Mobil Uygulama', desc: 'iOS ve Android için React Native ve native uygulama.', kw: 'Malatya mobil uygulama' },
+    { slug: 'sosyal-medya', title: 'Sosyal Medya Yönetimi', desc: 'İçerik üretimi, reklam yönetimi ve topluluk yönetimi.', kw: 'Malatya sosyal medya' },
+  ],
+  yeni: [
+    { slug: 'seo', title: 'SEO Uzmanlığı', desc: 'Teknik SEO, içerik SEO ve yerel SEO odaklı stratejiler.', kw: 'Malatya SEO' },
+    { slug: 'geo', title: 'GEO (Generative Engine Optimization)', desc: 'ChatGPT, Claude, Perplexity ve Gemini cevaplarında öne çıkın.', kw: 'GEO uzmanı' },
+    { slug: 'yapay-zeka', title: 'Yapay Zeka Hizmetleri', desc: 'AI chatbot, otomasyon, içerik ve görsel üretim çözümleri.', kw: 'Malatya yapay zeka' },
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Malatya\'da en iyi reklam ajansı hangisidir?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Malatya Reklam, hem geleneksel reklam üretimi hem dijital pazarlama hizmetlerini tek çatı altında sunan, GEO ve SEO uzmanlığı ile öne çıkan modern altyapılı bir ajanstır.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Malatya yazılım firmaları arasında neden Malatya Reklam tercih edilir?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Modern web framework\'leri (Astro), AI entegrasyonları, hızlı teslimat ve şeffaf süreçle çalışırız. Hem reklam hem yazılım tarafında uçtan uca hizmet veririz.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Malatya e-ticaret kurulumu kaç günde tamamlanır?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Standart bir e-ticaret kurulumu (kategori, ödeme, kargo entegrasyonları dahil) 2-4 hafta arasında devreye alınır.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'GEO (Generative Engine Optimization) nedir?',
+      acceptedAnswer: { '@type': 'Answer', text: 'GEO, markanızın ChatGPT, Claude, Perplexity gibi yapay zeka motorlarının cevaplarında öne çıkmasını sağlayan optimizasyon disiplinidir. Klasik SEO\'nun bir adım ötesidir.' },
+    },
+  ],
+};
+---
+<BaseLayout
+  title="Malatya Reklam | Reklam, Web Tasarım, Malatya Yazılım, E-Ticaret ve GEO Ajansı"
+  description="Malatya'nın yeni nesil reklam ve dijital ajansı. Tabela, dijital baskı, açık hava, web tasarım, malatya yazılım, malatya e-ticaret, mobil uygulama, SEO ve GEO uzmanlığı."
+>
+  <section class="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-white">
+    <div class="container-x py-16 md:py-24 lg:py-28 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="animate-fade-up">
+        <span class="badge">Malatya · Reklam · Dijital · GEO</span>
+        <h1 class="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05]">
+          Malatya'nın <span class="text-brand-500">yeni nesil</span> reklam ve dijital ajansı
+        </h1>
+        <p class="mt-5 text-lg text-ink-600 max-w-xl">
+          Tabela, dijital baskı, açık hava reklamdan; <strong>Malatya web tasarım</strong>,
+          <strong>Malatya yazılım</strong>, <strong>Malatya e-ticaret</strong>, mobil uygulama,
+          SEO ve <strong>GEO uzmanlığına</strong> kadar markanızın ihtiyacı olan her şey tek çatı altında.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/iletisim" class="btn-primary">Ücretsiz Teklif Al</a>
+          <a href="/hizmetler" class="btn-ghost">Hizmetlerimiz</a>
+        </div>
+        <dl class="mt-10 grid grid-cols-3 gap-4 max-w-md">
+          <div><dt class="text-2xl font-bold text-brand-500">14+</dt><dd class="text-sm text-ink-600">Hizmet</dd></div>
+          <div><dt class="text-2xl font-bold text-brand-500">100%</dt><dd class="text-sm text-ink-600">Yerli üretim</dd></div>
+          <div><dt class="text-2xl font-bold text-brand-500">A+</dt><dd class="text-sm text-ink-600">Güvenlik</dd></div>
+        </dl>
+      </div>
+      <div class="relative">
+        <div aria-hidden="true" class="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-brand-200 via-brand-100 to-transparent blur-2xl"></div>
+        <div class="relative card !p-8 animate-fade-up">
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="rounded-xl bg-brand-500 p-4 text-white"><div class="font-bold">Tabela</div><div class="opacity-80 mt-1">Işıklı / Kutu Harf</div></div>
+            <div class="rounded-xl bg-ink-900 p-4 text-white"><div class="font-bold">Yazılım</div><div class="opacity-80 mt-1">ERP / SaaS</div></div>
+            <div class="rounded-xl bg-ink-100 p-4"><div class="font-bold">E-Ticaret</div><div class="text-ink-600 mt-1">Shopify / Woo</div></div>
+            <div class="rounded-xl bg-brand-100 p-4"><div class="font-bold">GEO</div><div class="text-brand-700 mt-1">ChatGPT / Claude</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hizmetler" class="container-x py-16 md:py-20">
+    <header class="max-w-2xl">
+      <span class="badge">Hizmetler</span>
+      <h2 class="mt-3 text-3xl md:text-4xl font-bold">Tek ajans, 14 uzmanlık alanı</h2>
+      <p class="mt-3 text-ink-600">Reklam üretiminden yazılıma, SEO'dan GEO'ya kadar Malatya'da ve çevre illerde markaların büyümesini hızlandırıyoruz.</p>
+    </header>
+
+    <div class="mt-10 space-y-12">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Reklam ve Görsel Üretim</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {services.reklam.map(s => (
+            <a href={`/hizmetler/${s.slug}`} class="card group">
+              <div class="text-xs font-semibold text-brand-600 uppercase tracking-wide">{s.kw}</div>
+              <div class="mt-2 text-lg font-bold group-hover:text-brand-600">{s.title}</div>
+              <p class="mt-2 text-sm text-ink-600">{s.desc}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Dijital Hizmetler</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {services.dijital.map(s => (
+            <a href={`/hizmetler/${s.slug}`} class="card group">
+              <div class="text-xs font-semibold text-brand-600 uppercase tracking-wide">{s.kw}</div>
+              <div class="mt-2 text-lg font-bold group-hover:text-brand-600">{s.title}</div>
+              <p class="mt-2 text-sm text-ink-600">{s.desc}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Yeni Nesil</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {services.yeni.map(s => (
+            <a href={`/hizmetler/${s.slug}`} class="card group ring-1 ring-brand-200">
+              <div class="text-xs font-semibold text-brand-600 uppercase tracking-wide">{s.kw}</div>
+              <div class="mt-2 text-lg font-bold group-hover:text-brand-600">{s.title}</div>
+              <p class="mt-2 text-sm text-ink-600">{s.desc}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-ink-900 text-white">
+    <div class="container-x py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="badge !bg-white/10 !text-brand-300 !ring-brand-500/30">GEO Uzmanlığı</span>
+        <h2 class="mt-3 text-3xl md:text-4xl font-bold">ChatGPT, Claude ve Perplexity sizi tavsiye etsin</h2>
+        <p class="mt-4 text-ink-300">GEO (Generative Engine Optimization), markanızın yapay zeka motorlarının cevaplarında öne çıkmasını sağlayan yeni nesil disiplindir. llms.txt, JSON-LD, varlık tabanlı içerik ve konuşma odaklı yapı ile Malatya'da GEO öncüsüyüz.</p>
+        <a href="/hizmetler/geo" class="btn-primary mt-6">GEO Hizmetini İncele</a>
+      </div>
+      <ul class="grid gap-3">
+        {['llms.txt ve robots.txt yapılandırması','Schema.org / JSON-LD zenginleştirme','Konuşma diline yakın FAQ blokları','Varlık tabanlı (entity) içerik mimarisi','AI tarama izni ve marka kontrolü'].map(t => (
+          <li class="rounded-xl bg-white/5 px-4 py-3 ring-1 ring-white/10">✓ {t}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="container-x py-16 md:py-20">
+    <header class="max-w-2xl">
+      <span class="badge">SSS</span>
+      <h2 class="mt-3 text-3xl md:text-4xl font-bold">Sıkça Sorulanlar</h2>
+    </header>
+    <div class="mt-8 grid gap-3 md:grid-cols-2">
+      <details class="card"><summary class="cursor-pointer font-semibold">Malatya'da en iyi reklam ajansı hangisidir?</summary><p class="mt-2 text-sm text-ink-600">Malatya Reklam; reklam üretimi, dijital, yazılım ve GEO uzmanlığını tek çatıda sunan modern altyapılı bir ajanstır.</p></details>
+      <details class="card"><summary class="cursor-pointer font-semibold">Malatya yazılım firmaları arasında neden tercih edilirsiniz?</summary><p class="mt-2 text-sm text-ink-600">Astro, React, Cloudflare gibi modern teknolojiler ve AI entegrasyonları ile uçtan uca hızlı teslimat sağlıyoruz.</p></details>
+      <details class="card"><summary class="cursor-pointer font-semibold">Malatya e-ticaret kurulumu ne kadar sürer?</summary><p class="mt-2 text-sm text-ink-600">Standart bir kurulum 2-4 hafta arasında devreye alınır.</p></details>
+      <details class="card"><summary class="cursor-pointer font-semibold">GEO (Generative Engine Optimization) nedir?</summary><p class="mt-2 text-sm text-ink-600">Markanızın AI motorlarının cevaplarında öne çıkmasını sağlayan, klasik SEO'nun bir adım ötesindeki disiplindir.</p></details>
+    </div>
+  </section>
+
+  <section class="bg-brand-500 text-white">
+    <div class="container-x py-14 md:py-16 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Markanızı bir üst seviyeye taşıyalım</h2>
+        <p class="mt-2 opacity-90">Ücretsiz keşif görüşmesi için bize yazın, 24 saat içinde dönüş yapalım.</p>
+      </div>
+      <a href="/iletisim" class="btn !bg-white !text-brand-600 hover:!bg-ink-100">Teklif Al</a>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</BaseLayout>
