@@ -1,183 +1,154 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { services, categoryLabels } from '../data/services';
 
-const services = {
-  reklam: [
-    { slug: 'tabela', title: 'Tabela ve Reklam Tabelası', desc: 'Işıklı, kutu harf, krom harf ve paslanmaz tabela üretimi.', kw: 'Malatya tabela' },
-    { slug: 'dijital-baski', title: 'Dijital Baskı', desc: 'Branda, vinil, folyo, mesh, afiş ve pankart baskıları.', kw: 'Malatya dijital baskı' },
-    { slug: 'acik-hava', title: 'Açık Hava Reklamcılığı', desc: 'Billboard, megaboard, raket ve CLP planlama.', kw: 'Malatya billboard' },
-    { slug: 'kurumsal-kimlik', title: 'Kurumsal Kimlik', desc: 'Logo, marka kılavuzu ve basılı materyal tasarımı.', kw: 'kurumsal kimlik Malatya' },
-    { slug: 'arac-giydirme', title: 'Araç Giydirme', desc: 'Ticari araç ve filo folyo kaplama hizmeti.', kw: 'Malatya araç giydirme' },
-    { slug: 'matbaa', title: 'Matbaa', desc: 'Ofset/dijital baskı, katalog, broşür ve kitap üretimi.', kw: 'Malatya matbaa' },
-  ],
-  dijital: [
-    { slug: 'web-tasarim', title: 'Malatya Web Tasarım', desc: 'Astro + Tailwind ile hızlı, SEO uyumlu kurumsal siteler.', kw: 'Malatya web tasarım' },
-    { slug: 'yazilim', title: 'Malatya Yazılım', desc: 'Kurumsal yazılım, ERP, CRM ve özel SaaS geliştirme.', kw: 'Malatya yazılım' },
-    { slug: 'e-ticaret', title: 'Malatya E-Ticaret', desc: 'Shopify, WooCommerce ve headless e-ticaret altyapısı.', kw: 'Malatya e-ticaret' },
-    { slug: 'mobil-uygulama', title: 'Mobil Uygulama', desc: 'iOS ve Android için React Native ve native uygulama.', kw: 'Malatya mobil uygulama' },
-    { slug: 'sosyal-medya', title: 'Sosyal Medya Yönetimi', desc: 'İçerik üretimi, reklam yönetimi ve topluluk yönetimi.', kw: 'Malatya sosyal medya' },
-  ],
-  yeni: [
-    { slug: 'seo', title: 'SEO Uzmanlığı', desc: 'Teknik SEO, içerik SEO ve yerel SEO odaklı stratejiler.', kw: 'Malatya SEO' },
-    { slug: 'geo', title: 'GEO (Generative Engine Optimization)', desc: 'ChatGPT, Claude, Perplexity ve Gemini cevaplarında öne çıkın.', kw: 'GEO uzmanı' },
-    { slug: 'yapay-zeka', title: 'Yapay Zeka Hizmetleri', desc: 'AI chatbot, otomasyon, içerik ve görsel üretim çözümleri.', kw: 'Malatya yapay zeka' },
-  ],
-};
+const featuredServices = [
+  services.find(s => s.slug === 'malatya-yazilim'),
+  services.find(s => s.slug === 'malatya-eticaret'),
+  services.find(s => s.slug === 'geo-hizmeti'),
+  services.find(s => s.slug === 'web-tasarim'),
+  services.find(s => s.slug === 'seo-hizmeti'),
+  services.find(s => s.slug === 'sosyal-medya-yonetimi'),
+].filter(Boolean);
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Malatya\'da en iyi reklam ajansı hangisidir?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Malatya Reklam, hem geleneksel reklam üretimi hem dijital pazarlama hizmetlerini tek çatı altında sunan, GEO ve SEO uzmanlığı ile öne çıkan modern altyapılı bir ajanstır.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Malatya yazılım firmaları arasında neden Malatya Reklam tercih edilir?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Modern web framework\'leri (Astro), AI entegrasyonları, hızlı teslimat ve şeffaf süreçle çalışırız. Hem reklam hem yazılım tarafında uçtan uca hizmet veririz.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Malatya e-ticaret kurulumu kaç günde tamamlanır?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Standart bir e-ticaret kurulumu (kategori, ödeme, kargo entegrasyonları dahil) 2-4 hafta arasında devreye alınır.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'GEO (Generative Engine Optimization) nedir?',
-      acceptedAnswer: { '@type': 'Answer', text: 'GEO, markanızın ChatGPT, Claude, Perplexity gibi yapay zeka motorlarının cevaplarında öne çıkmasını sağlayan optimizasyon disiplinidir. Klasik SEO\'nun bir adım ötesidir.' },
-    },
-  ],
-};
+const stats = [
+  { label: 'Tamamlanan Proje', value: '500+' },
+  { label: 'Mutlu Müşteri', value: '300+' },
+  { label: 'Yıllık Deneyim', value: '12+' },
+  { label: 'Uzman Ekip', value: '15+' }
+];
 ---
+
 <BaseLayout
-  title="Malatya Reklam | Reklam, Web Tasarım, Malatya Yazılım, E-Ticaret ve GEO Ajansı"
-  description="Malatya'nın yeni nesil reklam ve dijital ajansı. Tabela, dijital baskı, açık hava, web tasarım, malatya yazılım, malatya e-ticaret, mobil uygulama, SEO ve GEO uzmanlığı."
+  title="Malatya Reklam | Reklam, SEO, Web Tasarım, E-Ticaret & AI Çözümleri"
+  description="Malatya'nın yenilikçi reklam ajansı. Açıkhava reklam, SEO, web tasarım, e-ticaret, kurumsal yazılım, GEO ve yapay zeka destekli dijital pazarlama çözümleri."
 >
-  <section class="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-white">
-    <div class="container-x py-16 md:py-24 lg:py-28 grid lg:grid-cols-2 gap-10 items-center">
-      <div class="animate-fade-up">
-        <span class="badge">Malatya · Reklam · Dijital · GEO</span>
-        <h1 class="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05]">
-          Malatya'nın <span class="text-brand-500">yeni nesil</span> reklam ve dijital ajansı
+  <section class="relative bg-gradient-to-br from-apricot-50 via-white to-orange-50 overflow-hidden">
+    <div class="absolute top-20 right-10 w-96 h-96 bg-apricot-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-72 h-72 bg-orange-200/30 rounded-full blur-3xl"></div>
+    <div class="container mx-auto px-4 lg:px-8 py-16 lg:py-28 relative">
+      <div class="max-w-4xl">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-apricot-200 text-apricot-600 text-xs font-bold uppercase tracking-wider rounded-full mb-6 shadow-sm">
+          <span class="w-2 h-2 bg-apricot-500 rounded-full animate-pulse"></span>
+          Malatya'nın yeni nesil reklam ajansı
+        </span>
+        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6 leading-[1.05]">
+          Markanızı <span class="text-apricot-500">geleceğe</span> taşıyan reklam çözümleri
         </h1>
-        <p class="mt-5 text-lg text-ink-600 max-w-xl">
-          Tabela, dijital baskı, açık hava reklamdan; <strong>Malatya web tasarım</strong>,
-          <strong>Malatya yazılım</strong>, <strong>Malatya e-ticaret</strong>, mobil uygulama,
-          SEO ve <strong>GEO uzmanlığına</strong> kadar markanızın ihtiyacı olan her şey tek çatı altında.
+        <p class="text-xl md:text-2xl text-neutral-600 leading-relaxed mb-10 max-w-3xl">
+          Açıkhava reklamdan yapay zeka destekli içeriğe, e-ticaretten kurumsal yazılıma; Malatya'nın en kapsamlı reklam ve dijital pazarlama hizmetleri.
         </p>
-        <div class="mt-7 flex flex-wrap gap-3">
-          <a href="/iletisim" class="btn-primary">Ücretsiz Teklif Al</a>
-          <a href="/hizmetler" class="btn-ghost">Hizmetlerimiz</a>
+        <div class="flex flex-wrap gap-4">
+          <a href="/iletisim" class="inline-flex items-center gap-2 px-8 py-4 bg-apricot-500 hover:bg-apricot-600 text-white font-bold text-lg rounded-xl shadow-xl shadow-apricot-500/30 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            Ücretsiz Teklif Al
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="/hizmetler" class="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-neutral-50 text-neutral-900 font-bold text-lg rounded-xl border border-neutral-200 transition-all">Hizmetleri İncele</a>
         </div>
-        <dl class="mt-10 grid grid-cols-3 gap-4 max-w-md">
-          <div><dt class="text-2xl font-bold text-brand-500">14+</dt><dd class="text-sm text-ink-600">Hizmet</dd></div>
-          <div><dt class="text-2xl font-bold text-brand-500">100%</dt><dd class="text-sm text-ink-600">Yerli üretim</dd></div>
-          <div><dt class="text-2xl font-bold text-brand-500">A+</dt><dd class="text-sm text-ink-600">Güvenlik</dd></div>
-        </dl>
       </div>
-      <div class="relative">
-        <div aria-hidden="true" class="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-brand-200 via-brand-100 to-transparent blur-2xl"></div>
-        <div class="relative card !p-8 animate-fade-up">
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <div class="rounded-xl bg-brand-500 p-4 text-white"><div class="font-bold">Tabela</div><div class="opacity-80 mt-1">Işıklı / Kutu Harf</div></div>
-            <div class="rounded-xl bg-ink-900 p-4 text-white"><div class="font-bold">Yazılım</div><div class="opacity-80 mt-1">ERP / SaaS</div></div>
-            <div class="rounded-xl bg-ink-100 p-4"><div class="font-bold">E-Ticaret</div><div class="text-ink-600 mt-1">Shopify / Woo</div></div>
-            <div class="rounded-xl bg-brand-100 p-4"><div class="font-bold">GEO</div><div class="text-brand-700 mt-1">ChatGPT / Claude</div></div>
+    </div>
+  </section>
+
+  <section class="bg-neutral-900 text-white py-12">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {stats.map(stat => (
+          <div class="text-center">
+            <div class="font-display text-4xl md:text-5xl font-bold text-apricot-400 mb-2">{stat.value}</div>
+            <div class="text-sm text-neutral-400">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-24">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Öne Çıkan Hizmetler</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">14 Farklı Alanda Uzman Çözümler</h2>
+        <p class="text-lg text-neutral-600">Klasik reklamdan yapay zeka destekli yeni nesil hizmetlere kadar markanızı büyütecek tüm çözümler bir arada.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {featuredServices.map(service => (
+          <a href={`/hizmetler/${service.slug}`} class="group p-6 bg-white border border-neutral-200 rounded-2xl hover:border-apricot-300 hover:shadow-xl hover:shadow-apricot-500/10 hover:-translate-y-1 transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-apricot-600">{categoryLabels[service.category]}</span>
+              <svg class="w-5 h-5 text-neutral-400 group-hover:text-apricot-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </div>
+            <h3 class="font-display text-xl font-bold text-neutral-900 mb-3 group-hover:text-apricot-600 transition-colors">{service.title}</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">{service.shortDesc}</p>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/hizmetler" class="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 hover:bg-neutral-800 text-white font-semibold rounded-xl transition-all">
+          Tüm Hizmetleri Gör
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-neutral-50">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-block px-3 py-1 bg-white border border-apricot-200 text-apricot-600 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Neden Biz?</span>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-6">Malatya'da Yerli, Globalde Rekabetçi</h2>
+          <p class="text-lg text-neutral-600 leading-relaxed mb-8">
+            12 yılı aşkın tecrübemizle Malatya'da kurumsal markaların büyüme ortağıyız. Klasik reklam ile yeni nesil yapay zeka destekli pazarlamayı bir araya getiriyoruz.
+          </p>
+          <ul class="space-y-3">
+            {['Uçtan uca dijital ve reklam çözümleri', 'Şeffaf raporlama ve ölçülebilir sonuçlar', 'Yerli ekip, hızlı destek ve güvenli altyapı', 'AI ve GEO ile geleceğe hazır pazarlama'].map(item => (
+              <li class="flex items-start gap-3">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-apricot-500 flex items-center justify-center text-white mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <span class="text-neutral-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100">
+            <div class="text-4xl mb-3">🎯</div>
+            <h3 class="font-display font-bold text-lg mb-2">Stratejik Yaklaşım</h3>
+            <p class="text-sm text-neutral-600">Veri odaklı stratejilerle ROI'nizi maksimize ediyoruz.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100 mt-8">
+            <div class="text-4xl mb-3">⚡</div>
+            <h3 class="font-display font-bold text-lg mb-2">Hız & Performans</h3>
+            <p class="text-sm text-neutral-600">Modern altyapı ile saniyeler içinde yüklenen siteler.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100">
+            <div class="text-4xl mb-3">🤖</div>
+            <h3 class="font-display font-bold text-lg mb-2">AI Destekli</h3>
+            <p class="text-sm text-neutral-600">GEO, AI içerik ve otomatik pazarlama çözümleri.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100 mt-8">
+            <div class="text-4xl mb-3">🔒</div>
+            <h3 class="font-display font-bold text-lg mb-2">Güvenli</h3>
+            <p class="text-sm text-neutral-600">Cloudflare WAF, HTTPS ve bot koruması ile maksimum güvenlik.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="hizmetler" class="container-x py-16 md:py-20">
-    <header class="max-w-2xl">
-      <span class="badge">Hizmetler</span>
-      <h2 class="mt-3 text-3xl md:text-4xl font-bold">Tek ajans, 14 uzmanlık alanı</h2>
-      <p class="mt-3 text-ink-600">Reklam üretiminden yazılıma, SEO'dan GEO'ya kadar Malatya'da ve çevre illerde markaların büyümesini hızlandırıyoruz.</p>
-    </header>
-
-    <div class="mt-10 space-y-12">
-      <div>
-        <h3 class="text-xl font-bold mb-4">Reklam ve Görsel Üretim</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {services.reklam.map(s => (
-            <a href={`/hizmetler/${s.slug}`} class="card group">
-              <div class="text-xs font-semibold text-brand-600 uppercase tracking-wide">{s.kw}</div>
-              <div class="mt-2 text-lg font-bold group-hover:text-brand-600">{s.title}</div>
-              <p class="mt-2 text-sm text-ink-600">{s.desc}</p>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-bold mb-4">Dijital Hizmetler</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {services.dijital.map(s => (
-            <a href={`/hizmetler/${s.slug}`} class="card group">
-              <div class="text-xs font-semibold text-brand-600 uppercase tracking-wide">{s.kw}</div>
-              <div class="mt-2 text-lg font-bold group-hover:text-brand-600">{s.title}</div>
-              <p class="mt-2 text-sm text-ink-600">{s.desc}</p>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-bold mb-4">Yeni Nesil</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {services.yeni.map(s => (
-            <a href={`/hizmetler/${s.slug}`} class="card group ring-1 ring-brand-200">
-              <div class="text-xs font-semibold text-brand-600 uppercase tracking-wide">{s.kw}</div>
-              <div class="mt-2 text-lg font-bold group-hover:text-brand-600">{s.title}</div>
-              <p class="mt-2 text-sm text-ink-600">{s.desc}</p>
-            </a>
-          ))}
-        </div>
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-apricot-500 to-apricot-600 text-white">
+    <div class="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
+      <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Markanız İçin Bir Sonraki Adım</h2>
+      <p class="text-xl text-apricot-50 mb-8">Ücretsiz keşif görüşmesinde size özel strateji önerileri sunalım.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/iletisim" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-apricot-600 font-bold text-lg rounded-xl hover:bg-apricot-50 transition-colors shadow-xl">
+          Ücretsiz Görüşme
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a href="https://wa.me/905551234567" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-apricot-700 hover:bg-apricot-800 text-white font-bold text-lg rounded-xl transition-colors">WhatsApp</a>
       </div>
     </div>
   </section>
-
-  <section class="bg-ink-900 text-white">
-    <div class="container-x py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <span class="badge !bg-white/10 !text-brand-300 !ring-brand-500/30">GEO Uzmanlığı</span>
-        <h2 class="mt-3 text-3xl md:text-4xl font-bold">ChatGPT, Claude ve Perplexity sizi tavsiye etsin</h2>
-        <p class="mt-4 text-ink-300">GEO (Generative Engine Optimization), markanızın yapay zeka motorlarının cevaplarında öne çıkmasını sağlayan yeni nesil disiplindir. llms.txt, JSON-LD, varlık tabanlı içerik ve konuşma odaklı yapı ile Malatya'da GEO öncüsüyüz.</p>
-        <a href="/hizmetler/geo" class="btn-primary mt-6">GEO Hizmetini İncele</a>
-      </div>
-      <ul class="grid gap-3">
-        {['llms.txt ve robots.txt yapılandırması','Schema.org / JSON-LD zenginleştirme','Konuşma diline yakın FAQ blokları','Varlık tabanlı (entity) içerik mimarisi','AI tarama izni ve marka kontrolü'].map(t => (
-          <li class="rounded-xl bg-white/5 px-4 py-3 ring-1 ring-white/10">✓ {t}</li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  <section class="container-x py-16 md:py-20">
-    <header class="max-w-2xl">
-      <span class="badge">SSS</span>
-      <h2 class="mt-3 text-3xl md:text-4xl font-bold">Sıkça Sorulanlar</h2>
-    </header>
-    <div class="mt-8 grid gap-3 md:grid-cols-2">
-      <details class="card"><summary class="cursor-pointer font-semibold">Malatya'da en iyi reklam ajansı hangisidir?</summary><p class="mt-2 text-sm text-ink-600">Malatya Reklam; reklam üretimi, dijital, yazılım ve GEO uzmanlığını tek çatıda sunan modern altyapılı bir ajanstır.</p></details>
-      <details class="card"><summary class="cursor-pointer font-semibold">Malatya yazılım firmaları arasında neden tercih edilirsiniz?</summary><p class="mt-2 text-sm text-ink-600">Astro, React, Cloudflare gibi modern teknolojiler ve AI entegrasyonları ile uçtan uca hızlı teslimat sağlıyoruz.</p></details>
-      <details class="card"><summary class="cursor-pointer font-semibold">Malatya e-ticaret kurulumu ne kadar sürer?</summary><p class="mt-2 text-sm text-ink-600">Standart bir kurulum 2-4 hafta arasında devreye alınır.</p></details>
-      <details class="card"><summary class="cursor-pointer font-semibold">GEO (Generative Engine Optimization) nedir?</summary><p class="mt-2 text-sm text-ink-600">Markanızın AI motorlarının cevaplarında öne çıkmasını sağlayan, klasik SEO'nun bir adım ötesindeki disiplindir.</p></details>
-    </div>
-  </section>
-
-  <section class="bg-brand-500 text-white">
-    <div class="container-x py-14 md:py-16 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold">Markanızı bir üst seviyeye taşıyalım</h2>
-        <p class="mt-2 opacity-90">Ücretsiz keşif görüşmesi için bize yazın, 24 saat içinde dönüş yapalım.</p>
-      </div>
-      <a href="/iletisim" class="btn !bg-white !text-brand-600 hover:!bg-ink-100">Teklif Al</a>
-    </div>
-  </section>
-
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </BaseLayout>
