@@ -1,51 +1,102 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
+
+
 @layer base {
+
   :root {
+
     --brand: 255 107 53;
+
     --bg: 255 255 255;
+
     --fg: 12 12 26;
+
   }
+
   html {
+
     scroll-behavior: smooth;
+
     -webkit-text-size-adjust: 100%;
+
   }
+
   body {
-    @apply bg-white text-ink-900 font-sans antialiased;
+
+    @apply bg-white text-neutral-900 font-sans antialiased;
+
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+
   }
+
   h1, h2, h3, h4 {
-    @apply font-display tracking-tight text-ink-900;
+
+    @apply font-display tracking-tight text-neutral-900;
+
     text-wrap: balance;
+
   }
+
   p { text-wrap: pretty; }
+
   ::selection { background: rgb(var(--brand) / 0.25); }
+
 }
+
+
 
 @layer components {
+
   .container-x { @apply container mx-auto px-4 md:px-6 lg:px-8; }
+
   .btn {
+
     @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+
   }
+
   .btn-primary {
+
     @apply btn bg-brand-500 text-white shadow-soft hover:bg-brand-600 hover:shadow-glow active:scale-[.98];
+
   }
+
   .btn-ghost {
-    @apply btn bg-transparent text-ink-900 hover:bg-ink-100;
+
+    @apply btn bg-transparent text-neutral-900 hover:bg-neutral-100;
+
   }
+
   .card {
-    @apply rounded-2xl border border-ink-100 bg-white p-6 shadow-soft transition-all hover:-translate-y-1 hover:shadow-[0_12px_32px_-8px_rgba(255,107,53,0.25)];
+
+    @apply rounded-2xl border border-neutral-100 bg-white p-6 shadow-soft transition-all hover:-translate-y-1 hover:shadow-[0_12px_32px_-8px_rgba(255,107,53,0.25)];
+
   }
+
   .badge {
+
     @apply inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 ring-1 ring-brand-200;
+
   }
+
 }
 
+
+
 @media (prefers-reduced-motion: reduce) {
+
   *, *::before, *::after {
+
     animation-duration: .001ms !important;
+
     transition-duration: .001ms !important;
+
   }
+
 }
+
