@@ -1,0 +1,80 @@
+---
+import { services, categoryLabels, type ServiceCategory } from '../data/services';
+
+const categories: ServiceCategory[] = ['reklam', 'dijital', 'yeni-nesil'];
+---
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-200 shadow-sm">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a href="/" class="flex items-center gap-2 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-apricot-500 to-apricot-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-apricot-500/30 group-hover:scale-105 transition-transform">
+          M
+        </div>
+        <div class="hidden sm:block">
+          <div class="font-display font-bold text-lg leading-none text-neutral-900">Malatya Reklam</div>
+          <div class="text-xs text-neutral-500 mt-0.5">Reklam & Dijital Çözümler</div>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="/" class="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-apricot-600 transition-colors rounded-lg hover:bg-neutral-50">Anasayfa</a>
+
+        <div class="relative group">
+          <button class="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-apricot-600 transition-colors rounded-lg hover:bg-neutral-50 flex items-center gap-1">
+            Hizmetler
+            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <div class="bg-white rounded-2xl shadow-2xl border border-neutral-100 p-6 w-[720px] grid grid-cols-3 gap-6">
+              {categories.map(cat => (
+                <div>
+                  <div class="text-xs font-bold uppercase tracking-wider text-apricot-600 mb-3">{categoryLabels[cat]}</div>
+                  <ul class="space-y-1">
+                    {services.filter(s => s.category === cat).map(s => (
+                      <li>
+                        <a href={`/hizmetler/${s.slug}`} class="block px-3 py-2 rounded-lg text-sm text-neutral-700 hover:text-apricot-600 hover:bg-apricot-50 transition-colors">{s.title}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <a href="/hakkimizda" class="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-apricot-600 transition-colors rounded-lg hover:bg-neutral-50">Hakkımızda</a>
+        <a href="/blog" class="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-apricot-600 transition-colors rounded-lg hover:bg-neutral-50">Blog</a>
+        <a href="/iletisim" class="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-apricot-600 transition-colors rounded-lg hover:bg-neutral-50">İletişim</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="/iletisim" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-apricot-500 hover:bg-apricot-600 text-white text-sm font-semibold rounded-xl transition-all shadow-lg shadow-apricot-500/25 hover:shadow-xl hover:shadow-apricot-500/40 hover:-translate-y-0.5">
+          Teklif Al
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-neutral-100 transition-colors" aria-label="Menüyü aç">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden pb-4 border-t border-neutral-100 pt-4">
+      <nav class="flex flex-col gap-1">
+        <a href="/" class="px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 rounded-lg">Anasayfa</a>
+        <a href="/hizmetler" class="px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 rounded-lg">Tüm Hizmetler</a>
+        <a href="/hakkimizda" class="px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 rounded-lg">Hakkımızda</a>
+        <a href="/blog" class="px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 rounded-lg">Blog</a>
+        <a href="/iletisim" class="px-4 py-3 text-sm font-medium text-neutral-700 hover:bg-neutral-50 rounded-lg">İletişim</a>
+        <a href="/iletisim" class="mt-2 px-4 py-3 bg-apricot-500 text-white text-center font-semibold rounded-xl">Teklif Al</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>
+<!-- test -->
