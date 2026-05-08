@@ -1,154 +1,308 @@
 ---
+
 import BaseLayout from '../layouts/BaseLayout.astro';
+
 import { services, categoryLabels } from '../data/services';
 
+
+
 const featuredServices = [
+
   services.find(s => s.slug === 'malatya-yazilim'),
+
   services.find(s => s.slug === 'malatya-eticaret'),
+
   services.find(s => s.slug === 'geo-hizmeti'),
+
   services.find(s => s.slug === 'web-tasarim'),
+
   services.find(s => s.slug === 'seo-hizmeti'),
+
   services.find(s => s.slug === 'sosyal-medya-yonetimi'),
+
 ].filter(Boolean);
 
+
+
 const stats = [
+
   { label: 'Tamamlanan Proje', value: '500+' },
+
   { label: 'Mutlu Müşteri', value: '300+' },
+
   { label: 'Yıllık Deneyim', value: '12+' },
+
   { label: 'Uzman Ekip', value: '15+' }
+
 ];
+
 ---
 
+
+
 <BaseLayout
+
   title="Malatya Reklam | Reklam, SEO, Web Tasarım, E-Ticaret & AI Çözümleri"
+
   description="Malatya'nın yenilikçi reklam ajansı. Açıkhava reklam, SEO, web tasarım, e-ticaret, kurumsal yazılım, GEO ve yapay zeka destekli dijital pazarlama çözümleri."
+
 >
+
   <section class="relative bg-gradient-to-br from-apricot-50 via-white to-orange-50 overflow-hidden">
+
     <div class="absolute top-20 right-10 w-96 h-96 bg-apricot-200/30 rounded-full blur-3xl"></div>
+
     <div class="absolute bottom-0 left-0 w-72 h-72 bg-orange-200/30 rounded-full blur-3xl"></div>
+
     <div class="container mx-auto px-4 lg:px-8 py-16 lg:py-28 relative">
+
       <div class="max-w-4xl">
+
         <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-apricot-200 text-apricot-600 text-xs font-bold uppercase tracking-wider rounded-full mb-6 shadow-sm">
+
           <span class="w-2 h-2 bg-apricot-500 rounded-full animate-pulse"></span>
+
           Malatya'nın yeni nesil reklam ajansı
+
         </span>
+
         <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6 leading-[1.05]">
+
           Markanızı <span class="text-apricot-500">geleceğe</span> taşıyan reklam çözümleri
+
         </h1>
+
         <p class="text-xl md:text-2xl text-neutral-600 leading-relaxed mb-10 max-w-3xl">
+
           Açıkhava reklamdan yapay zeka destekli içeriğe, e-ticaretten kurumsal yazılıma; Malatya'nın en kapsamlı reklam ve dijital pazarlama hizmetleri.
+
         </p>
+
         <div class="flex flex-wrap gap-4">
+
           <a href="/iletisim" class="inline-flex items-center gap-2 px-8 py-4 bg-apricot-500 hover:bg-apricot-600 text-white font-bold text-lg rounded-xl shadow-xl shadow-apricot-500/30 hover:shadow-2xl hover:-translate-y-1 transition-all">
+
             Ücretsiz Teklif Al
+
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+
           </a>
+
           <a href="/hizmetler" class="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-neutral-50 text-neutral-900 font-bold text-lg rounded-xl border border-neutral-200 transition-all">Hizmetleri İncele</a>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section class="bg-neutral-900 text-white py-12">
+
     <div class="container mx-auto px-4 lg:px-8">
+
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
         {stats.map(stat => (
+
           <div class="text-center">
+
             <div class="font-display text-4xl md:text-5xl font-bold text-apricot-400 mb-2">{stat.value}</div>
+
             <div class="text-sm text-neutral-400">{stat.label}</div>
+
           </div>
+
         ))}
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section class="py-16 lg:py-24">
+
     <div class="container mx-auto px-4 lg:px-8">
+
       <div class="max-w-3xl mx-auto text-center mb-16">
+
         <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Öne Çıkan Hizmetler</span>
+
         <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">14 Farklı Alanda Uzman Çözümler</h2>
+
         <p class="text-lg text-neutral-600">Klasik reklamdan yapay zeka destekli yeni nesil hizmetlere kadar markanızı büyütecek tüm çözümler bir arada.</p>
+
       </div>
+
+
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
         {featuredServices.map(service => (
+
           <a href={`/hizmetler/${service.slug}`} class="group p-6 bg-white border border-neutral-200 rounded-2xl hover:border-apricot-300 hover:shadow-xl hover:shadow-apricot-500/10 hover:-translate-y-1 transition-all">
+
             <div class="flex items-center justify-between mb-4">
+
               <span class="text-xs font-bold uppercase tracking-wider text-apricot-600">{categoryLabels[service.category]}</span>
+
               <svg class="w-5 h-5 text-neutral-400 group-hover:text-apricot-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+
             </div>
+
             <h3 class="font-display text-xl font-bold text-neutral-900 mb-3 group-hover:text-apricot-600 transition-colors">{service.title}</h3>
+
             <p class="text-sm text-neutral-600 leading-relaxed">{service.shortDesc}</p>
+
           </a>
+
         ))}
+
       </div>
+
+
 
       <div class="text-center mt-12">
+
         <a href="/hizmetler" class="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 hover:bg-neutral-800 text-white font-semibold rounded-xl transition-all">
+
           Tüm Hizmetleri Gör
+
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+
         </a>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section class="py-16 lg:py-20 bg-neutral-50">
+
     <div class="container mx-auto px-4 lg:px-8">
+
       <div class="grid lg:grid-cols-2 gap-12 items-center">
+
         <div>
+
           <span class="inline-block px-3 py-1 bg-white border border-apricot-200 text-apricot-600 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Neden Biz?</span>
+
           <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-6">Malatya'da Yerli, Globalde Rekabetçi</h2>
+
           <p class="text-lg text-neutral-600 leading-relaxed mb-8">
+
             12 yılı aşkın tecrübemizle Malatya'da kurumsal markaların büyüme ortağıyız. Klasik reklam ile yeni nesil yapay zeka destekli pazarlamayı bir araya getiriyoruz.
+
           </p>
+
           <ul class="space-y-3">
+
             {['Uçtan uca dijital ve reklam çözümleri', 'Şeffaf raporlama ve ölçülebilir sonuçlar', 'Yerli ekip, hızlı destek ve güvenli altyapı', 'AI ve GEO ile geleceğe hazır pazarlama'].map(item => (
+
               <li class="flex items-start gap-3">
+
                 <div class="flex-shrink-0 w-6 h-6 rounded-full bg-apricot-500 flex items-center justify-center text-white mt-0.5">
+
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+
                 </div>
+
                 <span class="text-neutral-700">{item}</span>
+
               </li>
+
             ))}
+
           </ul>
+
         </div>
+
         <div class="grid grid-cols-2 gap-4">
+
           <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100">
+
             <div class="text-4xl mb-3">🎯</div>
+
             <h3 class="font-display font-bold text-lg mb-2">Stratejik Yaklaşım</h3>
+
             <p class="text-sm text-neutral-600">Veri odaklı stratejilerle ROI'nizi maksimize ediyoruz.</p>
+
           </div>
+
           <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100 mt-8">
+
             <div class="text-4xl mb-3">⚡</div>
+
             <h3 class="font-display font-bold text-lg mb-2">Hız & Performans</h3>
+
             <p class="text-sm text-neutral-600">Modern altyapı ile saniyeler içinde yüklenen siteler.</p>
+
           </div>
+
           <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100">
+
             <div class="text-4xl mb-3">🤖</div>
+
             <h3 class="font-display font-bold text-lg mb-2">AI Destekli</h3>
+
             <p class="text-sm text-neutral-600">GEO, AI içerik ve otomatik pazarlama çözümleri.</p>
+
           </div>
+
           <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100 mt-8">
+
             <div class="text-4xl mb-3">🔒</div>
+
             <h3 class="font-display font-bold text-lg mb-2">Güvenli</h3>
+
             <p class="text-sm text-neutral-600">Cloudflare WAF, HTTPS ve bot koruması ile maksimum güvenlik.</p>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
+
+
   <section class="py-16 lg:py-24 bg-gradient-to-br from-apricot-500 to-apricot-600 text-white">
+
     <div class="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
+
       <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Markanız İçin Bir Sonraki Adım</h2>
+
       <p class="text-xl text-apricot-50 mb-8">Ücretsiz keşif görüşmesinde size özel strateji önerileri sunalım.</p>
+
       <div class="flex flex-wrap justify-center gap-4">
+
         <a href="/iletisim" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-apricot-600 font-bold text-lg rounded-xl hover:bg-apricot-50 transition-colors shadow-xl">
+
           Ücretsiz Görüşme
+
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+
         </a>
-        <a href="https://wa.me/905551234567" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-apricot-700 hover:bg-apricot-800 text-white font-bold text-lg rounded-xl transition-colors">WhatsApp</a>
+
+        <a href="https://wa.me/905446732202" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-apricot-700 hover:bg-apricot-800 text-white font-bold text-lg rounded-xl transition-colors">WhatsApp</a>
+
       </div>
+
     </div>
+
   </section>
+
 </BaseLayout>
+
