@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = [
+  {
+    slug: 'malatya-seo-rehberi',
+    title: 'Malatya İşletmeleri İçin SEO Rehberi 2025',
+    excerpt: 'Yerel SEO ile Malatya\'da arama sonuçlarında üst sıralara çıkmanın yolları.',
+    date: '2025-01-15',
+    category: 'SEO',
+    readTime: '8 dk'
+  },
+  {
+    slug: 'geo-nedir',
+    title: 'GEO Nedir? Yapay Zeka Çağında Yeni SEO',
+    excerpt: 'ChatGPT, Perplexity ve Gemini\'nin yükselişiyle ortaya çıkan GEO\'yu öğrenin.',
+    date: '2025-01-10',
+    category: 'AI & GEO',
+    readTime: '12 dk'
+  },
+  {
+    slug: 'kayisi-eticaret',
+    title: 'Malatya Kayısısını Online Satmanın Yolları',
+    excerpt: 'Yerel ürünleri pazaryerleri ve kendi e-ticaret sitenizle satmak.',
+    date: '2025-01-05',
+    category: 'E-Ticaret',
+    readTime: '6 dk'
+  },
+  {
+    slug: 'sosyal-medya-trendleri-2025',
+    title: '2025 Sosyal Medya Trendleri',
+    excerpt: 'Yeni yılda öne çıkacak platform ve içerik formatları.',
+    date: '2024-12-28',
+    category: 'Sosyal Medya',
+    readTime: '10 dk'
+  },
+  {
+    slug: 'web-sitesi-hizi',
+    title: 'Web Sitesi Hızı Neden Bu Kadar Önemli?',
+    excerpt: 'Core Web Vitals, dönüşüm oranları ve Google sıralamaları arasındaki ilişki.',
+    date: '2024-12-20',
+    category: 'Web',
+    readTime: '7 dk'
+  },
+  {
+    slug: 'ai-icerik-uretimi-rehberi',
+    title: 'AI ile İçerik Üretimi: Pratik Rehber',
+    excerpt: 'ChatGPT ve Claude ile SEO uyumlu içerik üretmenin püf noktaları.',
+    date: '2024-12-15',
+    category: 'AI & GEO',
+    readTime: '9 dk'
+  }
+];
+
+const formatDate = (d: string) => new Date(d).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<BaseLayout title="Blog | Malatya Reklam" description="Reklam, SEO, dijital pazarlama, e-ticaret, AI ve GEO hakkında uzman içerikler.">
+  <section class="bg-gradient-to-br from-apricot-50 via-white to-orange-50 py-16 lg:py-24">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Blog</span>
+      <h1 class="font-display text-4xl md:text-6xl font-bold text-neutral-900 mb-6 leading-tight">Pazarlamanın Geleceğine Dair</h1>
+      <p class="text-xl text-neutral-600 leading-relaxed">SEO\'dan GEO\'ya, e-ticaretten yapay zekaya pazarlamanın yeni dünyasına dair uzman içerikler.</p>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {posts.map(post => (
+          <a href={`/blog/${post.slug}`} class="group bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:border-apricot-300 hover:shadow-xl hover:-translate-y-1 transition-all">
+            <div class="aspect-video bg-gradient-to-br from-apricot-200 to-apricot-400 flex items-center justify-center">
+              <span class="text-6xl opacity-50">📝</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 text-xs text-neutral-500 mb-3">
+                <span class="px-2 py-1 bg-apricot-100 text-apricot-700 font-bold rounded">{post.category}</span>
+                <span>{formatDate(post.date)}</span>
+                <span>·</span>
+                <span>{post.readTime}</span>
+              </div>
+              <h2 class="font-display text-xl font-bold text-neutral-900 mb-3 group-hover:text-apricot-600 transition-colors line-clamp-2">{post.title}</h2>
+              <p class="text-sm text-neutral-600 leading-relaxed line-clamp-3">{post.excerpt}</p>
+              <div class="mt-4 flex items-center gap-2 text-sm font-semibold text-apricot-600">
+                Devamını Oku
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-16 p-8 bg-neutral-50 rounded-2xl max-w-3xl mx-auto">
+        <h3 class="font-display text-2xl font-bold text-neutral-900 mb-3">Bültenimize Abone Olun</h3>
+        <p class="text-neutral-600 mb-6">Pazarlama dünyasındaki son gelişmeler, ipuçları ve özel içerikler için.</p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input type="email" placeholder="E-posta adresiniz" class="flex-1 px-4 py-3 border border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none focus:ring-2 focus:ring-apricot-200" />
+          <button class="px-6 py-3 bg-apricot-500 hover:bg-apricot-600 text-white font-bold rounded-xl">Abone Ol</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
