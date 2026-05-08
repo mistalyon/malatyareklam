@@ -1,81 +1,61 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 export interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
   canonical?: string;
-  image?: string;
-  noindex?: boolean;
+  jsonLd?: object;
 }
 
 const {
-  title = 'Malatya Reklam | Reklam, Web Tasarım, Yazılım, E-Ticaret ve GEO Ajansı',
-  description = 'Malatya\'nın yeni nesil reklam ve dijital ajansı. Tabela, dijital baskı, açık hava reklam, web tasarım, malatya yazılım, malatya e-ticaret, mobil uygulama, SEO ve GEO uzmanlığı tek çatı altında.',
+  title = 'Malatya Reklam | Reklam, Dijital Pazarlama, Yazılım & E-Ticaret',
+  description = 'Malatya\'nın yenilikçi reklam ajansı. Açıkhava reklam, SEO, web tasarım, e-ticaret, kurumsal yazılım ve AI destekli dijital pazarlama çözümleri.',
+  ogImage = '/og-image.jpg',
   canonical,
-  image = '/og-cover.jpg',
-  noindex = false,
+  jsonLd
 } = Astro.props;
 
-const siteUrl = 'https://malatyareklam.com';
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).toString();
-const ogImage = new URL(image, siteUrl).toString();
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site || 'https://malatyareklam.com').toString();
 
-const orgSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': siteUrl + '#org',
-  name: 'Malatya Reklam',
-  url: siteUrl,
-  logo: siteUrl + '/logo.svg',
-  image: ogImage,
-  description,
-  telephone: '+90-000-000-0000',
-  priceRange: '$$',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Malatya',
-    addressRegion: 'Malatya',
-    addressCountry: 'TR',
+const defaultJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Malatya Reklam",
+  "image": "https://malatyareklam.com/logo.png",
+  "url": "https://malatyareklam.com",
+  "telephone": "+90-555-123-4567",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Malatya",
+    "addressCountry": "TR"
   },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Malatya' },
-  sameAs: [],
-  knowsAbout: [
-    'Reklam Tabelası', 'Dijital Baskı', 'Açık Hava Reklamcılığı',
-    'Kurumsal Kimlik', 'Araç Giydirme', 'Matbaa',
-    'Web Tasarım', 'Malatya Yazılım', 'Malatya E-Ticaret',
-    'Mobil Uygulama', 'Sosyal Medya Yönetimi',
-    'SEO', 'GEO (Generative Engine Optimization)', 'Yapay Zeka',
-  ],
+  "priceRange": "₺₺",
+  "areaServed": "Malatya"
 };
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#FF6B35" />
-    <meta name="color-scheme" content="light" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalUrl} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
-
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href={canonicalURL} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="tr_TR" />
-    <meta property="og:site_name" content="Malatya Reklam" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:locale" content="tr_TR" />
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -83,78 +63,15 @@ const orgSchema = {
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" />
 
-    <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd || defaultJsonLd)} />
   </head>
-  <body class="min-h-screen flex flex-col bg-white text-ink-900">
-    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:shadow-soft">
-      İçeriğe atla
-    </a>
-
-    <header class="sticky top-0 z-40 border-b border-ink-100 bg-white/80 backdrop-blur-md">
-      <div class="container-x flex h-16 items-center justify-between">
-        <a href="/" class="flex items-center gap-2 font-display text-xl font-bold">
-          <span class="grid h-8 w-8 place-items-center rounded-lg bg-brand-500 text-white">M</span>
-          Malatya Reklam
-        </a>
-        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="/hizmetler" class="hover:text-brand-600">Hizmetler</a>
-          <a href="/projeler" class="hover:text-brand-600">Projeler</a>
-          <a href="/hakkimizda" class="hover:text-brand-600">Hakkımızda</a>
-          <a href="/blog" class="hover:text-brand-600">Blog</a>
-          <a href="/iletisim" class="btn-primary !py-2 !px-4 text-sm">Teklif Al</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main" class="flex-1">
+  <body class="bg-white text-neutral-900 font-sans antialiased">
+    <Header />
+    <main>
       <slot />
     </main>
-
-    <footer class="border-t border-ink-100 bg-ink-900 text-ink-100">
-      <div class="container-x py-12 grid gap-8 md:grid-cols-4">
-        <div>
-          <div class="font-display text-xl font-bold text-white">Malatya Reklam</div>
-          <p class="mt-2 text-sm text-ink-300">Malatya'nın reklam ve dijital ajansı.</p>
-        </div>
-        <div>
-          <div class="font-semibold text-white">Reklam</div>
-          <ul class="mt-2 space-y-1 text-sm text-ink-300">
-            <li><a href="/hizmetler/tabela" class="hover:text-brand-400">Tabela</a></li>
-            <li><a href="/hizmetler/dijital-baski" class="hover:text-brand-400">Dijital Baskı</a></li>
-            <li><a href="/hizmetler/acik-hava" class="hover:text-brand-400">Açık Hava</a></li>
-            <li><a href="/hizmetler/arac-giydirme" class="hover:text-brand-400">Araç Giydirme</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="font-semibold text-white">Dijital</div>
-          <ul class="mt-2 space-y-1 text-sm text-ink-300">
-            <li><a href="/hizmetler/web-tasarim" class="hover:text-brand-400">Web Tasarım</a></li>
-            <li><a href="/hizmetler/yazilim" class="hover:text-brand-400">Malatya Yazılım</a></li>
-            <li><a href="/hizmetler/e-ticaret" class="hover:text-brand-400">Malatya E-Ticaret</a></li>
-            <li><a href="/hizmetler/mobil-uygulama" class="hover:text-brand-400">Mobil Uygulama</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="font-semibold text-white">Yeni Nesil</div>
-          <ul class="mt-2 space-y-1 text-sm text-ink-300">
-            <li><a href="/hizmetler/seo" class="hover:text-brand-400">SEO</a></li>
-            <li><a href="/hizmetler/geo" class="hover:text-brand-400">GEO Uzmanlığı</a></li>
-            <li><a href="/hizmetler/yapay-zeka" class="hover:text-brand-400">Yapay Zeka</a></li>
-            <li><a href="/iletisim" class="hover:text-brand-400">İletişim</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t border-ink-800">
-        <div class="container-x py-4 text-xs text-ink-400 flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
-          <span>© {new Date().getFullYear()} Malatya Reklam. Tüm hakları saklıdır.</span>
-          <span>Astro · Tailwind · Cloudflare Pages ile inşa edildi.</span>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </body>
 </html>
