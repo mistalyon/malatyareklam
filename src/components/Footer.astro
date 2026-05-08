@@ -1,0 +1,79 @@
+---
+import { services } from '../data/services';
+const year = new Date().getFullYear();
+const reklamServices = services.filter(s => s.category === 'reklam');
+const dijitalServices = services.filter(s => s.category === 'dijital');
+const yeniNesilServices = services.filter(s => s.category === 'yeni-nesil');
+---
+
+<footer class="bg-neutral-900 text-neutral-300 mt-24">
+  <div class="container mx-auto px-4 lg:px-8 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-apricot-500 to-apricot-600 flex items-center justify-center text-white font-bold text-xl">M</div>
+          <div>
+            <div class="font-display font-bold text-xl text-white">Malatya Reklam</div>
+            <div class="text-xs text-neutral-400">Reklam & Dijital Çözümler</div>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed text-neutral-400 mb-6 max-w-md">
+          Malatya'nın yenilikçi reklam ve dijital pazarlama ajansı. Açıkhava reklamdan yapay zeka destekli içerik üretimine, e-ticaretten kurumsal yazılıma kadar uçtan uca çözümler sunuyoruz.
+        </p>
+        <div class="flex gap-3">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-lg bg-neutral-800 hover:bg-apricot-500 flex items-center justify-center transition-colors" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://wa.me/905551234567" target="_blank" rel="noopener" class="w-10 h-10 rounded-lg bg-neutral-800 hover:bg-apricot-500 flex items-center justify-center transition-colors" aria-label="WhatsApp">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.99 5.945L1.05 21.785l5.604-1.592z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-white mb-4">Reklam</h3>
+        <ul class="space-y-2">
+          {reklamServices.map(s => (
+            <li><a href={`/hizmetler/${s.slug}`} class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">{s.title}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-white mb-4">Dijital</h3>
+        <ul class="space-y-2">
+          {dijitalServices.map(s => (
+            <li><a href={`/hizmetler/${s.slug}`} class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">{s.title}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-white mb-4">Yeni Nesil</h3>
+        <ul class="space-y-2">
+          {yeniNesilServices.map(s => (
+            <li><a href={`/hizmetler/${s.slug}`} class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">{s.title}</a></li>
+          ))}
+        </ul>
+        <h3 class="font-display font-bold text-white mt-6 mb-4">Kurumsal</h3>
+        <ul class="space-y-2">
+          <li><a href="/hakkimizda" class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">Hakkımızda</a></li>
+          <li><a href="/blog" class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">Blog</a></li>
+          <li><a href="/iletisim" class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">İletişim</a></li>
+          <li><a href="/kvkk" class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">KVKK</a></li>
+          <li><a href="/gizlilik-politikasi" class="text-sm text-neutral-400 hover:text-apricot-400 transition-colors">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-neutral-800 flex flex-col md:flex-row gap-4 justify-between items-center text-sm text-neutral-500">
+      <div>© {year} Malatya Reklam. Tüm hakları saklıdır.</div>
+      <div class="flex items-center gap-2">
+        <span>Malatya, Türkiye</span>
+        <span>·</span>
+        <a href="mailto:info@malatyareklam.com" class="hover:text-apricot-400 transition-colors">info@malatyareklam.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
