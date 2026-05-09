@@ -7,11 +7,13 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:worker": "esbuild src/worker/index.ts --bundle --format=esm --target=es2022 --outfile=dist/_worker.js --external:cloudflare:* --platform=neutral",
+    "build:all": "npm run build && npm run build:worker",
     "preview": "astro preview",
+    "deploy": "npm run build:all && wrangler deploy",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.0.0",
     "@astrojs/react": "^4.2.0",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.4",
@@ -23,7 +25,10 @@
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250101.0",
     "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5"
+    "@types/react-dom": "^18.3.5",
+    "esbuild": "^0.24.0",
+    "wrangler": "^3.99.0"
   }
 }
