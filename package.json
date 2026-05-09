@@ -1,34 +1,39 @@
 {
-  "name": "malatyareklam",
-  "type": "module",
-  "version": "0.1.0",
-  "description": "Malatya Reklam - Modern dijital reklam ajansi websitesi",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "build:worker": "esbuild src/worker/index.ts --bundle --format=esm --target=es2022 --outfile=worker-dist/index.js --platform=neutral --conditions=worker,browser",
-    "build:all": "npm run build && npm run build:worker",
-    "preview": "astro preview",
-    "deploy": "npm run build:all && wrangler deploy",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/react": "^4.2.0",
-    "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/tailwind": "^5.1.4",
-    "astro": "^5.1.1",
-    "framer-motion": "^11.15.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "resend": "^4.0.0",
-    "tailwindcss": "^3.4.17"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250101.0",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "esbuild": "^0.24.0",
-    "wrangler": "^3.99.0"
-  }
+    "name": "malatyareklam",
+    "type": "module",
+    "version": "0.2.0",
+    "description": "Malatya Reklam - Modern dijital reklam ajansi websitesi",
+    "scripts": {
+          "dev": "astro dev",
+          "start": "astro dev",
+          "build": "astro build",
+          "build:worker": "esbuild src/worker/index.ts --bundle --format=esm --target=es2022 --outfile=worker-dist/index.js --platform=neutral --conditions=worker,browser",
+          "build:all": "npm run build && npm run build:worker",
+          "preview": "astro preview",
+          "deploy": "npm run build:all && wrangler deploy",
+          "astro": "astro"
+    },
+    "dependencies": {
+          "@astrojs/react": "^4.2.0",
+          "@astrojs/sitemap": "^3.2.1",
+          "@astrojs/tailwind": "^5.1.4",
+          "@portabletext/to-html": "^2.0.13",
+          "@sanity/client": "^6.22.5",
+          "@sanity/image-url": "^1.1.0",
+          "@sanity/vision": "^3.68.0",
+          "astro": "^5.1.1",
+          "framer-motion": "^11.15.0",
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1",
+          "sanity": "^3.68.0",
+          "styled-components": "^6.1.13",
+          "tailwindcss": "^3.4.17"
+    },
+    "devDependencies": {
+          "@cloudflare/workers-types": "^4.20250101.0",
+          "@types/react": "^18.3.18",
+          "@types/react-dom": "^18.3.5",
+          "esbuild": "^0.24.0",
+          "wrangler": "^3.99.0"
+    }
 }
