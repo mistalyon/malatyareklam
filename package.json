@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "build:worker": "esbuild src/worker/index.ts --bundle --format=esm --target=es2022 --outfile=dist/_worker.js --external:cloudflare:* --platform=neutral",
+    "build:worker": "esbuild src/worker/index.ts --bundle --format=esm --target=es2022 --outfile=worker-dist/index.js --platform=neutral --conditions=worker,browser",
     "build:all": "npm run build && npm run build:worker",
     "preview": "astro preview",
     "deploy": "npm run build:all && wrangler deploy",
