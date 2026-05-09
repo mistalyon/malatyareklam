@@ -13,8 +13,8 @@ export interface Props {
 }
 
 const {
-  title = 'Malatya Reklam | Reklam, Dijital Pazarlama, Yazilim & E-Ticaret',
-  description = 'Malatya\'nin yenilikci reklam ajansi. Acikhahva reklam, SEO, web tasarim, e-ticaret, kurumsal yazilim ve AI destekli dijital pazarlama cozumleri.',
+  title = 'Malatya Reklam | Reklam, Dijital Pazarlama, Yazılım & E-Ticaret',
+  description = 'Malatya\'nın yenilikçi reklam ajansı. Açıkhava reklam, SEO, web tasarım, e-ticaret, kurumsal yazılım ve AI destekli dijital pazarlama çözümleri.',
   ogImage = '/og-image.jpg',
   canonical,
   jsonLd
@@ -27,17 +27,17 @@ const organizationJsonLd = {
   "@type": "LocalBusiness",
   "@id": "https://malatyareklam.com/#organization",
   "name": "Malatya Reklam",
-  "alternateName": "Malatya Reklam Ajansi",
-  "description": "Malatya merkezli reklam, dijital pazarlama, web tasarim, yazilim, e-ticaret ve AI/GEO ajansi.",
+  "alternateName": "Malatya Reklam Ajansı",
+  "description": "Malatya merkezli reklam, dijital pazarlama, web tasarım, yazılım, e-ticaret ve AI/GEO ajansı.",
   "image": "https://malatyareklam.com/og-image.jpg",
   "logo": "https://malatyareklam.com/logo.png",
   "url": "https://malatyareklam.com",
   "telephone": "+90-544-673-22-02",
   "email": "info@malatyareklam.com",
-  "priceRange": "\u20BA\u20BA",
+  "priceRange": "₺₺",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Inonu Caddesi No:123",
+    "streetAddress": "İnönü Caddesi No:123",
     "addressLocality": "Battalgazi",
     "addressRegion": "Malatya",
     "postalCode": "44000",
@@ -50,7 +50,7 @@ const organizationJsonLd = {
   },
   "areaServed": [
     { "@type": "City", "name": "Malatya" },
-    { "@type": "AdministrativeArea", "name": "Dogu Anadolu Bolgesi" }
+    { "@type": "AdministrativeArea", "name": "Doğu Anadolu Bölgesi" }
   ],
   "openingHoursSpecification": [
     {
@@ -88,42 +88,42 @@ const allSchemas = [organizationJsonLd, ...pageSchemas];
 
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#FF6B35" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <title>{title}</title>
-  <meta name="description" content={description} />
-  <link rel="canonical" href={canonicalURL} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FF6B35" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:image" content={new URL(ogImage, Astro.site || 'https://malatyareklam.com').toString()} />
-  <meta property="og:url" content={canonicalURL} />
-  <meta property="og:site_name" content="Malatya Reklam" />
-  <meta property="og:locale" content="tr_TR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site || 'https://malatyareklam.com').toString()} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="Malatya Reklam" />
+    <meta property="og:locale" content="tr_TR" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={new URL(ogImage, Astro.site || 'https://malatyareklam.com').toString()} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site || 'https://malatyareklam.com').toString()} />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" />
 
-  {allSchemas.map(schema => (
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
-  ))}
-</head>
-<body class="bg-white text-neutral-900 font-sans antialiased">
-  <Header />
-  <main>
-    <slot />
-  </main>
-  <Footer />
-  <WhatsAppButton />
-</body>
+    {allSchemas.map(schema => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
+  </head>
+  <body class="bg-white text-neutral-900 font-sans antialiased">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <WhatsAppButton />
+  </body>
 </html>
