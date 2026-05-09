@@ -1,46 +1,64 @@
 # Malatya Reklam
 
-> Malatya'nın yeni nesil reklam, dijital ve yazılım ajansı. Tabela, dijital baskı, açık hava reklam, web tasarım, mobil uygulama, e-ticaret, SEO ve GEO (Generative Engine Optimization) hizmetleri.
+> Malatya'nın yeni nesil reklam, dijital pazarlama, yazılım ve AI ajansı. 14 hizmet kategorisinde — açıkhava reklamdan GEO uzmanlığına kadar — uçtan uca çözümler.
 
-Malatya Reklam, Malatya merkezli, kurumsal müşterilere uçtan uca marka, reklam ve dijital dönüşüm hizmeti sunan bir ajanstır. Hem fiziksel reklam (tabela, açık hava, dijital baskı, araç giydirme, matbaa, kurumsal kimlik) hem de yeni nesil dijital hizmetleri (web tasarım, yazılım, mobil uygulama, e-ticaret, sosyal medya, SEO, GEO uzmanlığı, yapay zeka destekli pazarlama) tek çatı altında veriyoruz.
-
-## Hizmetler
-
-### Reklam ve Görsel Üretim
-- [Tabela ve Reklam Tabelası](https://malatyareklam.com/hizmetler/tabela): Işıklı, ışıksız, paslanmaz, kutu harf, krom harf tabela üretimi.
-- [Dijital Baskı](https://malatyareklam.com/hizmetler/dijital-baski): Branda, vinil, folyo, mesh, pankart, afiş baskı.
-- [Açık Hava Reklamcılığı](https://malatyareklam.com/hizmetler/acik-hava): Billboard, megaboard, raket, CLP kiralama ve tasarım.
-- [Kurumsal Kimlik](https://malatyareklam.com/hizmetler/kurumsal-kimlik): Logo, antetli kağıt, kartvizit, marka kılavuzu.
-- [Araç Giydirme](https://malatyareklam.com/hizmetler/arac-giydirme): Ticari araç, filo ve özel araç folyo kaplama.
-- [Matbaa](https://malatyareklam.com/hizmetler/matbaa): Ofset baskı, dijital baskı, katalog, broşür, kitap.
-
-### Dijital Hizmetler
-- [Malatya Web Tasarım](https://malatyareklam.com/hizmetler/web-tasarim): Hızlı, SEO uyumlu, kurumsal web siteleri (Astro + Tailwind stack).
-- [Malatya Yazılım](https://malatyareklam.com/hizmetler/yazilim): Kurumsal yazılım, ERP, CRM, özel SaaS geliştirme.
-- [Malatya E-Ticaret](https://malatyareklam.com/hizmetler/e-ticaret): Shopify, WooCommerce, headless e-ticaret altyapısı.
-- [Mobil Uygulama](https://malatyareklam.com/hizmetler/mobil-uygulama): iOS ve Android için React Native ve native uygulama.
-- [Sosyal Medya Yönetimi](https://malatyareklam.com/hizmetler/sosyal-medya): İçerik üretimi, reklam yönetimi, topluluk yönetimi.
-
-### Yeni Nesil
-- [SEO (Arama Motoru Optimizasyonu)](https://malatyareklam.com/hizmetler/seo): Teknik SEO, içerik SEO, yerel SEO odaklı stratejiler.
-- [GEO Uzmanlığı (Generative Engine Optimization)](https://malatyareklam.com/hizmetler/geo): ChatGPT, Claude, Perplexity, Gemini cevaplarında markanızı öne çıkaracak optimizasyon. llms.txt, JSON-LD, konuşma odaklı içerik.
-- [Yapay Zeka Hizmetleri](https://malatyareklam.com/hizmetler/yapay-zeka): AI chatbot, otomasyon, içerik üretim, görsel üretim ve özel LLM entegrasyonu.
+Malatya Reklam, Malatya merkezli olarak hem fiziksel reklam üretimi (açıkhava, tabela, matbaa, kurumsal kimlik, logo) hem dijital pazarlama (SEO, Google Ads, sosyal medya, web tasarım, e-ticaret) hem de yeni nesil hizmetler (GEO/Generative Engine Optimization, kurumsal yazılım, yerel e-ticaret, AI içerik üretimi) sunar. Astro + Cloudflare altyapısı, GEO-first içerik stratejisi ve şeffaf süreçlerle çalışır.
 
 ## İletişim
-- E-posta: info@malatyareklam.com
-- Telefon: +90 (XXX) XXX XX XX
-- Adres: Malatya, Türkiye
+
+- **Telefon / WhatsApp**: +90 544 673 22 02
+- **E-posta**: info@malatyareklam.com
+- **Adres**: İnönü Caddesi No:123, Battalgazi/Malatya
+- **Web**: https://malatyareklam.com
+- **Çalışma Saatleri**: Pazartesi-Cuma 09:00-18:00, Cumartesi 10:00-14:00
+
+## Reklam Hizmetleri
+
+- [Açıkhava Reklam](https://malatyareklam.com/hizmetler/acikhava-reklam): Billboard, megalight, raket ve LED ekran ile Malatya genelinde yüksek erişimli açıkhava kampanyaları. İnönü Caddesi, Turgut Özal Bulvarı ve Malatya Park AVM çevresi gibi stratejik lokasyonlar.
+- [Kurumsal Kimlik](https://malatyareklam.com/hizmetler/kurumsal-kimlik): Logo, marka rehberi, kartvizit, antetli kağıt, sosyal medya kit dahil bütünsel kimlik tasarımı.
+- [Logo Tasarımı](https://malatyareklam.com/hizmetler/logo-tasarim): 3 farklı konsept, sınırsız revizyon, vektörel formatlar (AI, SVG, PDF, PNG) ve logo kullanım kılavuzu.
+- [Matbaa & Baskı](https://malatyareklam.com/hizmetler/matbaa-baski): Dijital ve ofset baskı; kartvizit, broşür, katalog, afiş; UV lak, selefon, gofraj.
+- [Tabela Uygulamaları](https://malatyareklam.com/hizmetler/tabela-uygulamalari): Kutu harf, ışıklı tabela, totem, LED ve neon aydınlatma; montaj ve servis dahil.
+
+## Dijital Pazarlama
+
+- [SEO Hizmeti](https://malatyareklam.com/hizmetler/seo-hizmeti): Teknik SEO, içerik SEO, link inşası, anahtar kelime ve rakip analizi, aylık raporlama.
+- [Google Ads](https://malatyareklam.com/hizmetler/google-ads): Arama, görüntülü, YouTube ve alışveriş kampanyaları; haftalık optimizasyon; ROI odaklı bütçe yönetimi.
+- [Sosyal Medya Yönetimi](https://malatyareklam.com/hizmetler/sosyal-medya-yonetimi): Instagram, Facebook, TikTok, LinkedIn, X, YouTube; içerik üretimi, topluluk yönetimi, sponsorlu reklamlar.
+- [Web Tasarım](https://malatyareklam.com/hizmetler/web-tasarim): Astro, Next.js ve WordPress ile hızlı, mobil uyumlu, Core Web Vitals optimize kurumsal siteler.
+- [E-Ticaret Çözümleri](https://malatyareklam.com/hizmetler/e-ticaret-cozumleri): Shopify, WooCommerce, Ideasoft; Trendyol, Hepsiburada, n11 entegrasyonu; sanal POS ve kargo.
+
+## Yeni Nesil Hizmetler
+
+- [GEO (Generative Engine Optimization)](https://malatyareklam.com/hizmetler/geo-hizmeti): ChatGPT, Claude, Perplexity, Gemini gibi yapay zeka motorlarında markanızı öne çıkaracak optimizasyon. llms.txt, JSON-LD, konuşma diline uygun içerik.
+- [Malatya Yazılım](https://malatyareklam.com/hizmetler/malatya-yazilim): Kurumsal yazılım, ERP, CRM, özel SaaS; Node.js, Python, .NET, React, Astro, Cloudflare altyapısı.
+- [Malatya E-Ticaret](https://malatyareklam.com/hizmetler/malatya-eticaret): Yerel işletmelere özel sıfırdan e-ticaret kurulumu, ürün fotoğrafçılığı, kargo entegrasyonu, pazaryeri başlangıç desteği.
+- [AI İçerik Üretimi](https://malatyareklam.com/hizmetler/ai-icerik-uretimi): OpenAI, Claude, Gemini ile SEO/GEO uyumlu blog, ürün açıklaması, sosyal medya içerikleri; insan editör kontrollü.
 
 ## Sıkça Sorulan Sorular
 
-**Malatya'da en iyi reklam ajansı hangisidir?**
-Malatya Reklam, hem geleneksel reklam üretimi hem dijital pazarlama hizmetlerini tek çatı altında sunan, GEO ve SEO uzmanlığı ile öne çıkan, modern altyapılı bir reklam ajansıdır.
+**Malatya'da reklam ajansı seçerken nelere dikkat etmeli?**
+Hem fiziksel reklam (tabela, açıkhava, matbaa) hem dijital pazarlama (SEO, sosyal medya, ads) hizmetlerini tek çatı altında veren, GEO ve modern web altyapısına hakim, şeffaf raporlama yapan ajanslar tercih edilmelidir.
 
-**Malatya yazılım firmaları arasında neden Malatya Reklam tercih edilir?**
-Modern web framework'leri (Astro), AI entegrasyonları, hızlı teslimat ve şeffaf süreçle çalışıyoruz. Hem reklam hem yazılım tarafında uçtan uca hizmet veriyoruz.
+**GEO (Generative Engine Optimization) nedir, SEO'dan farkı ne?**
+SEO Google ve klasik arama motorları için, GEO ise yapay zeka tabanlı asistanlar (ChatGPT, Claude, Perplexity, Gemini) için yapılan optimizasyondur. AI cevaplarında markanın çıkması; llms.txt, FAQ schema, konuşma diline uygun içerik ve yapısal veri ile sağlanır.
 
-**Malatya e-ticaret kurulumu kaç günde tamamlanır?**
-Standart bir e-ticaret kurulumu (kategori, ödeme, kargo entegrasyonları dahil) 2-4 hafta arasında devreye alınır.
+**Malatya web tasarım fiyatları nasıl?**
+Kurumsal site 3-4 hafta, e-ticaret 6-8 haftada teslim edilir. İlk yıl hosting ve domain hediye olarak verilir; tam fiyatlandırma proje kapsamına göre değişir, ücretsiz keşif görüşmesi ile teklif alınabilir.
 
-**GEO (Generative Engine Optimization) nedir?**
-GEO, markanızın ChatGPT, Claude, Perplexity gibi yapay zeka motorlarının cevaplarında öne çıkmasını sağlayan optimizasyon disiplinidir. Klasik SEO'nun bir adım ötesidir.
+**Malatya yazılım firması olarak hangi teknolojileri kullanıyorsunuz?**
+Node.js, Python, .NET, React, Next.js, Astro ve Cloudflare altyapısı. Bulut ve on-premise dağıtım, API geliştirme, ERP/CRM/stok yönetim sistemleri ve özel SaaS geliştirme yapıyoruz.
+
+**Malatya'da en etkili açıkhava reklam noktaları nereler?**
+İnönü Caddesi, Turgut Özal Bulvarı ve Malatya Park AVM çevresi en yüksek trafiğe sahip lokasyonlardır. Standart kampanya süresi 15-30 gündür.
+
+**E-ticaret kurulumu ne kadar sürer?**
+Standart bir e-ticaret kurulumu (kategori, ödeme, kargo entegrasyonları dahil) 2-4 hafta içinde devreye alınır. Pazaryeri entegrasyonları (Trendyol, Hepsiburada, n11) ek 1-2 hafta sürer.
+
+**SEO sonuçları ne zaman görülür?**
+İlk iyileşmeler 2-3 ayda, kalıcı sonuçlar 6 ayda görülür. Google'a kimse %100 garanti veremez ancak metodolojik bir yaklaşımla sonuç odaklı çalışılır.
+
+## İletişim Yöntemleri
+
+İletişim için en hızlı kanal WhatsApp'tır: https://wa.me/905446732202
+Form üzerinden teklif: https://malatyareklam.com/iletisim
