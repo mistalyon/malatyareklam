@@ -1,5 +1,3 @@
-import { Resend } from 'resend';
-
 export interface Env {
   ASSETS: Fetcher;
   RESEND_API_KEY: string;
@@ -56,9 +54,25 @@ function isValidEmail(email: string): boolean {
 }
 
 function isValidPhone(phone: string): boolean {
-  // Allow Turkish phone formats: digits, spaces, +, -, parentheses, 7-20 chars
   const digits = phone.replace(/[^0-9]/g, '');
   return digits.length >= 7 && digits.length <= 15;
+}
+
+async function sendViaResend(apiKey: string, payload: Record<string, unknown>): Promise<{ ok: true } | { ok: false; status: number; detail: unknown }> {
+  const response = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  });
+  if (!response.ok) {
+    let detail: unknown;
+    try { detail = await response.json(); } catch { detail = await response.text().catch(() => null); }
+    return { ok: false, status: response.status, detail };
+  }
+  return { ok: true };
 }
 
 async function handleContact(request: Request, env: Env): Promise<Response> {
@@ -84,7 +98,6 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
 
   // Honeypot check - bots tend to fill every field
   if (payload.website && payload.website.toString().trim().length > 0) {
-    // Pretend success to avoid signaling the trap to the bot
     return json({ ok: true });
   }
 
@@ -97,10 +110,10 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
 
   const errors: Record<string, string> = {};
   if (name.length < 2) errors.name = 'Ad Soyad gereklidir.';
-  if (!isValidPhone(phone)) errors.phone = 'Geçerli bir telefon numarası giriniz.';
-  if (!isValidEmail(email)) errors.email = 'Geçerli bir e-posta giriniz.';
-  if (message.length < 10) errors.message = 'Mesaj en az 10 karakter olmalıdır.';
-  if (!kvkkAccepted) errors.kvkk = 'KVKK onayı gereklidir.';
+  if (!isValidPhone(phone)) errors.phone = 'Ge\u00e7erli bir telefon numaras\u0131 giriniz.';
+  if (!isValidEmail(email)) errors.email = 'Ge\u00e7erli bir e-posta giriniz.';
+  if (message.length < 10) errors.message = 'Mesaj en az 10 karakter olmal\u0131d\u0131r.';
+  if (!kvkkAccepted) errors.kvkk = 'KVKK onay\u0131 gereklidir.';
 
   if (Object.keys(errors).length > 0) {
     return json({ ok: false, error: 'validation_failed', fields: errors }, 422);
@@ -110,24 +123,23 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
     return json({ ok: false, error: 'mailer_not_configured' }, 503);
   }
 
-  const resend = new Resend(env.RESEND_API_KEY);
   const fromAddress = env.CONTACT_FROM_EMAIL || 'Malatya Reklam <noreply@malatyareklam.com>';
   const submittedAt = new Date().toISOString();
 
   const subject = `Yeni teklif talebi - ${name}`;
   const htmlBody = `<!doctype html><html><body style="font-family:Inter,Arial,sans-serif;color:#111">
-    <h2 style="margin:0 0 12px">Yeni teklif talebi</h2>
-    <p style="margin:0 0 16px;color:#555">malatyareklam.com iletişim formundan gönderildi.</p>
-    <table cellpadding="6" style="border-collapse:collapse">
-      <tr><td style="color:#888">Ad Soyad</td><td><strong>${escapeHtml(name)}</strong></td></tr>
-      <tr><td style="color:#888">Telefon</td><td>${escapeHtml(phone)}</td></tr>
-      <tr><td style="color:#888">E-Posta</td><td>${escapeHtml(email)}</td></tr>
-      <tr><td style="color:#888">Hizmet</td><td>${escapeHtml(service || '-')}</td></tr>
-      <tr><td style="color:#888">KVKK</td><td>onaylandı (${escapeHtml(submittedAt)})</td></tr>
-    </table>
-    <h3 style="margin:16px 0 8px">Mesaj</h3>
-    <p style="white-space:pre-wrap;line-height:1.55">${escapeHtml(message)}</p>
-  </body></html>`;
+<h2 style="margin:0 0 12px">Yeni teklif talebi</h2>
+<p style="margin:0 0 16px;color:#555">malatyareklam.com ileti\u015fim formundan g\u00f6nderildi.</p>
+<table cellpadding="6" style="border-collapse:collapse">
+<tr><td style="color:#888">Ad Soyad</td><td><strong>${escapeHtml(name)}</strong></td></tr>
+<tr><td style="color:#888">Telefon</td><td>${escapeHtml(phone)}</td></tr>
+<tr><td style="color:#888">E-Posta</td><td>${escapeHtml(email)}</td></tr>
+<tr><td style="color:#888">Hizmet</td><td>${escapeHtml(service || '-')}</td></tr>
+<tr><td style="color:#888">KVKK</td><td>onayland\u0131 (${escapeHtml(submittedAt)})</td></tr>
+</table>
+<h3 style="margin:16px 0 8px">Mesaj</h3>
+<p style="white-space:pre-wrap;line-height:1.55">${escapeHtml(message)}</p>
+</body></html>`;
 
   const textBody = [
     'Yeni teklif talebi - malatyareklam.com',
@@ -136,14 +148,14 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
     `Telefon  : ${phone}`,
     `E-Posta  : ${email}`,
     `Hizmet   : ${service || '-'}`,
-    `KVKK     : onaylandı (${submittedAt})`,
+    `KVKK     : onayland\u0131 (${submittedAt})`,
     '',
     'Mesaj:',
     message,
   ].join('\n');
 
   try {
-    const result = await resend.emails.send({
+    const result = await sendViaResend(env.RESEND_API_KEY, {
       from: fromAddress,
       to: env.CONTACT_TO_EMAIL,
       reply_to: email,
@@ -155,8 +167,8 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
       },
     });
 
-    if ('error' in result && result.error) {
-      console.error('resend_error', result.error);
+    if (!result.ok) {
+      console.error('resend_error', result.status, result.detail);
       return json({ ok: false, error: 'send_failed' }, 502);
     }
 
