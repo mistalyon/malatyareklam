@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Google Ads Bütçe Hesaplama Aracı',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY' },
+  description: 'Google Ads kampanyaları için aylık bütçe ve tahmini sonuç hesaplayıcı. Tıklama, dönüşüm ve maliyet projeksiyonu.',
+};
+---
+
+<BaseLayout
+  title="Google Ads Bütçe Hesaplama Aracı 2026 — Tıklama, Dönüşüm ve Maliyet Tahmini | Malatya Reklam"
+  description="Google Ads bütçenizin size kaç tıklama, kaç müşteri kazandıracağını anında hesaplayın. Sektör CPC ortalamaları ve dönüşüm oranlarıyla doğru bütçe planlama."
+  keywords="google ads bütçe hesaplama, google reklam bütçesi, google ads cpc hesaplayıcı, adwords maliyet, malatya google ads, sem bütçe planlama"
+  jsonLd={jsonLd}
+>
+  <section class="bg-gradient-to-br from-apricot-50 via-white to-orange-50 py-16 lg:py-20">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+      <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Ücretsiz Araç</span>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">Google Ads Bütçe Hesaplayıcı</h1>
+      <p class="text-xl text-neutral-600 leading-relaxed">Sektörünüzü ve hedef bütçenizi seçin; aylık tıklama sayısı, tahmini dönüşüm ve müşteri başı maliyetinizi anında öğrenin. Türkiye 2026 sektör verilerine dayalı tahmini sonuçlar.</p>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-3xl">
+      <form id="g-form" class="bg-white rounded-3xl shadow-2xl border border-neutral-100 p-8 lg:p-10 space-y-8">
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">1. Sektörünüz</label>
+          <select name="sector" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none">
+            <option value="hukuk">Hukuk / Avukatlık (CPC: 25-60 ₺)</option>
+            <option value="finans">Finans / Sigorta (CPC: 18-45 ₺)</option>
+            <option value="saglik">Sağlık / Estetik (CPC: 12-35 ₺)</option>
+            <option value="eticaret">E-Ticaret / Perakende (CPC: 3-10 ₺)</option>
+            <option value="b2b">B2B / Yazılım (CPC: 8-25 ₺)</option>
+            <option value="yerel" selected>Yerel Hizmet (CPC: 4-12 ₺)</option>
+            <option value="egitim">Eğitim / Kurs (CPC: 6-18 ₺)</option>
+            <option value="emlak">Emlak / İnşaat (CPC: 5-20 ₺)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-2">2. Aylık Reklam Bütçeniz (₺): <span id="b-val" class="text-apricot-600">10.000</span></label>
+          <input type="range" name="budget" min="2000" max="100000" value="10000" step="1000" class="w-full accent-apricot-500" />
+          <div class="flex justify-between text-xs text-neutral-500 mt-1"><span>2K</span><span>50K</span><span>100K</span></div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-2">3. Web Site Dönüşüm Oranı (%): <span id="cv-val" class="text-apricot-600">3</span>%</label>
+          <input type="range" name="cv" min="0.5" max="15" value="3" step="0.5" class="w-full accent-apricot-500" />
+          <p class="text-xs text-neutral-500 mt-1">Bilmiyorsanız: Yerel hizmet %5-8, e-ticaret %2-3, B2B %1-2.</p>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-2">4. Müşteri Yaşam Boyu Değeri (₺)</label>
+          <input type="number" name="ltv" value="3000" min="0" step="100" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none" />
+          <p class="text-xs text-neutral-500 mt-1">Bir müşteriden ortalama tüm kazancınız (yıllık veya ömür boyu).</p>
+        </div>
+        <div class="bg-gradient-to-br from-apricot-50 to-orange-50 border-2 border-apricot-200 rounded-2xl p-6 lg:p-8 space-y-3">
+          <div class="text-sm font-bold uppercase tracking-wider text-apricot-700 text-center">Aylık Tahmini Sonuç</div>
+          <div class="grid grid-cols-3 gap-3 text-center">
+            <div class="bg-white rounded-xl p-3"><div class="text-xs text-neutral-500">Tıklama</div><div class="font-display text-2xl font-bold text-neutral-900" id="g-clicks">0</div></div>
+            <div class="bg-white rounded-xl p-3"><div class="text-xs text-neutral-500">Müşteri</div><div class="font-display text-2xl font-bold text-emerald-600" id="g-conv">0</div></div>
+            <div class="bg-white rounded-xl p-3"><div class="text-xs text-neutral-500">CAC</div><div class="font-display text-2xl font-bold text-apricot-600"><span id="g-cac">0</span>₺</div></div>
+          </div>
+          <div class="bg-white rounded-xl p-4 text-center">
+            <div class="text-xs text-neutral-500 mb-1">Aylık Tahmini Gelir / ROI</div>
+            <div class="font-display text-2xl font-bold text-neutral-900"><span id="g-rev">0</span> ₺ <span class="text-sm text-emerald-600 font-normal">(<span id="g-roi">0</span>% ROI)</span></div>
+          </div>
+        </div>
+        <a id="g-cta" href="https://wa.me/905555555555" target="_blank" rel="noopener" class="block w-full text-center px-6 py-4 bg-apricot-500 hover:bg-apricot-600 text-white text-lg font-bold rounded-xl transition shadow-lg shadow-apricot-500/30">Google Ads Stratejiniz İçin Görüşme →</a>
+        <p class="text-xs text-neutral-500 text-center">Tahminler Türkiye sektör ortalamalarına dayalıdır. Gerçek sonuçlar reklam metni, açılış sayfası ve teklif stratejisine göre %30-200 arası farklılık gösterebilir.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-8 text-center">Google Ads Bütçesi Nasıl Hesaplanır?</h2>
+      <div class="prose prose-lg max-w-none">
+        <p>Google Ads bütçesi 4 değişkene dayanır: <strong>sektör CPC ortalaması</strong>, <strong>aylık bütçe</strong>, <strong>açılış sayfası dönüşüm oranı</strong> ve <strong>müşteri yaşam boyu değeri (LTV)</strong>. Hesaplayıcımız Türkiye 2026 verilerine göre size makul bir tahmin sunar.</p>
+        <h3>Sektör CPC Aralıkları</h3>
+        <p>Hukuk, finans ve sigorta sektörleri en pahalı tıklamalara sahiptir (25-60 ₺). Yerel hizmetler ve e-ticaret çok daha ekonomiktir (3-12 ₺). Doğru sektör seçimi sayesinde gerçekçi planlama yapabilirsiniz.</p>
+        <h3>Doğru Bütçe Aralığı</h3>
+        <p>İlk ay için minimum 30 dönüşüm hedefleyin — istatistiksel olarak anlamlı veri toplamak için. Yerel hizmet için 5.000-12.000 ₺, B2B için 15.000-30.000 ₺, e-ticaret için 8.000-20.000 ₺ başlangıç bütçesi ideal.</p>
+        <h3>CAC vs LTV Kuralı</h3>
+        <p>Müşteri Edinme Maliyeti (CAC) , Müşteri Yaşam Boyu Değerinin (LTV) en az 1/3'ü olmalı. LTV/CAC oranı 3+ ise reklam yatırımı sürdürülebilir.</p>
+        <h3>İlk 3 Ay Optimizasyon Süreci</h3>
+        <p>Google Ads sonuçları 4-6 hafta içinde stabilleşir. İlk 30 günde bütçe %30-50 daha verimsiz harcanır; sistem öğrenirken bunu kabul edin. Asıl optimizasyon 2. ve 3. ayda yapılır: dönüşmeyen anahtar kelimeleri eleyin, en iyi reklamları çoğaltın.</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const f = document.getElementById("g-form");
+    const bV = document.getElementById("b-val");
+    const cvV = document.getElementById("cv-val");
+    const gC = document.getElementById("g-clicks");
+    const gCv = document.getElementById("g-conv");
+    const gCac = document.getElementById("g-cac");
+    const gR = document.getElementById("g-rev");
+    const gRoi = document.getElementById("g-roi");
+    const cta = document.getElementById("g-cta");
+    const fmt = (n) => Math.round(n).toLocaleString("tr-TR");
+    const cpc = { hukuk:[25,60], finans:[18,45], saglik:[12,35], eticaret:[3,10], b2b:[8,25], yerel:[4,12], egitim:[6,18], emlak:[5,20] };
+    function calc() {
+      const d = new FormData(f);
+      const s = d.get("sector");
+      const b = parseFloat(d.get("budget"))||0;
+      const cv = parseFloat(d.get("cv"))||0;
+      const ltv = parseFloat(d.get("ltv"))||0;
+      const [low, high] = cpc[s];
+      const avg = (low + high) / 2;
+      const clicks = Math.round(b / avg);
+      const conv = Math.round(clicks * (cv/100));
+      const cac = conv > 0 ? b / conv : 0;
+      const rev = conv * ltv;
+      const roi = b > 0 ? ((rev - b) / b) * 100 : 0;
+      bV.textContent = fmt(b);
+      cvV.textContent = cv;
+      gC.textContent = fmt(clicks);
+      gCv.textContent = fmt(conv);
+      gCac.textContent = fmt(cac);
+      gR.textContent = fmt(rev);
+      gRoi.textContent = fmt(roi);
+      const msg = "Merhaba, Google Ads butce hesaplayicisindan geliyorum. Sektor: " + s + ", aylik butce: " + fmt(b) + " TL. Tahmini ayda " + fmt(conv) + " musteri ve %" + fmt(roi) + " ROI. Stratejimi gorusmek istiyorum.";
+      cta.href = "https://wa.me/905555555555?text=" + encodeURIComponent(msg);
+    }
+    f.addEventListener("input", calc);
+    calc();
+  </script>
+</BaseLayout>
