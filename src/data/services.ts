@@ -311,7 +311,7 @@ export const services: Service[] = [
       }
     ],
     "keywords": [
-      "malatya e-ticaret",
+            "platform e-ticaret malatya",
       "e-ticaret sitesi malatya",
       "shopify malatya",
       "woocommerce malatya"
