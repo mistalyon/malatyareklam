@@ -8,7 +8,7 @@ coverEmoji: "💻"
 author: "Malatya Reklam"
 seoTitle: "Web Sitesi Fiyatları 2026: 5 Senaryoda Gerçek Maliyet Rehberi"
 seoDescription: "Web sitesi fiyatları 2026: Landing 8.000 TL, kurumsal 25.000 TL, e-ticaret 80.000 TL. Domain, hosting, bakım dahil net maliyetler ve doğru bütçeleme rehberi."
-keywords: ["web sitesi fiyatları", "web tasarım fiyatları 2026", "kurumsal web sitesi maliyeti", "e-ticaret site fiyatı", "wordpress site fiyatı", "malatya web tasarım fiyatı"]
+keywords: "web sitesi fiyatları, web tasarım fiyatları 2026, kurumsal web sitesi maliyeti, e-ticaret site fiyatı, wordpress site fiyatı, malatya web tasarım fiyatı"
 ---
 
 ## Web Sitesi Fiyatları 2026: Niye Hiç Kimse Net Cevap Vermiyor?

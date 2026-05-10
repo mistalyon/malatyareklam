@@ -8,7 +8,7 @@ coverEmoji: "💼"
 author: "Malatya Reklam"
 seoTitle: "Kartvizit Tasarımı 2026: Boyut, Şablon, Yazı Tipi, Fiyat Rehberi"
 seoDescription: "Kartvizit tasarımında 2026 standartları: boyutlar (8.5x5.5 cm), kâğıt türü (couche, kraft), baskı çeşitleri, QR dijital kartvizit ve 1.000'lik baskı fiyatları."
-keywords: ["kartvizit tasarım", "kartvizit boyutu", "kartvizit yazı tipi", "kartvizit şablon", "qr kartvizit", "dijital kartvizit", "malatya kartvizit baskı"]
+keywords: "kartvizit tasarım, kartvizit boyutu, kartvizit yazı tipi, kartvizit şablon, qr kartvizit, dijital kartvizit, malatya kartvizit baskı"
 ---
 
 ## Kartvizit 2026'da Hâlâ Anlamlı mı?

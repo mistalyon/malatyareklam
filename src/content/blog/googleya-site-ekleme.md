@@ -8,7 +8,7 @@ coverEmoji: "🔍"
 author: "Malatya Reklam"
 seoTitle: "Google'a Site Ekleme Rehberi 2026: Search Console, Sitemap, Index"
 seoDescription: "Google'a site nasıl eklenir? Search Console doğrulama yöntemleri, sitemap.xml gönderme, URL inceleme aracı, indexleme problemleri çözümü 2026 rehberi."
-keywords: ["googleya site ekleme", "google'a site ekleme", "search console site ekleme", "google indexleme", "sitemap gönderme", "google'a sayfa ekleme"]
+keywords: "googleya site ekleme, google'a site ekleme, search console site ekleme, google indexleme, sitemap gönderme, google'a sayfa ekleme"
 ---
 
 ## Google'a Site Eklemek Neden Önemli?

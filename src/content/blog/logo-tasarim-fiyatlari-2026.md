@@ -8,7 +8,7 @@ coverEmoji: "🎨"
 author: "Malatya Reklam"
 seoTitle: "Logo Tasarım Fiyatları 2026: Freelancer, Ajans, Online Karşılaştırma"
 seoDescription: "2026 logo tasarım fiyatları: freelancer 500-5.000 TL, ajans 8.000-50.000 TL, online şablon siteler 50-500 TL. Hangi bütçeye hangi kalite? Dürüst karşılaştırma."
-keywords: ["logo tasarım fiyatları", "logo tasarım ücretleri 2026", "freelance logo fiyatı", "ajans logo tasarımı", "ucuz logo tasarım", "kurumsal logo fiyatı", "malatya logo tasarım"]
+keywords: "logo tasarım fiyatları, logo tasarım ücretleri 2026, freelance logo fiyatı, ajans logo tasarımı, ucuz logo tasarım, kurumsal logo fiyatı, malatya logo tasarım"
 ---
 
 ## Logo Tasarım Fiyatları 2026: Net Bir Aralık Vermek Mümkün mü?
