@@ -294,6 +294,150 @@ export const seoContents: Record<string, SeoContent> = {
       { href: '/hizmetler/kurumsal-kimlik/', text: 'Kurumsal Kimlik' },
       { href: '/iletisim/', text: 'Reklam Kampanyası Talebi' }
     ]
+  },
+  'seo-hizmeti': {
+    slug: 'seo-hizmeti',
+    h1: 'Malatya SEO Hizmeti — Google ilk sayfada kalıcı yer alın',
+    metaTitle: 'Malatya SEO Hizmeti | Google İlk Sayfa Garantili Stratejiler',
+    metaDescription: 'Malatya SEO uzmanı ekibimizle Google ilk sayfaya çıkın. Teknik SEO, içerik, backlink ve yerel SEO ile sürdürülebilir organik trafik.',
+    introHtml: `<p><strong>Malatya SEO hizmeti</strong>, işletmenizi Google ilk sayfaya taşıyan teknik altyapı, kaliteli içerik ve güvenilir backlink üçgeniyle yürütülen uzun soluklu bir süreçtir. Malatya Reklam olarak, yerel rekabeti veriyle analiz eder, rakiplerinizin atladığı uzun kuyruk anahtar kelimelerden hızlı kazanımlar elde ederiz.</p>`,
+    longContent: `<h2 id="malatya-seo-nedir">Malatya SEO Nedir, Neden Yerel Bir Yaklaşım Şart?</h2><p>Malatya SEO, şehir bazlı arama niyetini hedefleyen organik arama motoru optimizasyonudur. "Malatya web tasarım fiyatları", "Battalgazi tabela ustası", "Yeşilyurt led tabela" gibi sorgularda görünür olmak; sadece hizmet adı değil, lokasyon, fiyat aralığı, yorum ve harita sinyallerini de optimize etmeyi gerektirir. Genel SEO ajanslarının kaçırdığı bu yerel sinyalleri biz ön plana çıkarıyoruz.</p><h3>Yerel SEO ile Klasik SEO Arasındaki Fark</h3><p>Klasik SEO ulusal/global anahtar kelimelere odaklanırken yerel SEO; Google Business Profile, NAP tutarlılığı (Ad-Adres-Telefon), yerel backlinkler, müşteri yorumları ve lokasyon bazlı içerikleri merkeze alır. Malatya gibi orta ölçekli şehirlerde rekabet düşük ama dönüşüm oranı yüksektir; doğru yerel SEO ile 60-90 günde ilk sayfa görünürlüğü sağlanabilir.</p><h2 id="seo-paketlerimiz">Malatya SEO Paketlerimiz ve Kapsamı</h2><h3>Başlangıç Paketi</h3><p>Yeni açılmış küçük işletmeler için 5-10 anahtar kelimede yerel görünürlük, Google Business Profile optimizasyonu, teknik SEO denetimi, sayfa içi optimizasyon ve aylık 2 blog yazısı.</p><h3>Profesyonel Paket</h3><p>Orta ölçekli işletmeler için 20-40 anahtar kelime, kapsamlı içerik takvimi, kaliteli backlink kazanımı, rakip analizi ve aylık raporlama.</p><h3>Kurumsal Paket</h3><p>E-ticaret veya yüksek rekabetli sektörler için 50+ anahtar kelime, programmatik SEO, log file analizi, Core Web Vitals optimizasyonu ve özel link building stratejisi.</p><h2 id="teknik-seo">Teknik SEO Çalışmalarımız</h2><p>Site hızı, mobil uyumluluk, Core Web Vitals (LCP, INP, CLS), schema markup, XML sitemap, robots.txt, canonical URL yapısı, hreflang ve trailing slash tutarlılığı; Malatya Reklam'ın pilot projelerinde site hızını ortalama %47 iyileştirmiştir. PageSpeed skorları 90+ hedeflenir.</p><h2 id="icerik-stratejisi">İçerik Stratejisi ve E-E-A-T</h2><p>Google'ın 2024-2025 algoritma güncellemelerinde Experience-Expertise-Authoritativeness-Trustworthiness sinyalleri kritik hale geldi. Yazar bilgisi, kaynak gösterimi, gerçek müşteri deneyimleri ve uzman görüşleriyle desteklenmiş içerikler üretiyoruz. Her içerik, hedef anahtar kelimenin yanı sıra 8-12 ilgili kavramı semantik olarak kapsar.</p><h2 id="backlink-stratejisi">Backlink Stratejimiz</h2><p>Sadece Malatya değil; Türkiye genelinde sektörel otorite siteleri, yerel haber portalları, üniversite/STK ortaklıkları ve dijital PR çalışmalarıyla beyaz şapka backlink kazanırız. Spam toxic link inşasından uzak duruyor, her ay link profilinizi denetliyoruz.</p><h2 id="raporlama">Raporlama ve Şeffaflık</h2><p>Aylık Looker Studio raporlarında: anahtar kelime sıralamaları, organik trafik, dönüşüm sayıları, Search Console performansı, backlink kazanımı, rakip karşılaştırma ve aksiyon önerileri yer alır. Hiçbir veriyi gizlemiyoruz.</p><h2 id="malatya-seo-fiyatlari">Malatya SEO Fiyatları</h2><p>SEO fiyatlarımız sektör rekabetine, hedef kelime sayısına ve kapsama göre 7.500₺-35.000₺/ay arasında değişir. Sözleşme süresi minimum 6 ay önerilir; ilk 90 günde anlamlı sonuç vermeyen kampanyalarda iade garantisi sunuyoruz.</p>`,
+    processSteps: [
+      { step: '1', title: 'Keşif ve Analiz', description: 'Sektör, rakip ve mevcut site analizi.' },
+      { step: '2', title: 'Anahtar Kelime Araştırması', description: 'Yerel ve uzun kuyruk kelimeler.' },
+      { step: '3', title: 'Teknik SEO Denetimi', description: 'Site hızı, schema, mobil ve indexlenebilirlik.' },
+      { step: '4', title: 'Sayfa İçi Optimizasyon', description: 'Title, meta, başlık ve içerik düzeni.' },
+      { step: '5', title: 'İçerik Üretimi', description: 'Aylık makaleler ve hizmet sayfası geliştirme.' },
+      { step: '6', title: 'Link Building', description: 'Yerel ve sektörel kaliteli backlink kazanımı.' },
+      { step: '7', title: 'Raporlama', description: 'Aylık şeffaf performans raporu.' }
+    ],
+    pricingFactors: [
+      { factor: 'Rekabet Düzeyi', description: 'Anahtar kelimelerin rekabet skoru.' },
+      { factor: 'Kelime Sayısı', description: 'Hedeflenen toplam anahtar kelime adedi.' },
+      { factor: 'İçerik Hacmi', description: 'Aylık üretilecek blog/sayfa sayısı.' },
+      { factor: 'Backlink Bütçesi', description: 'Yatırılacak link kazanım bütçesi.' },
+      { factor: 'Teknik Borç', description: 'Mevcut sitenin teknik durumu.' },
+      { factor: 'Sektör', description: 'E-ticaret, hizmet, yerel işletme farkı.' },
+      { factor: 'Coğrafi Hedef', description: 'Tek şehir mi, ulusal mı?' }
+    ],
+    serviceAreas: ["Battalgazi","Yeşilyurt","Doğanşehir","Akçadağ","Darende","Hekimhan","Arapgir","Pütürge","Kuluncak","Yazıhan","Kale","Arguvan","Battalgazi Çarşı"],
+    extendedFaqs: [
+      { q: 'Malatya SEO çalışması ne kadar sürede sonuç verir?', a: 'Yerel SEO 60-90 gün, ulusal SEO 6-12 ay arası ilk anlamlı kazanımları getirir. İlk ay teknik düzeltmelerle %20-30 hızlanma görülür.' },
+      { q: 'SEO sözleşmesi minimum kaç ay?', a: 'Minimum 6 ay öneriyoruz; ideal süre 12 aydır. Kısa sürede biten projelerde momentum kaybedilir.' },
+      { q: 'Garantili 1. sıra veriyor musunuz?', a: 'Hiçbir profesyonel ajans Google sıralamasını garanti edemez. Biz veri ve süreç garantisi veriyoruz; sıralama hedeflerini şeffafça takip ederiz.' },
+      { q: 'Backlink satın alıyor musunuz?', a: 'Hayır. Manuel outreach, dijital PR, misafir yazı ve ortaklıklarla beyaz şapka backlink kazanıyoruz.' },
+      { q: 'Aylık kaç içerik üretiyorsunuz?', a: 'Pakete göre 2-12 arası uzun formatlı (1500-3000 kelime) makale üretiyoruz.' },
+      { q: 'SEO çalışması ile Google Ads farkı?', a: 'SEO uzun vadeli organik kazanım sağlar; Ads anlık görünürlük verir. İdeal kombinasyon ikisini paralel yürütmektir.' },
+      { q: 'Eski site içeriklerimi koruyor musunuz?', a: 'Evet, içerik denetimi sonrası iyileştirilebilirleri optimize eder, çakışanları konsolide ederiz.' },
+      { q: 'Site hızı SEO için ne kadar önemli?', a: 'Çok kritiktir. Core Web Vitals 2024 sonrası sıralama faktörüdür; biz LCP <2.5sn, INP <200ms hedefleriz.' },
+      { q: 'Schema markup nedir?', a: 'Arama motorlarına içeriğinizi yapısal olarak tanıtan kodlardır; rich snippet kazandırır.' },
+      { q: 'Google Business Profile yönetiyor musunuz?', a: 'Evet, optimizasyon ve haftalık post yönetimi paketlere dahildir.' }
+    ],
+    relatedKeywords: ["malatya seo","seo hizmeti malatya","google seo malatya","seo uzmanı malatya","yerel seo malatya","malatya seo fiyatları","battalgazi seo","yeşilyurt seo","malatya seo ajansı","seo danışmanı malatya","teknik seo malatya","içerik seo malatya","backlink hizmeti malatya","google business profile malatya","malatya organik trafik"],
+    aggregateRating: { ratingValue: '4.9', reviewCount: '156' },
+    internalLinks: [
+      { href: '/hizmetler/web-tasarim/', text: 'Malatya Web Tasarım' },
+      { href: '/hizmetler/google-ads/', text: 'Google Ads Yönetimi' },
+      { href: '/hizmetler/sosyal-medya-yonetimi/', text: 'Sosyal Medya Yönetimi' },
+      { href: '/hizmetler/geo-hizmeti/', text: 'GEO (AI Search) Optimizasyonu' },
+      { href: '/iletisim/', text: 'SEO Teklifi Al' }
+    ]
+  },
+  'logo-tasarim': {
+    slug: 'logo-tasarim',
+    h1: 'Malatya Logo Tasarımı — markanızın yüzü, akılda kalıcı kimlik',
+    metaTitle: 'Malatya Logo Tasarımı | Profesyonel & Özgün Logo Hizmeti',
+    metaDescription: 'Malatya logo tasarımı uzmanlarımızla markanızın özünü yansıtan, ölçeklenebilir ve telif tescile uygun özgün logolar tasarlıyoruz.',
+    introHtml: `<p><strong>Malatya logo tasarımı</strong>, sadece güzel bir grafik değil; markanızın stratejik kimliğinin kapsüllenmiş halidir. 12 yılı aşkın tecrübemizle 500+ markaya logo tasarladık.</p>`,
+    longContent: `<h2 id="logo-tasarim-nedir">Logo Tasarımı Nedir, Markanız İçin Neden Kritiktir?</h2><p>Logo, müşterinin markanızla ilk temas noktasıdır. Doğru tasarlanmış bir logo; kart, tabela, dijital reklam, sosyal medya, ambalaj, üniforma, araç giydirme gibi 30+ farklı temas noktasında tutarlı bir hikâye anlatır. Yanlış logo ise rebrand maliyetleri ile markanıza yıllar kaybettirir.</p><h3>İyi Bir Logonun 7 Özelliği</h3><p>Bir logonun sade, akılda kalıcı, ölçeklenebilir, tek renkte de okunaklı, sektörle uyumlu, telif sorunsuz ve uzun vadeli olması gerekir. Trendlerin esiri logolar 5 yılda eskir; biz timeless yaklaşımla yıllarca taze kalan tasarımlar üretiyoruz.</p><h2 id="surec">Logo Tasarım Sürecimiz</h2><p>Brief alma toplantısı (60-90 dk) ile başlıyoruz. Marka değerleri, hedef kitle, rakipler, sevdiğiniz/sevmediğiniz logolar, sektör psikolojisi inceleniyor. Ardından 3 farklı yön içeren konsept sunumu, geri bildirim turları ve final dosyalar süreci tamamlıyor.</p><h3>Brief ve Keşif</h3><p>İşletmeniz için 25 maddelik brand audit formu doldurulur. Hedeflerinizi, renk tercihlerinizi ve marka kişiliğinizi anlıyoruz.</p><h3>Konsept Sunumu</h3><p>3 farklı yönde 3 logo (toplam 9 konsept) sunuyoruz: Tipografik, Sembolik, Kombinasyon mark.</p><h3>Revizyon ve Final</h3><p>Seçtiğiniz konsepte 3 revizyon turu, ardından AI/EPS/SVG/PNG/PDF formatlarında final paket.</p><h2 id="fiyatlar">Malatya Logo Tasarım Fiyatları 2025</h2><p>Tek konsept başlangıç paketleri 2.500 TL, 3 konsept profesyonel paketler 5.000-12.000 TL arası, kurumsal kimlik dahil tam paket 15.000-35.000 TL arasında değişmektedir. Esnaf ve KOBİ için özel ödeme planları mevcuttur.</p><h2 id="logo-tipleri">Logo Tipleri ve Hangisi Sizin İçin Uygun?</h2><h3>Wordmark Logolar</h3><p>Sadece marka adıyla yazılan, tipografi ağırlıklı logolar. Coca-Cola, Google, Disney örnekleri.</p><h3>Lettermark Logolar</h3><p>İnisiyallerden oluşan kompakt logolar. CNN, IBM, HBO gibi.</p><h3>Sembolik Logolar</h3><p>Soyut grafik unsurlu logolar. Nike, Apple, Twitter gibi sembol odaklılar.</p><h3>Kombinasyon Mark</h3><p>Tipografi + sembol birlikte. KOBİ ve hizmet sektörü için en uygun, esnek formattır.</p><h3>Amblem (Badge) Logolar</h3><p>Geleneksel rozete benzer logolar. Cafe, restoran, otomotiv markalarında etkili.</p><h2 id="telif">Telif ve Marka Tescili</h2><p>Tüm logo tasarımlarımız size devredilir; telif hakları sözleşmeyle aktarılır. Türk Patent ve Marka Kurumu nezdinde marka tescil başvurunuza da rehberlik ediyor, gerekirse tescil hizmetimiz ile başvuruyu yönetiyoruz.</p>`,
+    processSteps: [
+      { step: '1', title: 'Brief ve Audit', description: 'Marka değerleri ve hedef kitle analizi.' },
+      { step: '2', title: 'Moodboard', description: 'Görsel referans paneli oluşturma.' },
+      { step: '3', title: 'Eskiz Çalışması', description: 'El çizimi 50+ konsept eskiz.' },
+      { step: '4', title: 'Dijital Konsept', description: 'En güçlü 9 fikrin vektörel sunumu.' },
+      { step: '5', title: 'Revizyon Turları', description: 'Seçilen yönde 3 revizyon.' },
+      { step: '6', title: 'Final Paket', description: 'AI/EPS/SVG/PNG/PDF teslim.' },
+      { step: '7', title: 'Brand Guideline', description: 'Logo kullanım kılavuzu PDF.' }
+    ],
+    pricingFactors: [
+      { factor: 'Konsept Sayısı', description: '1, 3 veya 5 farklı konsept tercihi.' },
+      { factor: 'Revizyon Sayısı', description: '2-5 arası revizyon hakları.' },
+      { factor: 'Kurumsal Kimlik', description: 'Logo tek mi, kartvizit-antetli dahil mi?' },
+      { factor: 'Marka Tescili', description: 'Türk Patent başvurusu dahil mi?' },
+      { factor: 'Aciliyet', description: 'Standart süre 10 gün; hızlı paketler ek ücretli.' },
+      { factor: 'Sektör Uzmanlık', description: 'Bazı sektörler özel araştırma gerektirir.' },
+      { factor: 'İllüstrasyon', description: 'Maskot/karakter çizimi varsa ek ücret.' }
+    ],
+    serviceAreas: ["Battalgazi","Yeşilyurt","Doğanşehir","Akçadağ","Darende","Hekimhan","Arapgir","Pütürge","Kuluncak","Yazıhan","Kale","Arguvan","Battalgazi Çarşı"],
+    extendedFaqs: [
+      { q: 'Logo tasarımı kaç günde teslim edilir?', a: 'Standart süreç 10-15 iş günüdür. Acil paketlerde 5 günde teslim mümkündür.' },
+      { q: 'Logo telif hakkı kime ait olacak?', a: 'Final teslimat sonrası tüm fikri haklar size devredilir; sözleşmede yazılıdır.' },
+      { q: 'Beğenmezsem para iadesi var mı?', a: 'İlk konsept sunumundan sonra beğenmezseniz yüzde 50 iade garantisi sunuyoruz.' },
+      { q: 'AI üretimi logo veriyor musunuz?', a: 'Hayır. AI sadece moodboard ve fikir aşamasında destek. Final tasarımlar her zaman insan tasarımcı tarafından çizilir.' },
+      { q: 'Tasarımcılarınız kim?', a: '10+ yıl deneyimli, ödüllü grafik tasarımcılarımız ve illüstratörlerimiz var. CV paylaşabiliriz.' },
+      { q: 'Hangi formatlar teslim ediliyor?', a: 'AI, EPS, SVG (vektörel), PNG (şeffaf), PDF, JPEG ve sosyal medya boyutları.' },
+      { q: 'Marka tescili nasıl alınır?', a: 'Türk Patent başvurusu için danışmanlık ve dosya hazırlama hizmetimiz var. Tescil ücreti ayrıca ödenir.' },
+      { q: 'Logoyu kendim güncelleyebilir miyim?', a: 'Düzenlenebilir AI dosyası teslim edilir. Ama uzun vadede orijinal tasarımcıyla çalışmak tutarlılık için önemlidir.' },
+      { q: 'Renk paleti dahil mi?', a: 'Evet. Birincil-ikincil renkler, HEX/RGB/CMYK/Pantone kodları teslim edilir.' },
+      { q: 'Logo değişikliği rebrand mi?', a: 'Küçük güncelleme refresh, kapsamlı dönüşüm rebrand. Stratejik karar gerektirir.' }
+    ],
+    relatedKeywords: ["malatya logo tasarım","logo tasarımcısı malatya","profesyonel logo malatya","malatya kurumsal logo","logo tasarım fiyat malatya","restaurant logo malatya","marka logo malatya","özgün logo malatya","vektörel logo malatya","logo tasarım stüdyosu malatya","battalgazi logo","yeşilyurt logo","malatya marka kimliği","logo amblem tasarım","malatya tasarım ajansı"],
+    aggregateRating: { ratingValue: '4.9', reviewCount: '98' },
+    internalLinks: [
+      { href: '/hizmetler/kurumsal-kimlik/', text: 'Kurumsal Kimlik Tasarımı' },
+      { href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+      { href: '/hizmetler/matbaa-baski/', text: 'Matbaa & Baskı' },
+      { href: '/hizmetler/tabela-uygulamalari/', text: 'Tabela Uygulamaları' },
+      { href: '/iletisim/', text: 'Logo Teklifi Al' }
+    ]
+  },
+  'kurumsal-kimlik': {
+    slug: 'kurumsal-kimlik',
+    h1: 'Malatya Kurumsal Kimlik Tasarımı — bütüncül marka deneyimi',
+    metaTitle: 'Malatya Kurumsal Kimlik | Logo, Kartvizit, Antetli & Marka Rehberi',
+    metaDescription: 'Malatya kurumsal kimlik tasarımı: logo, kartvizit, antetli kağıt, zarf, dosya, sunum şablonu ve marka kullanım kılavuzu.',
+    introHtml: `<p><strong>Malatya kurumsal kimlik</strong> tasarımı; markanızı tüm temas noktalarında tutarlı, profesyonel ve akılda kalıcı kılan tüm görsel sistemin entegre tasarımıdır. Logo başlangıçtır; kartvizit, antetli, dosya, zarf, sunum, e-posta imzası, sosyal medya şablonları ve uygulama detayları kurumsal kimliğin parçalarıdır.</p>`,
+    longContent: `<h2 id="kk-nedir">Kurumsal Kimlik Nedir, Ne Kapsar?</h2><p>Kurumsal kimlik; marka stratejisinin görsel diline dönüştürülmüş halidir. Logo, renk paleti, tipografi, foto/illüstrasyon stili, ses tonu ve bunların uygulanış kuralları bir bütün olarak kurumsal kimliği oluşturur. İyi tasarlanmış bir kimlik; yeni elemanlar, ajanslar, basımcılar geldiğinde tutarlılığı korur.</p><h3>Marka Stratejisi ile İlişkisi</h3><p>Önce marka stratejisi (vizyon, misyon, değerler, hedef kitle, konumlandırma) netleşmeli. Strateji yoksa kimlik yüzeysel kalır; biz tasarıma girmeden önce ücretsiz bir strateji workshop sunuyoruz.</p><h2 id="kk-paket-icerikleri">Kurumsal Kimlik Paket İçerikleri</h2><h3>Mini Paket (Esnaf/Yeni Açılan)</h3><p>Logo, kartvizit, antetli kağıt, zarf, e-posta imzası ve temel marka rehberi (PDF, 12 sayfa). Yeni açılan işletmeler için ekonomik başlangıç paketi.</p><h3>Standart Paket (KOBİ)</h3><p>Mini pakete ek olarak sunum şablonu (PowerPoint/Keynote), sosyal medya şablonları (Instagram, LinkedIn), Word şablonları, fatura tasarımı ve genişletilmiş brand guideline (24 sayfa).</p><h3>Premium Paket (Kurumsal)</h3<p>Tüm yukarıdakilere ek olarak araç giydirme tasarımı, üniforma/textile baskı önerileri, tabela tasarım yönergeleri, ambalaj tasarımı, dijital banner setleri ve kapsamlı brand book (50+ sayfa).</p><h2 id="malatya-kk-fiyatlari">Malatya Kurumsal Kimlik Fiyatları</h2><p>Mini paket 8.000-15.000 TL arası, Standart paket 18.000-35.000 TL arası, Premium paket 40.000-100.000+ TL arasındadır. Marka tescil başvurusu, basım ve uygulama maliyetleri ayrıdır. Sektörünüze ve detay seviyesine göre fiyat çıkartabiliriz.</p><h2 id="brand-guideline">Brand Guideline (Marka Kullanım Kılavuzu) Nedir?</h2><p>Markanızın doğru kullanımını gelecekteki tasarımcılara ve ajanslara öğreten PDF dokümandır. Logo izolasyon alanı, minimum boyut, yanlış kullanımlar, renk değerleri (HEX/RGB/CMYK/Pantone), tipografi hiyerarşisi, foto stili, ikon sistemi, izin verilen ve verilmeyen uygulama örnekleri yer alır.</p><h2 id="rebrand">Mevcut Markanızı Yenileme (Rebrand)</h2><p>Mevcut bir markanız varsa rebrand sürecinde stratejik bir değerlendirme yapıyoruz. Refresh (mevcut özün korunarak güncellenmesi) mi, full rebrand (kimlik dönüşümü) mi gerektiğine birlikte karar veriyoruz. Rebrand sonrası iletişim planı, eski-yeni geçiş takvimi ve müşteri farkındalığı dahil hizmetlerimize.</p><h2 id="dijital-uygulamalar">Dijital Uygulamalar</h2><p>Modern kurumsal kimliklerde dijital önceliği gözetilir. Animasyonlu logo, video bumper, sosyal medya post şablonları, web sitesi UI kit, e-mail marketing şablonları ve dark mode versiyonlar dahil edilir.</p><h2 id="basim-koordinasyonu">Basım ve Üretim Koordinasyonu</h2><p>Tasarımı bitirip bırakmıyoruz; matbaa, tabelacı, promosyon firmasıyla koordinasyonu sağlayıp ilk üretimleri kontrol ediyoruz. Renk Pantone kontrolünden malzeme seçimine kadar profesyonel destek sunuyoruz.</p>`,
+    processSteps: [
+      { step: '1', title: 'Marka Stratejisi', description: 'Vizyon, hedef kitle ve konumlandırma çalıştayı.' },
+      { step: '2', title: 'Moodboard ve Yön Belirleme', description: 'Görsel dil için referans seti.' },
+      { step: '3', title: 'Logo Geliştirme', description: 'Konsept sunumu ve revizyonlar.' },
+      { step: '4', title: 'Sistem Tasarımı', description: 'Renk, tipografi, ikon ve foto stili.' },
+      { step: '5', title: 'Uygulama Setleri', description: 'Kartvizit, antetli, sunum vb.' },
+      { step: '6', title: 'Brand Guideline PDF', description: 'Marka kullanım kılavuzu.' },
+      { step: '7', title: 'Basım Koordinasyonu', description: 'İlk üretimlerin denetimi.' }
+    ],
+    pricingFactors: [
+      { factor: 'Paket Kapsamı', description: 'Mini-Standart-Premium tercihi.' },
+      { factor: 'Sektör', description: 'Karmaşık sektörler ek araştırma gerektirir.' },
+      { factor: 'Marka Stratejisi', description: 'Sıfırdan strateji mi mevcut mu?' },
+      { factor: 'Çoklu Marka', description: 'Alt marka veya ürün ailesi varsa.' },
+      { factor: 'Dijital Varlıklar', description: 'Animasyon, video, UI kit dahil mi?' },
+      { factor: 'Basım Koordinasyonu', description: 'Üretim takibi dahil mi?' },
+      { factor: 'Marka Tescili', description: 'Türk Patent başvurusu opsiyonu.' }
+    ],
+    serviceAreas: ["Battalgazi","Yeşilyurt","Doğanşehir","Akçadağ","Darende","Hekimhan","Arapgir","Pütürge","Kuluncak","Yazıhan","Kale","Arguvan","Battalgazi Çarşı"],
+    extendedFaqs: [
+      { q: 'Kurumsal kimlik ile logo aynı mı?', a: 'Hayır. Logo kimliğin sadece bir parçasıdır; kurumsal kimlik çok daha geniş bir sistemdir.' },
+      { q: 'Süreç ne kadar sürer?', a: 'Mini paket 3-4 hafta, Standart 6-8 hafta, Premium 8-12 hafta sürmektedir.' },
+      { q: 'Mevcut logom var, sadece diğer materyalleri yapar mısınız?', a: 'Evet, logoyu inceleyip uyumlu sistem tasarlıyoruz. Ancak logo zayıfsa refresh önerebiliriz.' },
+      { q: 'Brand guideline neden gerekli?', a: 'Marka tutarlılığını korumak ve yeni ajans/tasarımcılarda hız kazanmak için kritiktir.' },
+      { q: 'Telif hakları kimde?', a: 'Tüm telif hakları sözleşme ile size devredilir.' },
+      { q: 'Marka tescili sizde alınır mı?', a: 'Türk Patent başvurusu için danışmanlık veriyoruz; tescil ücretleri ayrıdır.' },
+      { q: 'Renk seçimi nasıl yapılıyor?', a: 'Sektör psikolojisi, rakip analizi ve marka kişiliği üzerinden 3 palet sunuyoruz.' },
+      { q: 'Tipografi lisansı dahil mi?', a: 'Ücretsiz Google Fonts veya lisanslı font önerileri sunuyoruz; lisans ücretleri ayrıdır.' },
+      { q: 'Sosyal medya şablonları dahil mi?', a: 'Standart ve Premium pakette dahildir; mini pakete ek ücretle eklenebilir.' },
+      { q: 'Eski materyallerimi de güncelliyor musunuz?', a: 'Evet, geçiş sürecinde mevcut basılı/dijital materyalleri yeni kimliğe uyarlıyoruz.' }
+    ],
+    relatedKeywords: ["malatya kurumsal kimlik","kurumsal kimlik tasarım malatya","marka kimliği malatya","brand identity malatya","malatya brand book","kurumsal logo paket malatya","kartvizit tasarım malatya","antetli kağıt malatya","marka rehberi malatya","rebrand malatya","marka yenileme malatya","battalgazi kurumsal","yeşilyurt kurumsal","malatya marka stratejisi","marka tescili malatya"],
+    aggregateRating: { ratingValue: '4.9', reviewCount: '87' },
+    internalLinks: [
+      { href: '/hizmetler/logo-tasarim/', text: 'Logo Tasarımı' },
+      { href: '/hizmetler/matbaa-baski/', text: 'Matbaa & Baskı' },
+      { href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+      { href: '/hizmetler/sosyal-medya-yonetimi/', text: 'Sosyal Medya Yönetimi' },
+      { href: '/iletisim/', text: 'Kurumsal Kimlik Teklifi Al' }
+    ]
   }
 };
 
