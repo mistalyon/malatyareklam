@@ -630,6 +630,102 @@ internalLinks: [
 { href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
 { href: '/iletisim/', text: 'AI İçerik Teklifi Al' }
 ]
+},
+'geo-hizmeti': {
+slug: 'geo-hizmeti',
+h1: 'Malatya GEO Hizmeti — AI Search Optimizasyonu (ChatGPT, Perplexity, Gemini)',
+metaTitle: 'Malatya GEO Hizmeti | ChatGPT Search, Perplexity ve Gemini Optimizasyonu',
+metaDescription: 'Malatya GEO hizmeti: ChatGPT Search, Perplexity, Gemini ve Claude AI arama motorlarında markanızı alıntılatmak için Generative Engine Optimization.',
+introHtml: '<p><strong>Malatya GEO hizmeti</strong> ile ChatGPT Search, Perplexity, Google Gemini ve Claude gibi AI tabanlı arama motorlarında markanızın referans gösterilmesini sağlıyoruz. SEO nun yeni nesli olan Generative Engine Optimization, klasik aramanın ötesinde AI yanıtlarının içinde yer almak için kritik.</p>',
+longContent: `<h2 id='geo-nedir'>GEO Nedir? AI Search Çağında SEO nun Yeni Hali</h2><p>GEO (Generative Engine Optimization), ChatGPT Search, Perplexity, Google Gemini, Claude ve Microsoft Copilot gibi AI tabanlı arama motorlarında markanızın referans gösterilmesi için yapılan optimizasyondur. Klasik SEO Google da sıralanmaya odaklanırken GEO, AI nın ürettiği yanıtlar içinde sitenizin alıntılanmasını hedefler.</p><h3>Klasik SEO ile GEO Farkı</h3><p>Klasik SEO da hedef SERP (arama sonuçları sayfası) sıralamasıdır. GEO da ise hedef AI yanıtının içine girmektir. AI sistemler genellikle 3-7 kaynak özetler; siz onlardan biri olmalısınız. AI ın 1. sıradaki kaynağı %63, 3. sıradaki %22 oranında alıntılanır.</p><h3>Neden Şimdi Önemli?</h3><p>Gartner 2024 raporuna göre 2026 yılına kadar geleneksel arama trafiği yüzde 25 azalacak, AI search yüzde 35 büyüyecek. Türkiye de Perplexity Pro Türkçe desteği, ChatGPT Search ve Gemini in Google da entegre edilmesi geçişi hızlandırıyor. Bugün GEO ya yatırım yapanlar 1-2 yıl sonra önde olacak.</p><h2 id='nasil-calisir'>AI Arama Motorları Nasıl Çalışır?</h2><h3>Retrieval Augmented Generation (RAG)</h3><p>AI önce web aramayı tetikler, ilgili kaynakları çeker, sonra bu kaynaklardan sentez yapar. Bing API (ChatGPT için), Google Search API (Gemini için) ve özel crawler lar (Perplexity için) kullanılır.</p><h3>Citation Selection (Alıntı Seçimi)</h3><p>AI, otorite, alaka, güncellik, yapısal kalite ve içerik özgüllüğü kriterleriyle 3-7 kaynak seçer. Wikipedia, Reddit, Quora ve uzman bloglar yüksek alıntı oranına sahiptir.</p><h2 id='taktikler'>GEO İçin Pratik Taktikler</h2><h3>Soru-Cevap Yapısı</h3><p>İçeriklerinizi soru başlığı ve net 2-3 cümlelik yanıt ile başlatın. AI, structured FAQ formatlarını sever.</p><h3>İstatistik ve Veri Zenginliği</h3><p>Spesifik sayılar (yüzde 47, 218 müşteri, 12 yıl deneyim) AI nın alıntılamayı tercih ettiği unsurlardır. Genel ifadelerin alıntılanma oranı 4 kat düşüktür.</p><h3>Yapısal Schema Markup</h3><p>FAQPage, HowTo, Article, LocalBusiness, AggregateRating, Review schema lar AI nın içeriği anlamasını kolaylaştırır.</p><h3>Yazar Otoritesi (Author Authority)</h3><p>İçeriğin sonunda yazar bio su, LinkedIn linki, sertifika ve deneyim bilgisi olmalı. AI, anonim içeriği daha az alıntılar.</p><h3>Konversasyonel Anahtar Kelimeler</h3><p>Klasik SEO da malatya seo fiyatları kullanılırken, GEO da Malatya da SEO hizmetleri ne kadar 2025 gibi tam soru cümleleri tercih edilir.</p><h3>Dahili Linkleme ve Topical Authority</h3><p>Bir konuda 5-15 derin makale, AI nın markanızı o konuda otorite olarak işaretlemesini sağlar.</p><h2 id='paketler'>Malatya GEO Hizmet Paketleri</h2><h3>GEO Audit</h3><p>Tek seferlik 7.500 TL: Markanızın ChatGPT, Perplexity, Gemini ve Claude da nasıl göründüğünün denetimi + 30 sayfalık aksiyon raporu.</p><h3>GEO Standart</h3><p>Aylık 12.000 TL: Aylık 4 GEO uyumlu uzun makale, schema markup, AI tracking ve raporlama.</p><h3>GEO Premium</h3><p>Aylık 25.000 TL: Aylık 8 makale + Reddit/Quora outreach + Wikipedia mention çalışması + dijital PR.</p><h2 id='olcumleme'>GEO Performans Ölçümü</h2><p>Gridscope, Profound ve Athena AI tracking araçlarıyla markanızın AI yanıtlarındaki yer alma oranını izliyoruz. Aylık raporda: ChatGPT alıntılanma sayısı, Perplexity citation sayısı, Gemini featured oranı, Claude reference rate, rakip karşılaştırma yer alıyor.</p>`,
+processSteps: [
+{ step: '1', title: 'AI Search Audit', description: 'Mevcut AI görünürlük analizi.' },
+{ step: '2', title: 'Konu Otorite Haritası', description: 'Topical authority planı.' },
+{ step: '3', title: 'GEO Uyumlu İçerik', description: 'Soru-cevap yapısında uzun makale.' },
+{ step: '4', title: 'Schema Markup', description: 'FAQPage, HowTo, Article, Review.' },
+{ step: '5', title: 'Otorite Mention Çalışması', description: 'Reddit, Quora, Wikipedia, sektörel platform.' },
+{ step: '6', title: 'AI Tracking', description: 'ChatGPT/Perplexity/Gemini citation izleme.' },
+{ step: '7', title: 'Aylık Raporlama', description: 'Citation rate ve rakip karşılaştırma.' }
+],
+pricingFactors: [
+{ factor: 'Hedef AI Sayısı', description: 'Tek platform mu, 4 platform mu?' },
+{ factor: 'Konu Otorite Seviyesi', description: 'Yeni başlangıç mı, mevcut otorite mi?' },
+{ factor: 'Aylık İçerik Hacmi', description: '4-12 GEO makale.' },
+{ factor: 'Outreach Kapsamı', description: 'Reddit/Quora/Wikipedia editör çalışması.' },
+{ factor: 'Tracking Aracı', description: 'Profound, Athena, Gridscope abonelik.' },
+{ factor: 'Sektör Rekabeti', description: 'Yüksek rekabetli sektörler ek yatırım.' },
+{ factor: 'Dijital PR', description: 'Yetkili medya mention çalışmaları ek pakettir.' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'GEO nedir?', a: 'Generative Engine Optimization. AI tabanlı arama motorlarında (ChatGPT, Perplexity, Gemini) markanızın alıntılanması için yapılan optimizasyon.' },
+{ q: 'Klasik SEO ile farkı ne?', a: 'SEO Google sıralaması, GEO ise AI yanıtının içine girmek hedefler. İkisi tamamlayıcıdır.' },
+{ q: 'Sonuçları ne zaman görürüm?', a: 'AI yanıtlarında ilk citation lar 8-12 hafta içinde görünmeye başlar. Tam etki 6 ay sonra netleşir.' },
+{ q: 'Türkçe AI aramada var mıyım?', a: 'Audit ile kontrol ediyoruz. ChatGPT, Perplexity ve Gemini de Türkçe sorgularla aratıp sonuçları raporluyoruz.' },
+{ q: 'GEO için içerik nasıl olmalı?', a: 'Soru başlık + 2-3 cümle net yanıt + istatistik + schema markup + yazar otoritesi formatında olmalı.' },
+{ q: 'Reddit ve Quora outreach gerçekten işe yarıyor mu?', a: 'Evet. Perplexity %22 alıntısını Reddit ten alıyor. Doğal, değer katan paylaşımlar markanızı görünür kılar.' },
+{ q: 'Wikipedia mention almak mümkün mü?', a: 'Doğru sektörel ve kurumsal başarı kanıtıyla evet. Editör onayı sürecini yönetiyoruz; tüm markalar için garanti edilemez.' },
+{ q: 'GEO performansı nasıl ölçülür?', a: 'Profound, Athena, Gridscope gibi AI tracking araçları ile haftalık citation oranı ve rakip kıyaslaması yapılır.' },
+{ q: 'Schema markup neden bu kadar kritik?', a: 'AI içeriği yapısal olarak okur. Doğru schema, AI nın içeriğinizi anlamasını ve alıntılamasını kolaylaştırır.' },
+{ q: 'GEO fiyatı ne kadar?', a: 'Tek seferlik audit 7.500 TL, GEO Standart 12.000 TL/ay, GEO Premium 25.000 TL/ay olarak başlar.' }
+],
+relatedKeywords: ['malatya geo','generative engine optimization malatya','chatgpt seo malatya','perplexity optimizasyonu malatya','gemini seo malatya','ai search optimizasyonu','llm seo malatya','ai search malatya','malatya yapay zeka seo','llmo malatya','answer engine optimization','aeo malatya','malatya ai görünürlük','chatgpt search malatya','google sge malatya'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '52' },
+internalLinks: [
+{ href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
+{ href: '/hizmetler/ai-icerik-uretimi/', text: 'AI İçerik Üretimi' },
+{ href: '/hizmetler/google-ads/', text: 'Google Ads' },
+{ href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+{ href: '/iletisim/', text: 'GEO Audit Talep Et' }
+]
+},
+'malatya-eticaret': {
+slug: 'malatya-eticaret',
+h1: 'Malatya E-Ticaret Çözümleri — platform, ödeme, kargo, pazaryeri',
+metaTitle: 'Malatya E-Ticaret | Shopify, WooCommerce, ideasoft & Pazaryeri',
+metaDescription: 'Malatya e-ticaret çözümleri: Shopify, WooCommerce, ideasoft, Magento ve özel Next.js geliştirme. Ödeme, kargo ve pazaryeri entegrasyonları.',
+introHtml: '<p><strong>Malatya e-ticaret</strong> çözümleri ile Shopify, WooCommerce, ideasoft, Magento ve özel Next.js platformlarda mağazanızı kuruyoruz. iyzico, PayTR ödeme, Aras-Yurtiçi-MNG kargo ve Trendyol-Hepsiburada-n11 pazaryeri entegrasyonları dahil.</p>',
+longContent: `<h2 id='platform-secimi'>E-Ticaret Platform Karşılaştırması: Hangi Sizin İçin?</h2><p>E-ticaret yolculuğunda en kritik karar platform seçimidir. Yanlış seçim, 6-12 ay sonra göç maliyetini ve kayıp satışı doğurur. Malatya Reklam olarak Shopify, WooCommerce, Magento, ideasoft ve özel Astro/Next.js geliştirmeyi karşılaştırmalı değerlendiriyoruz.</p><h3>Shopify</h3><p>Hızlı kurulum, kararlı altyapı, geniş app ekosistemi. Aylık 29 USD den başlayan paketler, satış komisyonu yok (Shopify Payments kullanıldığında). 0-5.000 SKU lu markalar için ideal. Türkiye de ödeme entegrasyonu için iyzico, PayTR, Param zorunlu kullanılır.</p><h3>WooCommerce (WordPress)</h3><p>Açık kaynak, esnek, eklenti zengin. Hosting+domain dışında platform ücreti yok. SEO de güçlü. Ancak performans optimizasyonu ve güvenlik için sürekli teknik bakım gerekir. 1.000-50.000 SKU için uygun.</p><h3>ideasoft</h3><p>Türkiye nin yerli kurumsal e-ticaret altyapısı. Trendyol, Hepsiburada, n11 entegrasyonları yerleşik. Aylık 1.500-15.000 TL paketler. KOBİ ve orta ölçekli e-ticaretler için pratik.</p><h3>Magento (Adobe Commerce)</h3><p>Kurumsal seviyede, B2B ve çok mağaza desteği güçlü. Geliştirme ve hosting maliyeti yüksek (60.000+ TL kurulum). Yıllık ciro 10M TL üzeri firmalar için.</p><h3>Özel Astro/Next.js Geliştirme</h3><p>Headless commerce yaklaşımı: Shopify backend + Next.js frontend gibi. Maximum hız ve özelleştirme. Tek ürünlü D2C markaları veya marketplace tarzı projeler için tercih edilir.</p><h2 id='odeme'>Ödeme Entegrasyonları (Türkiye)</h2><p>iyzico (en yaygın, kolay onay), PayTR (rekabetçi komisyon), Param POS, Stripe (uluslararası), Paratika, Wirecard. Komisyon oranları yüzde 1.49-2.89 arası. 3D Secure zorunlu, BKM Express ve Garanti BBVA mobilödeme entegre edilebilir.</p><h2 id='kargo'>Kargo Entegrasyonları</h2><p>Aras Kargo, Yurtiçi Kargo, MNG Kargo, Sürat Kargo, PTT, UPS API entegrasyonları. Otomatik kargo etiketi basımı, takip linki, iade yönetimi. Ortalama Malatya çıkışlı kargo bedeli 35-65 TL.</p><h2 id='pazaryeri'>Pazaryeri Entegrasyonları</h2><p>Trendyol, Hepsiburada, n11, GittiGidiyor, Çiçeksepeti, Amazon TR, Etsy. Tek panelden ürün-stok-fiyat senkronizasyonu, otomatik sipariş aktarımı. Pazaryeri komisyon oranları yüzde 9-22 arası.</p><h2 id='trendyol-rehberi'>Malatyalı İhracatçılar İçin Özel: Trendyol GO ve Uluslararası</h2><p>Malatya kayısı ihracatçıları, tekstil ve gıda işletmeleri için Trendyol GO, Hepsiburada Global, Amazon Global Selling ve Etsy entegrasyonu yapıyoruz. İngilizce ürün açıklaması, USD/EUR fiyatlandırma ve uluslararası kargo entegrasyonları paketlerimizde.</p><h2 id='paketler-fiyatlar'>Malatya E-Ticaret Paketleri</h2><h3>Mini E-Ticaret (15.000 TL den)</h3><p>Shopify veya WooCommerce kurulum, 50 ürüne kadar yükleme, ödeme + kargo entegrasyonu, temel tema, 1 ay destek.</p><h3>Standart E-Ticaret (35.000 TL den)</h3<p>Özel tema tasarımı, 500 ürüne kadar, çoklu ödeme, çoklu kargo, blog modülü, SEO altyapısı, GA4 + Search Console, 3 ay destek.</p><h3>Kurumsal E-Ticaret (80.000 TL den)</h3<p>Headless veya Magento, 5.000+ ürün, B2B paneli, çoklu pazaryeri, ERP entegrasyonu, çoklu mağaza, çoklu dil, 12 ay destek.</p><h2 id='operasyon'>Operasyonel Süreç Yönetimi</h2><p>E-ticaret kurulumdan sonra başlar. Stok takibi, sipariş yönetimi, müşteri hizmetleri, iade-değişim süreci, kampanya planlama ve performans optimizasyonu için ayrı paketlerimiz var.</p>`,
+processSteps: [
+{ step: '1', title: 'İhtiyaç Analizi', description: 'Ürün sayısı, hedef pazar, bütçe analizi.' },
+{ step: '2', title: 'Platform Önerisi', description: 'Shopify/WooCommerce/ideasoft/Özel kurulum kararı.' },
+{ step: '3', title: 'Tema Tasarımı', description: 'Marka kimliğine uygun özel tema.' },
+{ step: '4', title: 'Ödeme ve Kargo Entegrasyonu', description: 'iyzico/PayTR + Aras/Yurtiçi/MNG/PTT.' },
+{ step: '5', title: 'Ürün Yükleme', description: 'Toplu ürün, varyant, kategori, görsel optimizasyon.' },
+{ step: '6', title: 'Pazaryeri Entegrasyonu', description: 'Trendyol, Hepsiburada, n11 senkronizasyon.' },
+{ step: '7', title: 'Lansman ve Destek', description: 'GA4 + reklam + 1-12 ay teknik destek.' }
+],
+pricingFactors: [
+{ factor: 'Platform Seçimi', description: 'Shopify, WooCommerce, ideasoft, Magento farklı bantlardadır.' },
+{ factor: 'Ürün Sayısı', description: '50, 500, 5000+ ürünler farklı yükleme maliyetidir.' },
+{ factor: 'Tema Özgünlüğü', description: 'Hazır tema mı, sıfırdan tasarım mı?' },
+{ factor: 'Ödeme Entegrasyon Sayısı', description: '1 mi, 5 mi ödeme yöntemi?' },
+{ factor: 'Pazaryeri Entegrasyonu', description: 'Trendyol, Hepsiburada, n11 vs. adedi.' },
+{ factor: 'B2B Modülü', description: 'Toptan paneli, fiyat grupları ek paket.' },
+{ factor: 'Çoklu Dil/Para Birimi', description: 'Uluslararası satış için ek geliştirme.' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'Hangi platformu seçmeliyim?', a: '0-500 SKU için Shopify, 500-5000 SKU için WooCommerce/ideasoft, 5000+ ve B2B için Magento/Headless öneririz. Ücretsiz danışmanlık veriyoruz.' },
+{ q: 'Kurulum ne kadar sürer?', a: 'Mini paket 2-3 hafta, Standart 6-8 hafta, Kurumsal 10-16 hafta sürer.' },
+{ q: 'Ödeme komisyonları ne kadar?', a: 'iyzico ve PayTR yüzde 1.49-2.89 arası komisyon alır. 3D Secure zorunludur.' },
+{ q: 'Kargo entegrasyonu nasıl çalışır?', a: 'Sipariş alındığında otomatik etiket basımı, takip linki müşteriye SMS/e-posta ile iletilir.' },
+{ q: 'Trendyol entegrasyonu yapıyor musunuz?', a: 'Evet, Trendyol XML/API entegrasyonu, ürün-stok-fiyat senkronizasyonu ve sipariş aktarımı dahildir.' },
+{ q: 'Pazaryeri komisyonları ne kadar?', a: 'Trendyol yüzde 12-22, Hepsiburada yüzde 9-19, n11 yüzde 7-15 arası kategoriye göre değişir.' },
+{ q: 'B2B paneli kurar mısınız?', a: 'Evet. Bayi girişi, özel fiyat grupları, kredi limiti, vade ve sipariş tarihçesi modülleri kurabiliyoruz.' },
+{ q: 'Yurt dışı satış için neler gerekli?', a: 'İngilizce ürün açıklaması, USD/EUR fiyatlandırma, Stripe entegrasyonu, uluslararası kargo (UPS, DHL) ve gümrük dokümanları.' },
+{ q: 'Hosting ve domain dahil mi?', a: 'WooCommerce ve Magento için Cloudflare hızlı hosting + domain ilk yıl ücretsiz. Shopify kendi hosting i kullanır.' },
+{ q: 'E-ticaret kurulum fiyatı ne kadar?', a: 'Mini paket 15.000 TL den, Standart 35.000 TL den, Kurumsal 80.000 TL den başlar. Net fiyat ücretsiz keşif sonrası verilir.' }
+],
+relatedKeywords: ['malatya e-ticaret','malatya eticaret','malatya online satış','malatya shopify','malatya woocommerce','malatya ideasoft','malatya magento','e-ticaret kurulumu malatya','online mağaza malatya','malatya trendyol entegrasyonu','malatya hepsiburada','malatya n11','b2b e-ticaret malatya','dropshipping malatya','malatya e-ticaret ajansı'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '94' },
+internalLinks: [
+{ href: '/hizmetler/e-ticaret-cozumleri/', text: 'E-Ticaret Çözümleri' },
+{ href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+{ href: '/hizmetler/google-ads/', text: 'Google Ads' },
+{ href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
+{ href: '/iletisim/', text: 'E-Ticaret Teklifi Al' }
+]
 }
 };
 
