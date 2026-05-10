@@ -79,19 +79,21 @@ const homeJsonLd: any[] = [
   jsonLd={homeJsonLd}
 >
 
-  <section class="relative bg-gradient-to-br from-apricot-50 via-white to-orange-50 overflow-hidden">
-    <div class="absolute top-20 right-10 w-96 h-96 bg-apricot-200/30 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 left-0 w-72 h-72 bg-orange-200/30 rounded-full blur-3xl"></div>
-    <div class="container mx-auto px-4 lg:px-8 py-16 lg:py-28 relative">
-      <div class="max-w-4xl">
+<section class="relative bg-gradient-to-br from-apricot-50 via-white to-orange-50 overflow-hidden">
+  <div class="absolute top-20 right-10 w-96 h-96 bg-apricot-200/30 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-72 h-72 bg-orange-200/30 rounded-full blur-3xl"></div>
+  <div class="container mx-auto px-4 lg:px-8 py-12 lg:py-20 relative">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- LEFT: Headline + CTAs -->
+      <div>
         <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-apricot-200 text-apricot-600 text-xs font-bold uppercase tracking-wider rounded-full mb-6 shadow-sm">
           <span class="w-2 h-2 bg-apricot-500 rounded-full animate-pulse"></span>
           Malatya'nın yeni nesil reklam ajansı
         </span>
-        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6 leading-[1.05]">
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-[1.05]">
           <span class="text-apricot-500">Malatya Reklam</span>, Web Tasarım ve Tabela Çözümleri
         </h1>
-        <p class="text-xl md:text-2xl text-neutral-600 leading-relaxed mb-10 max-w-3xl">
+        <p class="text-lg md:text-xl text-neutral-600 leading-relaxed mb-8">
           Açıkhava reklamdan billboard'a, kurumsal web sitesinden e-ticarete, kutu harf tabeladan dijital LED ekrana; <strong>Malatya'nın</strong> en kapsamlı reklam ve dijital pazarlama hizmetleri tek elden.
         </p>
         <div class="flex flex-wrap gap-4">
@@ -101,10 +103,57 @@ const homeJsonLd: any[] = [
           </a>
           <a href="/hizmetler" class="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-neutral-50 text-neutral-900 font-bold text-lg rounded-xl border border-neutral-200 transition-all">Hizmetleri İncele</a>
         </div>
+        <!-- Trust badges -->
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mt-8 text-sm text-neutral-600">
+          <div class="flex items-center gap-2"><svg class="w-5 h-5 text-apricot-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>12+ yıl deneyim</span></div>
+          <div class="flex items-center gap-2"><svg class="w-5 h-5 text-apricot-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>500+ proje</span></div>
+          <div class="flex items-center gap-2"><svg class="w-5 h-5 text-apricot-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>In-house atölye</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Service Mosaic + Quick WhatsApp -->
+      <div class="relative">
+        <!-- 2x2 Service Cards -->
+        <div class="grid grid-cols-2 gap-4 mb-5">
+          <a href="/hizmetler/acikhava-reklam/" class="group relative p-5 bg-white border border-neutral-200 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-apricot-500/20 hover:border-apricot-400 hover:-translate-y-1 transition-all">
+            <div class="text-3xl mb-3">📣</div>
+            <h3 class="font-display font-bold text-neutral-900 text-base mb-1 group-hover:text-apricot-600 transition-colors">Reklam</h3>
+            <p class="text-xs text-neutral-500 leading-snug">Billboard, megalight, raket, LED ekran</p>
+          </a>
+          <a href="/hizmetler/web-tasarim/" class="group relative p-5 bg-white border border-neutral-200 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-apricot-500/20 hover:border-apricot-400 hover:-translate-y-1 transition-all lg:translate-y-6">
+            <div class="text-3xl mb-3">💻</div>
+            <h3 class="font-display font-bold text-neutral-900 text-base mb-1 group-hover:text-apricot-600 transition-colors">Web Tasarım</h3>
+            <p class="text-xs text-neutral-500 leading-snug">Astro, Next.js, kurumsal & e-ticaret</p>
+          </a>
+          <a href="/hizmetler/tabela-uygulamalari/" class="group relative p-5 bg-white border border-neutral-200 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-apricot-500/20 hover:border-apricot-400 hover:-translate-y-1 transition-all">
+            <div class="text-3xl mb-3">🪧</div>
+            <h3 class="font-display font-bold text-neutral-900 text-base mb-1 group-hover:text-apricot-600 transition-colors">Tabela</h3>
+            <p class="text-xs text-neutral-500 leading-snug">Kutu harf, ışıklı, LED, totem</p>
+          </a>
+          <a href="/hizmetler/seo-hizmeti/" class="group relative p-5 bg-white border border-neutral-200 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-apricot-500/20 hover:border-apricot-400 hover:-translate-y-1 transition-all lg:translate-y-6">
+            <div class="text-3xl mb-3">🚀</div>
+            <h3 class="font-display font-bold text-neutral-900 text-base mb-1 group-hover:text-apricot-600 transition-colors">SEO & GEO</h3>
+            <p class="text-xs text-neutral-500 leading-snug">Google, ChatGPT, Gemini görünürlüğü</p>
+          </a>
+        </div>
+
+        <!-- Quick WhatsApp CTA -->
+        <div class="lg:mt-10 p-5 bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl shadow-xl">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <span class="text-white font-bold text-sm uppercase tracking-wider">Hızlı Teklif</span>
+          </div>
+          <p class="text-neutral-300 text-sm mb-4 leading-relaxed">15 dakika içinde size dönüyoruz. WhatsApp'tan yazın, hizmet ihtiyacınızı kısaca anlatın.</p>
+          <a href="https://wa.me/905446732202?text=Merhaba%2C%20web%20sitenizden%20ula%C5%9F%C4%B1yorum.%20Reklam%2FWeb%20Tasar%C4%B1m%2FTabela%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="flex items-center justify-center gap-2 w-full px-5 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-green-500/30">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp'tan Hemen Yaz
+          </a>
+          <p class="text-neutral-400 text-xs text-center mt-3">📞 +90 544 673 22 02 · ⚡ Ortalama yanıt: 15 dk</p>
+        </div>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>  
   <section class="bg-neutral-900 text-white py-12">
     <div class="container mx-auto px-4 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
