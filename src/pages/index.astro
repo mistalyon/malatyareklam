@@ -1,309 +1,246 @@
 ---
-
 import BaseLayout from '../layouts/BaseLayout.astro';
-
 import { services, categoryLabels } from '../data/services';
 
-
-
 const featuredServices = [
-
   services.find(s => s.slug === 'malatya-yazilim'),
-
   services.find(s => s.slug === 'malatya-eticaret'),
-
   services.find(s => s.slug === 'geo-hizmeti'),
-
   services.find(s => s.slug === 'web-tasarim'),
-
   services.find(s => s.slug === 'seo-hizmeti'),
-
   services.find(s => s.slug === 'sosyal-medya-yonetimi'),
-
 ].filter(Boolean);
 
-
-
 const stats = [
-
   { label: 'Tamamlanan Proje', value: '500+' },
-
   { label: 'Mutlu Müşteri', value: '300+' },
-
   { label: 'Yıllık Deneyim', value: '12+' },
-
   { label: 'Uzman Ekip', value: '15+' }
-
 ];
 
+const targetServices = [
+  { title: 'Malatya Reklam Ajansı', slug: 'acikhava-reklam', desc: 'Billboard, megalight, raket ve LED ekranlarla şehrin en yoğun caddelerinde markanızı milyonlarca insana ulaştırıyoruz.', icon: '📣' },
+  { title: 'Malatya Web Tasarım', slug: 'web-tasarim', desc: 'Astro, Next.js ve WordPress altyapısıyla saniyenin altında yüklenen, SEO uyumlu kurumsal web siteleri tasarlıyoruz.', icon: '💻' },
+  { title: 'Malatya Tabela', slug: 'tabela-uygulamalari', desc: 'Işıklı tabela, kutu harf, LED tabela, totem ve dijital tabela üretimi; kendi atölyemizde, 2 yıl LED garantili.', icon: '🪧' }
+];
+
+const homeFaqs = [
+  { q: 'Malatya reklam ajansı seçerken nelere dikkat etmeliyim?', a: 'Tecrübe (yıl), portföy, in-house üretim kapasitesi, raporlama şeffaflığı ve yerel ofis varlığı en önemli kriterlerdir. Malatya Reklam olarak 12 yıllık deneyimimiz, kendi matbaa ve tabela atölyemiz, dijital ve açıkhavayı tek elden yöneten yapımızla bu kriterlerin tamamını karşılıyoruz.' },
+  { q: 'Malatya web tasarım fiyatları ne kadar?', a: 'Web sitesi fiyatları kurumsal landing page için 8.000 TL den, kapsamlı kurumsal site için 35.000 TL den, gelişmiş e-ticaret projeleri için 80.000 TL den itibaren değişiyor.' },
+  { q: 'Malatya tabela üretimi ne kadar sürede tamamlanır?', a: 'Standart mağaza tabelaları tasarım onayı sonrası 7-10 iş günü, kurumsal kutu harf ve totem tabelaları 10-15 iş günü içinde üretilip yerinde montaj edilir.' },
+  { q: 'Hangi reklam türü en etkilidir?', a: 'Hedef kitlenize göre değişir. B2C markalar için açıkhava (billboard, raket) + sosyal medya kombinasyonu, B2B markalar için Google Ads + LinkedIn ve sektörel etkinlikler en yüksek dönüşüm getirir.' },
+  { q: 'Malatya dışındaki şehirlere de hizmet veriyor musunuz?', a: 'Evet, Türkiye genelinde web tasarım, SEO, yazılım ve dijital pazarlama hizmeti veriyoruz.' },
+  { q: 'Sözleşme süresi ne kadar?', a: 'Web tasarım ve yazılım projeleri tek seferlik sözleşmeyle, SEO ve sosyal medya yönetimi 6-12 aylık paketlerle, açıkhava reklamı 15 günden başlayan kampanyalarla yönetilir.' }
+];
+
+const homeJsonLd: any[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://malatyareklam.com/#website",
+    "url": "https://malatyareklam.com/",
+    "name": "Malatya Reklam",
+    "description": "Malatya merkezli reklam, web tasarım, tabela, SEO, dijital pazarlama ve yazılım ajansı.",
+    "publisher": { "@id": "https://malatyareklam.com/#organization" },
+    "inLanguage": "tr-TR"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://malatyareklam.com/#faq",
+    "mainEntity": homeFaqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://malatyareklam.com/#services",
+    "name": "Malatya Reklam Hizmetleri",
+    "itemListElement": services.map((s, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": {
+        "@type": "Service",
+        "name": s.title,
+        "url": `https://malatyareklam.com/hizmetler/${s.slug}/`
+      }
+    }))
+  }
+];
 ---
 
-
-
 <BaseLayout
-
-  title="Malatya Reklam | Reklam, SEO, Web Tasarım, E-Ticaret & AI Çözümleri"
-
-  description="Malatya'nın yenilikçi reklam ajansı. Açıkhava reklam, SEO, web tasarım, e-ticaret, kurumsal yazılım, GEO ve yapay zeka destekli dijital pazarlama çözümleri."
-    keywords="malatya reklam, reklam çözümleri malatya, malatya markalaşma, malatya reklam çözüm ortağı, büyüme ortağı malatya"
-
+  title="Malatya Reklam Ajansı | Reklam, Web Tasarım, Tabela, SEO ve Dijital Pazarlama"
+  description="Malatya reklam, web tasarım ve tabela hizmetlerinde 12 yıllık deneyim. Açıkhava reklam, billboard, kutu harf tabela, kurumsal web sitesi, SEO ve dijital pazarlama çözümleri için Malatya Reklam ajansı."
+  keywords="malatya reklam, malatya reklam ajansı, malatya reklam firması, malatya web tasarım, malatya tabela, malatya billboard, malatya seo, malatya dijital pazarlama, malatya açıkhava reklam, malatya kutu harf, malatya led tabela, malatya kurumsal web sitesi"
+  jsonLd={homeJsonLd}
 >
 
   <section class="relative bg-gradient-to-br from-apricot-50 via-white to-orange-50 overflow-hidden">
-
     <div class="absolute top-20 right-10 w-96 h-96 bg-apricot-200/30 rounded-full blur-3xl"></div>
-
     <div class="absolute bottom-0 left-0 w-72 h-72 bg-orange-200/30 rounded-full blur-3xl"></div>
-
     <div class="container mx-auto px-4 lg:px-8 py-16 lg:py-28 relative">
-
       <div class="max-w-4xl">
-
         <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-apricot-200 text-apricot-600 text-xs font-bold uppercase tracking-wider rounded-full mb-6 shadow-sm">
-
           <span class="w-2 h-2 bg-apricot-500 rounded-full animate-pulse"></span>
-
           Malatya'nın yeni nesil reklam ajansı
-
         </span>
-
         <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6 leading-[1.05]">
-
-          Markanızı <span class="text-apricot-500">geleceğe</span> taşıyan reklam çözümleri
-
+          <span class="text-apricot-500">Malatya Reklam</span>, Web Tasarım ve Tabela Çözümleri
         </h1>
-
         <p class="text-xl md:text-2xl text-neutral-600 leading-relaxed mb-10 max-w-3xl">
-
-          Açıkhava reklamdan yapay zeka destekli içeriğe, e-ticaretten kurumsal yazılıma; Malatya'nın en kapsamlı reklam ve dijital pazarlama hizmetleri.
-
+          Açıkhava reklamdan billboard'a, kurumsal web sitesinden e-ticarete, kutu harf tabeladan dijital LED ekrana; <strong>Malatya'nın</strong> en kapsamlı reklam ve dijital pazarlama hizmetleri tek elden.
         </p>
-
         <div class="flex flex-wrap gap-4">
-
           <a href="/iletisim" class="inline-flex items-center gap-2 px-8 py-4 bg-apricot-500 hover:bg-apricot-600 text-white font-bold text-lg rounded-xl shadow-xl shadow-apricot-500/30 hover:shadow-2xl hover:-translate-y-1 transition-all">
-
             Ücretsiz Teklif Al
-
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-
           </a>
-
           <a href="/hizmetler" class="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-neutral-50 text-neutral-900 font-bold text-lg rounded-xl border border-neutral-200 transition-all">Hizmetleri İncele</a>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-
 
   <section class="bg-neutral-900 text-white py-12">
-
     <div class="container mx-auto px-4 lg:px-8">
-
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-
         {stats.map(stat => (
-
           <div class="text-center">
-
             <div class="font-display text-4xl md:text-5xl font-bold text-apricot-400 mb-2">{stat.value}</div>
-
             <div class="text-sm text-neutral-400">{stat.label}</div>
-
           </div>
-
         ))}
-
       </div>
-
     </div>
-
   </section>
 
-
+  <section class="py-16 lg:py-24 bg-gradient-to-b from-white to-apricot-50/30">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">3 Hedef Çözüm</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">Malatya Reklam, Web Tasarım ve Tabela Hizmetlerimiz</h2>
+        <p class="text-lg text-neutral-600">Markanızın görünürlüğünü artırmak için 3 ana alanda tek elden, profesyonel çözümler sunuyoruz.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        {targetServices.map(ts => (
+          <a href={`/hizmetler/${ts.slug}/`} class="group p-8 bg-white border-2 border-neutral-100 rounded-2xl hover:border-apricot-400 hover:shadow-2xl hover:shadow-apricot-500/10 hover:-translate-y-2 transition-all">
+            <div class="text-5xl mb-5">{ts.icon}</div>
+            <h3 class="font-display text-2xl font-bold text-neutral-900 mb-3 group-hover:text-apricot-600 transition-colors">{ts.title}</h3>
+            <p class="text-neutral-600 leading-relaxed mb-6">{ts.desc}</p>
+            <span class="inline-flex items-center gap-1 text-apricot-600 font-semibold text-sm group-hover:gap-2 transition-all">
+              Detaylı Bilgi
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <section class="py-16 lg:py-24">
-
     <div class="container mx-auto px-4 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <article class="prose prose-neutral max-w-none prose-headings:font-display prose-h2:text-3xl prose-h2:font-bold prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-6 prose-p:text-neutral-700 prose-p:leading-relaxed prose-strong:text-neutral-900 prose-a:text-apricot-600 prose-a:no-underline hover:prose-a:underline">
 
-      <div class="max-w-3xl mx-auto text-center mb-16">
+          <h2>Malatya Reklam Ajansı Olarak Sunduğumuz Değer</h2>
+          <p>Malatya reklam pazarında 12 yılı aşkın deneyimimizle 500+ proje tamamladık ve 300+ markanın büyüme yolculuğuna eşlik ettik. <strong>Açıkhava reklam, billboard, kutu harf tabela, ışıklı tabela, LED ekran, kurumsal web tasarım, e-ticaret, SEO ve dijital pazarlama</strong> hizmetlerini tek çatı altında sunan az sayıdaki ajans arasındayız.</p>
+          <p>Geleneksel reklam ile yeni nesil yapay zeka destekli pazarlamayı (GEO, AI içerik üretimi) bir araya getirerek Malatya'daki işletmelerin hem fiziksel hem dijital dünyada öne çıkmasını sağlıyoruz.</p>
 
-        <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Öne Çıkan Hizmetler</span>
+          <h2>Neden Malatya Reklam Ajansı?</h2>
+          <h3>Yerel Bilgi, Global Standart</h3>
+          <p>Malatya'da fiziksel ofisimiz var. İnönü Caddesi, Turgut Özal Bulvarı, Battalgazi merkez, Yeşilyurt ve Malatya Park AVM çevresi başta olmak üzere şehrin en yüksek trafiğine sahip 50+ premium reklam konumuyla kontratlı çalışıyoruz.</p>
+          <h3>Uçtan Uca Çözüm</h3>
+          <p>Logo tasarımından kurumsal kimliğe, web sitesinden tabelaya, billboard'dan sosyal medyaya kadar markanızın ihtiyacı olan tüm hizmetler tek yerden. Aracı yok, fabrika fiyatı.</p>
+          <h3>Şeffaf Raporlama</h3>
+          <p>Her kampanyanın başında, ortasında ve sonunda fotoğraflı, GPS koordinatlı ve tarih damgalı raporlar; SEO ve dijital pazarlamada aylık detaylı performans raporları.</p>
+          <h3>AI ve GEO Hazır</h3>
+          <p>SEO'nun yeni nesli olan GEO (Generative Engine Optimization) ile markanızın ChatGPT, Gemini, Perplexity ve Claude gibi yapay zeka motorlarında da görünür olmasını sağlıyoruz.</p>
 
-        <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">14 Farklı Alanda Uzman Çözümler</h2>
+          <h2>Malatya Web Tasarım: Hızlı, Mobil Uyumlu, SEO Dostu</h2>
+          <p>Astro, Next.js ve WordPress altyapılarıyla Lighthouse'da 90+ puan alan, mobilde 1 saniyenin altında yüklenen kurumsal web siteleri ve e-ticaret çözümleri geliştiriyoruz. Her sayfa schema.org JSON-LD, OpenGraph, sitemap ve canonical etiketleriyle sıfırdan SEO uyumlu olarak teslim edilir. Detaylı bilgi için <a href="/hizmetler/web-tasarim/">Malatya web tasarım hizmet sayfamızı</a> inceleyebilirsiniz.</p>
 
-        <p class="text-lg text-neutral-600">Klasik reklamdan yapay zeka destekli yeni nesil hizmetlere kadar markanızı büyütecek tüm çözümler bir arada.</p>
+          <h2>Malatya Tabela: Işıklı, Kutu Harf, LED ve Dijital</h2>
+          <p>Kendi atölyemizde CNC kesim, lazer kesim ve baskı makineleriyle ışıklı tabela, kutu harf tabela, LED tabela, totem tabela, dijital LED ekran ve yönlendirme tabelası üretiyoruz. 2 yıl LED garantisi, 5 yıl gövde garantisi, sertifikalı yüksekte çalışma ekibiyle güvenli montaj. Detaylar için <a href="/hizmetler/tabela-uygulamalari/">Malatya tabela hizmet sayfamızı</a> ziyaret edin.</p>
 
+          <h2>Malatya Açıkhava Reklam ve Billboard</h2>
+          <p>Şehrin en yoğun caddelerinde billboard, megalight, raket, otobüs giydirme ve dijital LED ekran reklamları ile markanızı milyonlarca insana ulaştırıyoruz. 50+ premium konum, in-house tasarım ve baskı, 48 saatte devreye alma. Detayları <a href="/hizmetler/acikhava-reklam/">Malatya açıkhava reklam sayfamızda</a> bulabilirsiniz.</p>
+
+          <h2>Hangi Sektörlere Hizmet Veriyoruz?</h2>
+          <p>Malatya'da hizmet verdiğimiz sektörler arasında <strong>kayısı ihracatçıları</strong>, <strong>tekstil üreticileri</strong>, <strong>inşaat ve emlak şirketleri</strong>, <strong>sağlık kuruluşları</strong>, <strong>avukatlar ve hukuk büroları</strong>, <strong>eğitim kurumları</strong>, <strong>restoran ve kafeler</strong>, <strong>otomotiv galerileri</strong>, <strong>oto servisleri</strong>, <strong>mobilya üreticileri</strong>, <strong>kuyumcular</strong>, <strong>e-ticaret işletmeleri</strong>, <strong>kuaför ve güzellik salonları</strong>, <strong>fitness merkezleri</strong> bulunuyor.</p>
+
+          <h2>Malatya'nın Tüm İlçelerinde Hizmet</h2>
+          <p>Battalgazi, Yeşilyurt, Doğanşehir, Akçadağ, Darende, Hekimhan, Arapgir, Pütürge, Kuluncak, Kale, Yazıhan, Arguvan ve Doğanyol başta olmak üzere Malatya'nın tüm ilçelerinde reklam, tabela ve web tasarım hizmeti sunuyoruz.</p>
+
+        </article>
       </div>
-
-
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        {featuredServices.map(service => (
-
-          <a href={`/hizmetler/${service.slug}`} class="group p-6 bg-white border border-neutral-200 rounded-2xl hover:border-apricot-300 hover:shadow-xl hover:shadow-apricot-500/10 hover:-translate-y-1 transition-all">
-
-            <div class="flex items-center justify-between mb-4">
-
-              <span class="text-xs font-bold uppercase tracking-wider text-apricot-600">{categoryLabels[service.category]}</span>
-
-              <svg class="w-5 h-5 text-neutral-400 group-hover:text-apricot-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-
-            </div>
-
-            <h3 class="font-display text-xl font-bold text-neutral-900 mb-3 group-hover:text-apricot-600 transition-colors">{service.title}</h3>
-
-            <p class="text-sm text-neutral-600 leading-relaxed">{service.shortDesc}</p>
-
-          </a>
-
-        ))}
-
-      </div>
-
-
-
-      <div class="text-center mt-12">
-
-        <a href="/hizmetler" class="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 hover:bg-neutral-800 text-white font-semibold rounded-xl transition-all">
-
-          Tüm Hizmetleri Gör
-
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-
-        </a>
-
-      </div>
-
     </div>
-
   </section>
-
-
 
   <section class="py-16 lg:py-20 bg-neutral-50">
-
     <div class="container mx-auto px-4 lg:px-8">
-
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-        <div>
-
-          <span class="inline-block px-3 py-1 bg-white border border-apricot-200 text-apricot-600 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Neden Biz?</span>
-
-          <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-6">Malatya'da Yerli, Globalde Rekabetçi</h2>
-
-          <p class="text-lg text-neutral-600 leading-relaxed mb-8">
-
-            12 yılı aşkın tecrübemizle Malatya'da kurumsal markaların büyüme ortağıyız. Klasik reklam ile yeni nesil yapay zeka destekli pazarlamayı bir araya getiriyoruz.
-
-          </p>
-
-          <ul class="space-y-3">
-
-            {['Uçtan uca dijital ve reklam çözümleri', 'Şeffaf raporlama ve ölçülebilir sonuçlar', 'Yerli ekip, hızlı destek ve güvenli altyapı', 'AI ve GEO ile geleceğe hazır pazarlama'].map(item => (
-
-              <li class="flex items-start gap-3">
-
-                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-apricot-500 flex items-center justify-center text-white mt-0.5">
-
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-
-                </div>
-
-                <span class="text-neutral-700">{item}</span>
-
-              </li>
-
-            ))}
-
-          </ul>
-
-        </div>
-
-        <div class="grid grid-cols-2 gap-4">
-
-          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100">
-
-            <div class="text-4xl mb-3">🎯</div>
-
-            <h3 class="font-display font-bold text-lg mb-2">Stratejik Yaklaşım</h3>
-
-            <p class="text-sm text-neutral-600">Veri odaklı stratejilerle ROI'nizi maksimize ediyoruz.</p>
-
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100 mt-8">
-
-            <div class="text-4xl mb-3">⚡</div>
-
-            <h3 class="font-display font-bold text-lg mb-2">Hız & Performans</h3>
-
-            <p class="text-sm text-neutral-600">Modern altyapı ile saniyeler içinde yüklenen siteler.</p>
-
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100">
-
-            <div class="text-4xl mb-3">🤖</div>
-
-            <h3 class="font-display font-bold text-lg mb-2">AI Destekli</h3>
-
-            <p class="text-sm text-neutral-600">GEO, AI içerik ve otomatik pazarlama çözümleri.</p>
-
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100 mt-8">
-
-            <div class="text-4xl mb-3">🔒</div>
-
-            <h3 class="font-display font-bold text-lg mb-2">Güvenli</h3>
-
-            <p class="text-sm text-neutral-600">Cloudflare WAF, HTTPS ve bot koruması ile maksimum güvenlik.</p>
-
-          </div>
-
-        </div>
-
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">SSS</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">Sıkça Sorulan Sorular</h2>
+        <p class="text-lg text-neutral-600">Malatya reklam, web tasarım ve tabela hizmetlerimizle ilgili merak edilenler.</p>
       </div>
-
+      <div class="max-w-3xl mx-auto space-y-3">
+        {homeFaqs.map(f => (
+          <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer hover:bg-neutral-50 transition-colors">
+              <span class="font-semibold text-neutral-900 pr-4">{f.q}</span>
+              <svg class="w-5 h-5 text-apricot-500 flex-shrink-0 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-neutral-700 leading-relaxed">{f.a}</div>
+          </details>
+        ))}
+      </div>
     </div>
-
   </section>
 
-
+  <section class="py-16 lg:py-24">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Öne Çıkan Hizmetler</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">14 Farklı Alanda Uzman Çözümler</h2>
+        <p class="text-lg text-neutral-600">Klasik reklamdan yapay zeka destekli yeni nesil hizmetlere kadar markanızı büyütecek tüm çözümler bir arada.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {featuredServices.map(service => (
+          <a href={`/hizmetler/${service.slug}`} class="group p-6 bg-white border border-neutral-200 rounded-2xl hover:border-apricot-300 hover:shadow-xl hover:shadow-apricot-500/10 hover:-translate-y-1 transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-apricot-600">{categoryLabels[service.category]}</span>
+              <svg class="w-5 h-5 text-neutral-400 group-hover:text-apricot-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </div>
+            <h3 class="font-display text-xl font-bold text-neutral-900 mb-3 group-hover:text-apricot-600 transition-colors">{service.title}</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">{service.shortDesc}</p>
+          </a>
+        ))}
+      </div>
+      <div class="text-center mt-12">
+        <a href="/hizmetler" class="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 hover:bg-neutral-800 text-white font-semibold rounded-xl transition-all">
+          Tüm Hizmetleri Gör
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <section class="py-16 lg:py-24 bg-gradient-to-br from-apricot-500 to-apricot-600 text-white">
-
     <div class="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
-
       <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Markanız İçin Bir Sonraki Adım</h2>
-
       <p class="text-xl text-apricot-50 mb-8">Ücretsiz keşif görüşmesinde size özel strateji önerileri sunalım.</p>
-
       <div class="flex flex-wrap justify-center gap-4">
-
         <a href="/iletisim" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-apricot-600 font-bold text-lg rounded-xl hover:bg-apricot-50 transition-colors shadow-xl">
-
           Ücretsiz Görüşme
-
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-
         </a>
-
         <a href="https://wa.me/905446732202" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-apricot-700 hover:bg-apricot-800 text-white font-bold text-lg rounded-xl transition-colors">WhatsApp</a>
-
       </div>
-
     </div>
-
   </section>
 
 </BaseLayout>
-
