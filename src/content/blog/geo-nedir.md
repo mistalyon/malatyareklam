@@ -7,6 +7,7 @@ readTime: "12 dk"
 coverEmoji: "🤖"
 seoTitle: "GEO Nedir? Generative Engine Optimization 2025 Rehberi"
 seoDescription: "GEO, ChatGPT ve Perplexity gibi yapay zeka aramalarında üst sıralarda yer almanın yolu. Markanızı AI çağına nasıl hazırlarsınız?"
+keywords: "geo nedir, generative engine optimization, ai seo, chatgpt seo, perplexity seo, yapay zeka arama optimizasyonu, malatya geo hizmeti, geo rehberi"
 ---
 
 SEO'yu duydunuz, peki ya GEO? Şu anda dünya genelinde milyonlarca insan, bir ürün ya da hizmet ararken artık Google yerine ChatGPT, Perplexity, Claude veya Gemini'a soruyor. Bu yeni alanın adı: **Generative Engine Optimization — GEO**.
