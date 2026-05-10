@@ -534,6 +534,102 @@ internalLinks: [
 { href: '/hizmetler/e-ticaret-cozumleri/', text: 'E-Ticaret Çözümleri' },
 { href: '/iletisim/', text: 'Google Ads Teklifi Al' }
 ]
+},
+'sosyal-medya-yonetimi': {
+slug: 'sosyal-medya-yonetimi',
+h1: 'Malatya Sosyal Medya Yönetimi — platform bazlı strateji',
+metaTitle: 'Malatya Sosyal Medya Yönetimi | Instagram, TikTok, LinkedIn, YouTube',
+metaDescription: 'Malatya sosyal medya yönetimi: platform bazlı strateji, içerik takvimi, video üretimi, topluluk yönetimi ve aylık analiz raporu.',
+introHtml: '<p><strong>Malatya sosyal medya yönetimi</strong> hizmetimizle Instagram, TikTok, LinkedIn, YouTube ve Facebook ta markanızı stratejik, planlı ve sürdürülebilir bir şekilde büyütüyoruz. Her platforma özel içerik takvimi, in-house video ekibi ve gerçek topluluk yönetimi ile organik büyüme sağlıyoruz.</p>',
+longContent: `<h2 id='platformlar'>Platform Bazlı Sosyal Medya Stratejisi</h2><p>Her platformun kendine özgü kullanıcı davranışı, algoritması ve içerik formatı vardır. Aynı içeriği tüm platformlara aynı kalıpla atmak en sık yapılan hatadır. Malatya Reklam olarak, hedef kitlenizin yoğun olduğu 2-3 platforma odaklanır, kalan platformlarda minimum varlık stratejisi uygularız.</p><h3>Instagram</h3><p>Reels, carousel post, story ve broadcast channel kombinasyonu. Görsel kaliteli markalar için birincil platform. Hashtag stratejisi 2024 sonrası önemini yitirdi; içerik kalitesi ve etkileşim sinyalleri belirleyici.</p><h3>TikTok</h3><p>Algoritma yeni hesaplara cömert davranır. 7-21 saniye arası organik viral video üretmek için fırsat. Trend ses ve geçişleri takip eden içerik takvimi.</p><h3>LinkedIn</h3><p>B2B markalar, hizmet sektörü, eğitim ve danışmanlık için kritik. Düşünce liderliği yazıları ve kurucu ortağın kişisel hesabı şirket sayfasından 4 kat daha fazla erişim alır.</p><h3>Facebook</h3><p>40 yaş üstü Türkiye kullanıcısında hâlâ aktif. Yerel grup yönetimi ve canlı yayın için kullanışlı. Marketplace e-ticaret için önemli.</p><h3>YouTube</h3><p>Long-form (10-20 dk) eğitim ve hikaye videoları + Shorts (60 sn) hibrit stratejisi. SEO değeri yüksek, evergreen içerik üretmek için tercih edilen platform.</p><h3>X (Twitter)</h3><p>Kriz iletişimi, anlık haber paylaşımı ve özellikle teknoloji-medya markaları için. Türkiye pazarı küçüldü ama nitelikli kalabalık.</p><h2 id='icerik-takvimi'>Aylık İçerik Takvimi Yapımız</h2><p>Her ay başında 30 günlük içerik takvimi hazırlıyor; başlık, format, görsel/video brief, yayın günü/saati, hashtag/keyword listesi ve CTA önceden belirleniyor. Onayladıktan sonra üretime giriliyor. Spontan trend içeriklerini takvim dışı yayına alıyoruz.</p><h3>Pillar İçerik Stratejisi</h3><p>4 ana içerik sütunu belirliyoruz: Eğitici (sektör bilgisi paylaşımı), Eğlendirici (trend/duygusal), Tanıtıcı (ürün/hizmet), Sosyal kanıt (müşteri yorumları, vaka çalışmaları). Her hafta her sütundan 1-2 içerik gelmesini sağlıyoruz.</p><h2 id='hizmet-paketleri'>Sosyal Medya Yönetim Paketleri</h2><h3>Başlangıç Paketi (12.000 TL/ay)</h3><p>Tek platform (Instagram veya TikTok), ayda 12 post + 8 story + 4 Reels/video, content calendar, ayda 1 strateji görüşmesi.</p><h3>Standart Paket (25.000 TL/ay)</h3><p>3 platform, ayda 20 post + 30 story + 12 video, community management (yorum-DM yanıtlama), ayda 2 strateji görüşmesi, analiz raporu.</p><h3>Premium Paket (50.000+ TL/ay)</h3<p>4-5 platform, ayda 40+ içerik, profesyonel video çekim ekibi, influencer outreach, sponsorlu reklam yönetimi (ek bütçe), kapsamlı raporlama.</p><h2 id='video'>Video İçerik Üretimi</h2><p>Reels ve TikTok algoritması 2024-2025 te video içeriği önceliklendiriyor. In-house ekibimizle aylık 12-40 arası kısa form video üretiyoruz; konsept yazımı, çekim, edit, ses ve altyazı dahil. Mağazanıza gelip çekim yapıyor veya stüdyomuzda hazırlık yapıyoruz.</p><h2 id='community'>Topluluk Yönetimi (Community Management)</h2><p>Sosyal medya sadece post atmak değildir. Yorumlara 30 dakika içinde yanıt, DM lere 1 saat içinde yanıt, kriz anında 15 dakika içinde aksiyon ile gerçek bir marka topluluğu kuruyoruz. Olumsuz yorumları gizlemek yerine yapıcı yanıtlarla markanızı güçlendiriyoruz.</p><h2 id='analiz'>Aylık Analiz ve Raporlama</h2><p>Her ay sonunda Looker Studio raporunda erişim, etkileşim oranı, takipçi büyümesi, en performanslı içerikler, hashtag performansı, optimum yayın saatleri ve rakip karşılaştırması yer alır. Her çeyrekte stratejik değerlendirme yapıyoruz.</p>`,
+processSteps: [
+{ step: '1', title: 'Marka Sesi Workshop', description: 'Tone of voice, hedef kitle ve değer önerisi netleştirilir.' },
+{ step: '2', title: 'Platform Seçimi', description: 'Hedef kitlenize uygun 2-3 platforma odaklanma.' },
+{ step: '3', title: 'Pillar İçerik Stratejisi', description: 'Eğitici-Eğlendirici-Tanıtıcı-Sosyal kanıt sütunları.' },
+{ step: '4', title: 'Aylık İçerik Takvimi', description: '30 gün önceden onaylı plan.' },
+{ step: '5', title: 'Üretim ve Çekim', description: 'In-house video ekibimizle profesyonel üretim.' },
+{ step: '6', title: 'Yayın ve Topluluk', description: 'Optimum saatlerde yayın + DM/yorum yanıtlama.' },
+{ step: '7', title: 'Aylık Rapor', description: 'Looker Studio + stratejik öneriler.' }
+],
+pricingFactors: [
+{ factor: 'Platform Sayısı', description: '1 mi, 5 mi platform yönetilecek?' },
+{ factor: 'Aylık İçerik Adedi', description: 'Post, story, reels, video sayısı.' },
+{ factor: 'Video Üretim Hacmi', description: 'Profesyonel çekim, edit, animasyon dahil mi?' },
+{ factor: 'Topluluk Yönetimi', description: 'DM ve yorum yanıtlama hızı/kapsamı.' },
+{ factor: 'Reklam Yönetimi', description: 'Sponsorlu post yönetimi dahil mi?' },
+{ factor: 'İnfluencer Outreach', description: 'Marka iş birlikleri ek pakettir.' },
+{ factor: 'Raporlama Kapsamı', description: 'Aylık özet mi, çeyrek dönem stratejik mi?' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'Hangi platformlardan başlamalıyım?', a: 'Hedef kitlenize göre değişir. B2B için LinkedIn + YouTube, B2C görsel ürünler için Instagram + TikTok, yerel hizmet için Instagram + Google Business önerilir.' },
+{ q: 'Aylık kaç içerik atılmalı?', a: 'Instagramda en az haftada 4 post + 7 story + 2-3 Reels önerilir. TikTokta günde 1-2 video idealdir.' },
+{ q: 'Sosyal medya yönetimi fiyatı ne?', a: 'Tek platform başlangıç paketi 12.000 TL/ay, 3 platform standart paket 25.000 TL/ay, premium paket 50.000+ TL/ay olarak başlar.' },
+{ q: 'İçerikleri kim üretiyor?', a: 'In-house ekibimiz: copywriter, grafik tasarımcı, video editör, kameraman ve sosyal medya uzmanı.' },
+{ q: 'Reels ve TikTok video üretiyor musunuz?', a: 'Evet, profesyonel ekipmanla mağazanıza geliyor veya stüdyomuzda çekim yapıyoruz. Aylık 12-40 video üretiyoruz.' },
+{ q: 'Hashtag stratejisi hâlâ önemli mi?', a: 'Önceliği azaldı. İçerik kalitesi, kayıt edilme ve paylaşılma sinyalleri 2024 sonrası daha önemli.' },
+{ q: 'Reklam bütçesi yönetim ücretine dahil mi?', a: 'Hayır, sponsorlu reklam bütçesi sizden ayrı çıkar. Yönetim ücretine reklam optimizasyonu dahildir.' },
+{ q: 'Şikayetlere nasıl yanıt veriyorsunuz?', a: 'Onaylı kriz iletişimi protokolüyle. Olumsuz yorumları silmiyor, profesyonel ve empati dolu yanıtlarla markanızı güçlendiriyoruz.' },
+{ q: 'İnfluencer iş birlikleri yapıyor musunuz?', a: 'Evet, mikro ve makro influencer outreach, sözleşme, brief ve performans takibi dahil paketleyebiliyoruz.' },
+{ q: 'Sözleşme süresi ne kadar?', a: 'Minimum 3 ay öneriyoruz. İlk ay marka sesi ve test, ikinci ay optimizasyon, üçüncü ay sonuç ölçümü.' }
+],
+relatedKeywords: ['malatya sosyal medya yönetimi','malatya instagram yönetimi','malatya tiktok yönetimi','malatya sosyal medya ajansı','malatya sosyal medya uzmanı','malatya reels üretimi','sosyal medya danışmanı malatya','malatya facebook yönetimi','malatya linkedin yönetimi','malatya youtube yönetimi','malatya sosyal medya fiyatları','malatya influencer','malatya içerik üretimi','malatya video çekim','sosyal medya reklamı malatya'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '143' },
+internalLinks: [
+{ href: '/hizmetler/google-ads/', text: 'Google Ads Yönetimi' },
+{ href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
+{ href: '/hizmetler/ai-icerik-uretimi/', text: 'AI İçerik Üretimi' },
+{ href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+{ href: '/iletisim/', text: 'Sosyal Medya Teklifi Al' }
+]
+},
+'ai-icerik-uretimi': {
+slug: 'ai-icerik-uretimi',
+h1: 'Malatya AI İçerik Üretimi — insan + AI hibrit yaklaşım',
+metaTitle: 'Malatya AI İçerik Üretimi | SEO Blog, E-Ticaret, Sosyal Medya',
+metaDescription: 'Malatya AI içerik üretimi: ChatGPT + Claude + Gemini ve insan editör hibrit yaklaşımı ile SEO blog, e-ticaret, sosyal medya ve çok dilli içerik.',
+introHtml: '<p><strong>Malatya AI içerik üretimi</strong> hizmetimizle ChatGPT, Claude ve Gemini gibi önde gelen yapay zeka araçlarını insan editör süreciyle birleştirerek yüksek hacimli, SEO uyumlu, özgün ve E-E-A-T standartlarına uygun içerikler üretiyoruz.</p>',
+longContent: `<h2 id='ai-yaklasim'>AI İçerik Üretiminde Etik ve Stratejik Yaklaşım</h2><p>2024-2025 itibarıyla AI içerik üretimi sektörün vazgeçilmezi haline geldi. Ancak ChatGPT, Claude veya Gemini ile direkt üretilmiş içerik Google nun helpful content güncellemelerinde rank kaybediyor. Biz <strong>insan + AI hibrit</strong> yaklaşımını savunuyoruz: AI iskeleti hızlıca üretir, insan editör derinlik, deneyim ve özgünlük katar.</p><h3>AI ile Hangi İşler Yapılır?</h3><p>İlk taslak yazımı, başlık varyasyonları, meta description üretimi, FAQ genişletme, sosyal medya post varyasyonları, e-posta konu satırları, ürün açıklaması çoğullaması, çeviri ve özetleme. Bu görevlerde AI verimliliği 5-10 kat artırır.</p><h3>AI Tek Başına Yetersiz Kaldığı Yerler</h3><p>Sektör deneyimi paylaşımı, gerçek vaka çalışması, yerel kültürel referanslar, marka tonu tutarlılığı, doğru olgu kontrolü ve E-E-A-T sinyalleri için insan editör şart. AI sadece içerik üretirse yapay, yüzeysel ve riskli olur.</p><h2 id='kullanim-senaryolari'>AI İçerik Üretim Senaryolarımız</h2><h3>SEO Blog Yazıları</h3><p>Anahtar kelime brief inden başlayarak 1.500-3.500 kelime SEO uyumlu blog yazıları üretiyoruz. AI iskeleti çıkarıyor, insan editör 4-5 turluk düzenleme ile özgünleştiriyor. Kontrol checklist i: yazar deneyimi paragrafı, vaka çalışması, gerçek istatistik, görsel-tablo, ToC, internal link, meta description, schema markup.</p><h3>E-Ticaret Ürün Açıklamaları</h3><p>1000+ ürünlü kataloglarda her ürün için 200-400 kelime özgün açıklama, başlık, meta ve marka uyumlu copy üretiyoruz. Toplu üretim için custom prompt + Excel/CSV otomasyonu kullanıyoruz.</p><h3>Sosyal Medya İçerik Bulk Üretimi</h3><p>Aylık 30-100 post için varyasyonlar, hashtag, alt metin önerileri ve A/B test versiyonları üretiyoruz.</p><h3>E-posta Pazarlama Otomasyonu</h3><p>Hoş geldin serisi, sepet terk edildi, post-purchase ve nurturing kampanyaları için 5-12 e-postalık seriler hazırlıyoruz.</p><h3>Çok Dilli Çeviri</h3><p>Türkçe içeriklerinizi İngilizce, Arapça, Almanca, Fransızca ye çeviriyor; insan editör lokalizasyon kontrolü yapıyor.</p><h2 id='araclar'>Kullandığımız AI Araçları</h2><p>ChatGPT-4o ve o1, Claude 4.5 Sonnet, Gemini 2.5 Pro, Perplexity Pro, Jasper, Surfer SEO, Frase, Originality.ai (AI tespiti), Grammarly Premium, Quillbot, Midjourney V6 ve DALL-E 3 görsel üretim. Kombinasyonlu kullanım, tek araca bağımlılığı ortadan kaldırır.</p><h3>Google AI Search ve GEO</h3><p>İçeriklerimizi sadece klasik Google için değil, ChatGPT Search, Perplexity, Gemini ve Claude in arama özellikleri için de optimize ediyoruz. Bu yeni nesil arama (GEO) hizmetimiz farklı bir paket olarak da alınabilir.</p><h2 id='kalite-kontrol'>Kalite Kontrol ve AI Tespit</h2><p>Üretilen her içeriği Originality.ai ve Copyleaks ile AI skoru altına çekiyor; ardından insan editör turuyla son haline getiriyoruz. Hedefimiz: doğal, deneyimli yazar tonu + sıfır plagiarism + E-E-A-T uyumu.</p><h2 id='fiyatlar-paketler'>AI İçerik Üretim Paketleri ve Fiyatları</h2><p>Tek seferlik blog yazısı (1500-2500 kelime) 1.200-2.500 TL. Aylık 8 blog paketi 12.000 TL. Aylık 30 sosyal medya post + 4 blog 18.000 TL. E-ticaret ürün açıklaması toplu üretim 15-50 TL/ürün (adet ve karmaşıklığa göre).</p>`,
+processSteps: [
+{ step: '1', title: 'İçerik Brief', description: 'Anahtar kelime, hedef kitle ve marka tonu netleştirilir.' },
+{ step: '2', title: 'AI Taslak', description: 'Custom prompt ile çoklu AI aracından ilk taslak.' },
+{ step: '3', title: 'İnsan Editör Turu', description: 'Deneyim, vaka çalışması ve özgünlük eklenir.' },
+{ step: '4', title: 'SEO Optimizasyonu', description: 'Title, meta, schema, internal link.' },
+{ step: '5', title: 'AI Tespit Kontrolü', description: 'Originality.ai + Copyleaks taraması.' },
+{ step: '6', title: 'Görsel ve Medya', description: 'Midjourney veya stok görsel + alt metin.' },
+{ step: '7', title: 'Yayın ve İndekslenme', description: 'CMS yükleme + Search Console submit.' }
+],
+pricingFactors: [
+{ factor: 'İçerik Tipi', description: 'Blog, ürün, sosyal medya, e-posta farklı bantlarda.' },
+{ factor: 'Kelime Adedi', description: '500 mi, 3500 mü kelime?' },
+{ factor: 'Editör Tur Sayısı', description: '1-5 arası insan editör revizyonu.' },
+{ factor: 'Görsel Üretimi', description: 'Midjourney özel görsel ek pakettir.' },
+{ factor: 'Çoklu Dil', description: 'Çeviri ve lokalizasyon ek ücretlidir.' },
+{ factor: 'Hacim', description: 'Aylık abonelik bulk indirimi sağlar.' },
+{ factor: 'Sektör Karmaşıklığı', description: 'Tıp, hukuk, finans uzman editör gerektirir.' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'AI ile yazılan içerik Google da cezalanır mı?', a: 'Salt AI içerik cezalanır; insan editör turuyla özgünleştirilen ve değer katan AI içerik sorunsuz indekslenir. Helpful content güncellemesi insan değeri arar.' },
+{ q: 'AI içeriği nasıl tespit ediyorsunuz?', a: 'Originality.ai, Copyleaks, Sapling ve manuel kontrol kombinasyonu kullanıyoruz. Hedefimiz yüzde 90 üzeri insan skoru.' },
+{ q: 'Hangi AI araçlarını kullanıyorsunuz?', a: 'ChatGPT-4o, Claude 4.5 Sonnet, Gemini 2.5 Pro, Perplexity Pro ve sektörel ince ayarlı modeller.' },
+{ q: 'Tek başına AI çıktısı veriyor musunuz?', a: 'Hayır. Tüm içeriklerimiz insan editör turundan geçer. Salt AI içerik kalite riski oluşturur.' },
+{ q: 'E-ticaret ürün açıklaması üretimi nasıl?', a: 'Excel/CSV ile ürün listenizi alıyor, custom prompt ile her ürüne özel 200-400 kelime açıklama üretiyoruz. 1000 ürün ortalama 7-10 günde teslim.' },
+{ q: 'Çoklu dil çevirisi yapıyor musunuz?', a: 'Evet, Türkçe içeriklerinizi İngilizce, Arapça, Almanca, Fransızca ye çevirip lokalizasyon kontrolü yapıyoruz.' },
+{ q: 'Plagiarism (intihal) garantisi var mı?', a: 'Evet, tüm içerikler Copyscape ve Quetext ile kontrol edilir; yüzde 0 intihal garanti edilir.' },
+{ q: 'AI ile blog fiyatı ne kadar?', a: '1500-2500 kelime SEO blog 1.200-2.500 TL bandında. Aylık 8 blog paketi 12.000 TL.' },
+{ q: 'Görsel üretim dahil mi?', a: 'Standart pakete stok görsel dahildir. Midjourney özel görsel üretimi ek pakettir.' },
+{ q: 'GEO (AI Search) optimizasyonu yapıyor musunuz?', a: 'Evet, içeriklerimiz ChatGPT Search, Perplexity ve Gemini için de optimize edilebiliyor; ayrı paket olarak alınabilir.' }
+],
+relatedKeywords: ['malatya ai içerik','yapay zeka içerik üretimi malatya','malatya chatgpt içerik','seo blog yazımı malatya','ürün açıklaması üretimi malatya','malatya copywriter','malatya içerik yazarı','ai blog yazımı','malatya ai pazarlama','ai içerik üretimi','seo metin yazarlığı malatya','malatya yapay zeka','ai çeviri malatya','toplu içerik üretimi','e-ticaret içerik üretimi'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '76' },
+internalLinks: [
+{ href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
+{ href: '/hizmetler/geo-hizmeti/', text: 'GEO (AI Search) Optimizasyonu' },
+{ href: '/hizmetler/sosyal-medya-yonetimi/', text: 'Sosyal Medya Yönetimi' },
+{ href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+{ href: '/iletisim/', text: 'AI İçerik Teklifi Al' }
+]
 }
 };
 
