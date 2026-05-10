@@ -172,3 +172,8 @@ EK NOTLAR
 Brief'i 1-2 saat doğru hazırlayan bir girişimci, tasarım sürecinden 2-3 hafta tasarruf eder. Üstelik aldığı sonucu da çok daha çok beğenir. Çünkü tasarımcı **sizin kafanızdaki resmi** çiziyor olur, kendi tahminlerini değil.
 
 Logo tasarım briefiniz hazırsa, artık tasarımcıyla görüşme aşamasına geçebilirsiniz. Malatya'da kurumsal kimlik tasarımı projelerinizde brief uygulamamızı ücretsiz paylaşıyor, sürecinizi 4 aşamada yapılandırıyoruz: keşif, konsept, revizyon ve marka kullanım kılavuzu.
+
+**İlgili Yazılar:**
+- [Midjourney ile Görsel Üretim](/blog/midjourney-gorsel-uretim/)
+- [AI ile İçerik Üretimi](/blog/ai-icerik-uretimi/)
+- [Malatya Kuyumcu Pazarlama](/blog/malatya-kuyumcu/)

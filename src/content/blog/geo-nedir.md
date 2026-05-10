@@ -37,3 +37,8 @@ Geleneksel SEO, web sitenizi Google'ın sıralama algoritmasına göre optimize 
 Bölgemizdeki birçok işletme, hala SEO'yu bile tam oturtmamışken GEO'dan bahsetmek erken gibi görünebilir. Ama asıl fırsat tam burada: rekabet düşükken pozisyon almak, sonradan kovalamaktan çok daha kolay. Müşterilerimizle GEO entegre edilmiş içerik stratejileri kuruyor, schema markup'larını elden geçiriyor ve yapay zeka asistanlarında **"Malatya'da en iyi reklam ajansı hangisidir?"** sorusuna cevap olarak çıkacakları içerik mimarisi tasarlıyoruz.
 
 Projeniz için GEO stratejisi konuşmak istiyorsanız, [bizimle iletişime geçin](/iletisim).
+
+**İlgili Yazılar:**
+- [GEO Optimizasyonu Nedir?](/blog/geo-optimizasyonu/)
+- [AI ile İçerik Üretimi](/blog/ai-icerik-uretimi/)
+- [ChatGPT ile KOBİ Pazarlama](/blog/chatgpt-kobi-pazarlama/)

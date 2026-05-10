@@ -144,3 +144,8 @@ Wix, Webnode, Google Sites gibi platformlar başlangıç için yeterli ama: kend
 ## Sonuç
 
 Web sitesi yatırımı tek seferlik bir gider değil, dijital varlığınızın temelidir. Bütçenizi belirlerken sadece site fiyatına değil, 5 yıllık toplam sahip olma maliyetine bakın. Doğru süreçle yapılmış bir kurumsal site yıllarca müşteri getirir; yanlış süreçle yapılan ise her ay para emer ve sonunda baştan yapmak zorunda kalırsınız.
+
+**İlgili Yazılar:**
+- [Hosting Önerileri 2026](/blog/hosting-onerileri-2026/)
+- [Domain Alma Rehberi](/blog/domain-alma-rehberi/)
+- [Sosyal Medya Yönetim Fiyatları](/blog/sosyal-medya-yonetim-fiyatlari/)

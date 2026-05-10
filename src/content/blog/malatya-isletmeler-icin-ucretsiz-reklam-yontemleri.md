@@ -78,7 +78,7 @@ Sektör bilgini ücretsiz paylaş. Mesela tabelacı "Tabela izni nasıl alınır
 
 Malatya'da yerel SEO + Google Business + Instagram organik yönetimi için Malatya Reklam ekibi yanında. [WhatsApp'tan ulaş](https://wa.me/905446732202?text=Merhaba%2C%20Malatya%27da%20%C3%BCcretsiz%20reklam%20i%C3%A7in%20bilgi%20almak%20istiyorum) — ilk strateji ücretsiz.
 
-## İlgili Rehberler
-- [Ücretsiz Reklam Verme Rehberi](/blog/ucretsiz-reklam-verme-rehberi-2026/)
-- [Malatya SEO Rehberi](/blog/malatya-seo-rehberi/)
-- [Instagram Reklam Verme Rehberi](/blog/instagram-reklam-verme-rehberi/)
+**İlgili Yazılar:**
+- [Google My Business Rehberi](/blog/google-my-business-rehberi/)
+- [Sosyal Medya Yönetim Fiyatları](/blog/sosyal-medya-yonetim-fiyatlari/)
+- [Reklam Bütçesi Nasıl Hesaplanır?](/blog/reklam-butcesi-nasil-hesaplanir/)

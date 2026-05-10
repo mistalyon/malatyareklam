@@ -145,3 +145,8 @@ Arka yüzün ortasına veya alt sağ köşeye, en az 1.5×1.5 cm boyutunda. Kapa
 ## Sonuç
 
 Kartvizit küçük ama yüksek bütçeli bir karar değil — yapılan hata her gün dağıtılan her kartta tekrarlanıyor. Standart boyut (8.5×5.5), 300+ gr kâğıt, 2 font, 7 net bilgi, opsiyonel QR kod = formül. Hazır şablonla 350 TL'ye yapılan iş ile profesyonel tasarımla 1.500 TL'ye yapılan iş arasındaki fark, müşteri kazanma oranınızda her ay görünür.
+
+**İlgili Yazılar:**
+- [Malatya Emlak Pazarlama](/blog/malatya-emlak/)
+- [Midjourney ile Görsel Üretim](/blog/midjourney-gorsel-uretim/)
+- [Malatya Kuyumcu Pazarlama](/blog/malatya-kuyumcu/)

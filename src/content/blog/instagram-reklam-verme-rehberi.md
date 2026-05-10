@@ -101,7 +101,7 @@ Ne kadar harcayacağını bilmek için [Google Ads Bütçe Hesaplama](/araclar/g
 
 Instagram reklam hesabı kurulumu, hedefleme, creative üretimi ve aylık optimizasyon için Malatya Reklam ekibi yanında. [WhatsApp'tan ulaş](https://wa.me/905446732202?text=Merhaba%2C%20Instagram%20reklam%C4%B1%20i%C3%A7in%20bilgi%20almak%20istiyorum) — ilk strateji görüşmesi ücretsiz.
 
-## İlgili Rehberler
-- [Ücretsiz Reklam Verme Rehberi](/blog/ucretsiz-reklam-verme-rehberi-2026/)
-- [Google Ads Reklam Verme Rehberi](/blog/google-ads-reklam-verme-rehberi/)
-- [Facebook Reklamı Verme Rehberi](/blog/facebook-reklam-verme-rehberi/)
+**İlgili Yazılar:**
+- [TikTok Reklam Verme Rehberi 2026](/blog/tiktok-reklam-verme/)
+- [Sosyal Medya Yönetim Fiyatları](/blog/sosyal-medya-yonetim-fiyatlari/)
+- [Reklam Bütçesi Nasıl Hesaplanır?](/blog/reklam-butcesi-nasil-hesaplanir/)

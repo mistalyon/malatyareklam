@@ -114,7 +114,7 @@ Facebook reklamına ayıracağın bütçeyi hesaplamak için [Google Ads Bütçe
 
 Pixel kurulumu, kampanya yönetimi, creative üretimi, aylık optimizasyon için Malatya Reklam yanında. [WhatsApp'tan yaz](https://wa.me/905446732202?text=Merhaba%2C%20Facebook%20reklam%C4%B1%20i%C3%A7in%20bilgi%20almak%20istiyorum).
 
-## İlgili Rehberler
-- [Ücretsiz Reklam Verme Rehberi](/blog/ucretsiz-reklam-verme-rehberi-2026/)
-- [Instagram Reklam Verme Rehberi](/blog/instagram-reklam-verme-rehberi/)
-- [Google Ads Reklam Verme Rehberi](/blog/google-ads-reklam-verme-rehberi/)
+**İlgili Yazılar:**
+- [TikTok Reklam Verme Rehberi 2026](/blog/tiktok-reklam-verme/)
+- [Sosyal Medya Yönetim Fiyatları](/blog/sosyal-medya-yonetim-fiyatlari/)
+- [Reklam Bütçesi Nasıl Hesaplanır?](/blog/reklam-butcesi-nasil-hesaplanir/)

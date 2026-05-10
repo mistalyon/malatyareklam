@@ -117,7 +117,7 @@ Google Ads'e ne kadar ayırman gerektiğini öğrenmek için [Google Ads Bütçe
 
 Hesap kurulumu, anahtar kelime araştırması, kampanya yönetimi ve aylık raporlama için bize ulaşabilirsin. [WhatsApp'tan yaz](https://wa.me/905446732202?text=Merhaba%2C%20Google%20Ads%20y%C3%B6netimi%20i%C3%A7in%20bilgi%20almak%20istiyorum).
 
-## İlgili Rehberler
-- [Ücretsiz Reklam Verme Rehberi](/blog/ucretsiz-reklam-verme-rehberi-2026/)
-- [YouTube Reklam Verme Rehberi](/blog/youtube-reklam-verme-rehberi/)
-- [Instagram Reklam Verme Rehberi](/blog/instagram-reklam-verme-rehberi/)
+**İlgili Yazılar:**
+- [Reklam Bütçesi Nasıl Hesaplanır?](/blog/reklam-butcesi-nasil-hesaplanir/)
+- [ROAS ve ROI Farkı](/blog/roas-roi-farki/)
+- [CAC ve LTV Hesaplama Rehberi](/blog/cac-ltv-hesaplama/)

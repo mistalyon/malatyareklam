@@ -80,7 +80,7 @@ Hangi hizmete ne kadar ayırman gerektiğini görmek için araçlarımızı kull
 
 Tam hizmet ajansı olarak Malatya'da web tasarım, SEO, sosyal medya yönetimi, Google Ads, tabela ve matbaa hizmetleri sunuyoruz. Şeffaf raporlama, **hesap sahipliği sende**, çıkış cezası yok. [WhatsApp'tan görüşelim](https://wa.me/905446732202?text=Merhaba%2C%20reklam%20hizmetleri%20i%C3%A7in%20teklif%20almak%20istiyorum) — ilk teklif 24 saatte.
 
-## İlgili Rehberler
-- [Malatya İşletmeler İçin Ücretsiz Reklam](/blog/malatya-isletmeler-icin-ucretsiz-reklam-yontemleri/)
-- [Ücretsiz Reklam Verme Rehberi](/blog/ucretsiz-reklam-verme-rehberi-2026/)
-- [Web Sitesi Olmamanın 7 Gerçek Maliyeti](/blog/web-sitesi-olmamanin-7-gercek-maliyeti/)
+**İlgili Yazılar:**
+- [Malatya Kuyumcu Pazarlama](/blog/malatya-kuyumcu/)
+- [Malatya Emlak Pazarlama](/blog/malatya-emlak/)
+- [Malatya İnşaat Firmaları Pazarlama](/blog/malatya-insaat-firmalari/)

@@ -112,3 +112,8 @@ Trend değişikliği için değil, marka stratejisi değişikliği için. Ortala
 Logo tasarımı bir defalık ödeme değil, bir yatırımdır. 5 yıl kullanacağınız bir varlığa 50.000 lira yıllık ciro üreten bir işletmeyseniz, logoya 500 TL ayırmak ekonomik bir hata, 50.000 TL ayırmak da gereksiz lükstür. Tatlı nokta KOBİ'ler için **3.000-12.000 TL** aralığında, doğru süreçle çalışan bir freelancer veya yerel ajanstır.
 
 Logonuzu hemen yapmak istiyorsanız [WhatsApp'tan ulaşın](https://wa.me/905446732202?text=Merhaba%2C%20logo%20tasar%C4%B1m%C4%B1%20i%C3%A7in%20teklif%20almak%20istiyorum.); 24 saat içinde brief sorularıyla dönüş yapıyoruz. Bütçenizi belirlemek için [Reklam Bütçesi Hesaplayıcı](/araclar/reklam-butce-hesaplama/) aracımızdan da yararlanabilirsiniz.
+
+**İlgili Yazılar:**
+- [Midjourney ile Görsel Üretim](/blog/midjourney-gorsel-uretim/)
+- [Malatya Kuyumcu Pazarlama](/blog/malatya-kuyumcu/)
+- [Malatya Emlak Pazarlama](/blog/malatya-emlak/)
