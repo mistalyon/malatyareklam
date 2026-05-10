@@ -726,6 +726,103 @@ internalLinks: [
 { href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
 { href: '/iletisim/', text: 'E-Ticaret Teklifi Al' }
 ]
+},
+'malatya-yazilim': {
+slug: 'malatya-yazilim',
+h1: 'Malatya Yazılım Geliştirme — özel uygulamalar ve SaaS',
+metaTitle: 'Malatya Yazılım | Web Uygulaması, Mobil App, API, SaaS Geliştirme',
+metaDescription: 'Malatya yazılım: özel web uygulamaları, iOS/Android mobil app, REST/GraphQL API, SaaS ürün geliştirme. React, Next.js, Node.js, Python, Go.',
+introHtml: '<p><strong>Malatya yazılım</strong> geliştirme hizmetimizle özel web uygulamaları, mobil uygulamalar, API geliştirme, SaaS ürünleri ve AI entegrasyonları yapıyoruz. React, Next.js, Astro, Node.js, Python, Go ve mobilde React Native, Flutter teknolojilerinde uzmanız.</p>',
+longContent: `<h2 id='teknoloji-stack'>Teknoloji Stack ve Doğru Seçim</h2><p>Yazılım projesinin başarısı doğru teknoloji seçimi ile başlar. Yanlış stack seçimi bakım maliyetini 3 kat artırabilir, performans sorunları yaratabilir. Malatya Reklam yazılım ekibimiz, ihtiyaç analizinizi yaptıktan sonra projenizi en uygun teknoloji ile geliştiriyoruz.</p><h3>Frontend Teknolojileri</h3><p>React (Next.js, Vite), Vue.js (Nuxt), Astro, SvelteKit, Solid.js. Her birinin güçlü olduğu senaryolar farklı. Astro statik içerik ağırlıklı sitelerde performans şampiyonu, Next.js full-stack ve SEO için ideal, Vue Türkiye geliştirici havuzu zenginliği için pratik.</p><h3>Backend Teknolojileri</h3><p>Node.js (Express, Fastify, Hono), Python (FastAPI, Django), Go, Ruby (Rails), .NET 8, Java Spring Boot. Mikroservis veya monolith mimarisi seçimi proje ölçeğine göre yapılır.</p><h3>Veritabanı</h3><p>PostgreSQL (yapılandırılmış veri için ana tercih), MongoDB (esnek doküman yapısı için), Redis (cache ve session), MySQL (legacy uyum), SQLite (mobil/embedded), Cloudflare D1 (edge serverless).</p><h3>Hosting ve Altyapı</h3><p>Cloudflare Workers (edge computing), Vercel, AWS (EC2, Lambda, RDS), Google Cloud, Hetzner (uygun maliyet), DigitalOcean. Kurumsal projelerde multi-region deployment ve disaster recovery planlaması yapıyoruz.</p><h2 id='proje-tipleri'>Proje Tipleri ve Yaklaşımlarımız</h2><h3>Kurumsal Web Uygulamaları</h3><p>Sigorta, finans, lojistik, sağlık ve üretim sektörlerinde özel iş süreçleri yönetim sistemleri (ERP, CRM, WMS) geliştiriyoruz. Rol bazlı erişim, audit log, çoklu dil ve raporlama modülleri standart dahil.</p><h3>Mobil Uygulamalar</h3><p>React Native ve Flutter ile cross-platform iOS+Android uygulamalar. Native ihtiyaçlar için Swift (iOS) ve Kotlin (Android) seçenekleri. Push notification, in-app purchase, offline mode, deep linking dahil.</p><h3>API Geliştirme</h3><p>REST ve GraphQL API ler, OpenAPI/Swagger dokümantasyonu, JWT/OAuth2 kimlik doğrulama, rate limiting, webhook ve idempotency desteği ile entegrasyona hazır.</p><h3>SaaS Ürün Geliştirme</h3<p>Multi-tenant mimari, abonelik yönetimi (Stripe, iyzico Recurring), kullanım bazlı faturalama, admin paneli ve müşteri self-service hesap yönetimi.</p><h3>AI Entegrasyonları</h3><p>OpenAI, Anthropic Claude, Google Gemini API entegrasyonları; vektör veritabanları (Pinecone, Weaviate, pgvector); RAG mimarisi; AI agent ve chatbot geliştirme.</p><h3>Otomasyon ve Bot Geliştirme</h3><p>Zapier, Make (eski Integromat), n8n veya custom Node.js bot ile iş süreçlerinizi otomatize ediyoruz. WhatsApp Business API, Telegram bot, Slack bot, e-posta otomasyonları.</p><h2 id='surec'>Yazılım Geliştirme Sürecimiz (Agile)</h2><p>2 haftalık sprint döngüsü, GitHub Issues üzerinden şeffaf görev takibi, haftalık demo ve geri bildirim, Test Driven Development, code review zorunluluğu ve CI/CD ile otomatik deployment.</p><h2 id='garanti-bakim'>Garanti, Bakım ve SLA</h2><p>Tüm projelerimize 12 ay teknik garanti, ücretsiz hata düzeltme. Sonrasında aylık bakım sözleşmeleri ile yeni özellik geliştirme, optimizasyon ve 7/24 destek SLA si sunuyoruz.</p><h2 id='fiyat'>Yazılım Geliştirme Fiyatları</h2><p>Küçük modül 25.000 TL den, orta ölçekli kurumsal proje 150.000-500.000 TL, büyük SaaS ürünü 800.000+ TL. Saatlik geliştirme ücretimiz 950-2.500 TL bandında. Sabit fiyat veya dedicated team modelleri sunuyoruz.</p>`,
+processSteps: [
+{ step: '1', title: 'İhtiyaç Analizi', description: 'İş süreçleri ve hedef kullanıcı analizi.' },
+{ step: '2', title: 'Teknoloji Seçimi', description: 'Stack ve mimari kararı.' },
+{ step: '3', title: 'Wireframe ve UX', description: 'Ekran akışları ve kullanıcı deneyimi.' },
+{ step: '4', title: 'Sprint Geliştirme', description: '2 haftalık agile sprint döngüsü.' },
+{ step: '5', title: 'Test ve QA', description: 'Unit, integration ve E2E testler.' },
+{ step: '6', title: 'Deployment', description: 'CI/CD ile production a otomatik dağıtım.' },
+{ step: '7', title: 'Bakım ve SLA', description: '12 ay garanti + sonra aylık bakım sözleşmesi.' }
+],
+pricingFactors: [
+{ factor: 'Proje Karmaşıklığı', description: 'Modül sayısı, entegrasyon ve iş kuralları.' },
+{ factor: 'Teknoloji Stack', description: 'Standart vs niche teknoloji.' },
+{ factor: 'Mobil Gereksinimi', description: 'Cross-platform mı, native mi?' },
+{ factor: 'Tasarım Hacmi', description: 'Ekran sayısı ve özgünlük seviyesi.' },
+{ factor: 'Üçüncü Parti Entegrasyon', description: 'API, ödeme, kargo, ERP entegrasyonları.' },
+{ factor: 'Test Kapsamı', description: 'Manuel mi, otomatize mi?' },
+{ factor: 'SLA Seviyesi', description: '7/24 destek mi, mesai saati mi?' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'Yazılım fiyatı nasıl belirleniyor?', a: 'Kapsam (modül sayısı), karmaşıklık (entegrasyon, iş kuralları) ve süre üzerinden ihtiyaç analizi sonrası net fiyat veriyoruz. Saatlik 950-2.500 TL bandında.' },
+{ q: 'Sözleşme modeli nedir?', a: 'Sabit fiyat (kapsam netse) veya time and materials (esnek kapsamlı projeler için) modellerinden birini öneriyoruz.' },
+{ q: 'Hangi dilde geliştirme yapıyorsunuz?', a: 'JavaScript/TypeScript, Python, Go, Ruby, .NET, Java ve mobilde Swift/Kotlin/Dart.' },
+{ q: 'Ekibinizde kaç kişi var?', a: 'Proje yöneticisi, full-stack developer, mobil developer, backend developer, DevOps, UI/UX tasarımcı ve QA mühendisi dahil 12 kişilik ekibimiz var.' },
+{ q: 'Mobil uygulama geliştirir misiniz?', a: 'Evet. React Native ve Flutter ile cross-platform; Swift ve Kotlin ile native uygulamalar.' },
+{ q: 'Garantiniz var mı?', a: 'Tüm projelere 12 ay teknik garanti veriyoruz; bu sürede hatalar ücretsiz düzeltilir.' },
+{ q: 'Kaynak kodu bana ait mi?', a: 'Evet. Sözleşme imzalandığı andan itibaren kaynak kodu ve fikri haklar size aittir; GitHub repository sizin organizasyonunuzda tutulur.' },
+{ q: 'AI entegrasyonu yapıyor musunuz?', a: 'Evet. OpenAI, Claude, Gemini API entegrasyonları, RAG mimarisi ve AI agent geliştirme yapıyoruz.' },
+{ q: 'Hosting ve sunucu yönetimi dahil mi?', a: 'Cloudflare Workers, Vercel, AWS, Hetzner üzerinden DevOps ve hosting yönetimi ek pakette dahildir.' },
+{ q: 'Mevcut sistemimi modernize edebilir misiniz?', a: 'Evet. Legacy sistem refactoring, mikroservise geçiş, performans optimizasyonu ve teknoloji göçü projeleri yapıyoruz.' }
+],
+relatedKeywords: ['malatya yazılım','malatya yazılım firması','malatya yazılım şirketi','malatya web uygulaması','malatya mobil uygulama','malatya saas','malatya yazılım geliştirme','özel yazılım malatya','malatya developer','malatya programcı','malatya api geliştirme','malatya react','malatya next.js','malatya node.js','malatya yazılım fiyatları'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '83' },
+internalLinks: [
+{ href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+{ href: '/hizmetler/e-ticaret-cozumleri/', text: 'E-Ticaret Çözümleri' },
+{ href: '/hizmetler/ai-icerik-uretimi/', text: 'AI İçerik Üretimi' },
+{ href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
+{ href: '/iletisim/', text: 'Yazılım Teklifi Al' }
+]
+},
+'e-ticaret-cozumleri': {
+slug: 'e-ticaret-cozumleri',
+h1: 'E-Ticaret Çözümleri — modüller, ödeme, kargo, pazaryeri, B2B',
+metaTitle: 'E-Ticaret Çözümleri | Modüler Sistem, Pazaryeri & B2B Entegrasyonları',
+metaDescription: 'Kapsamlı e-ticaret çözümleri: modüler sistem, ödeme/kargo/pazaryeri entegrasyonları, B2B paneli, headless commerce ve CRO optimizasyonu.',
+introHtml: '<p><strong>E-ticaret çözümleri</strong> hizmetimizle modüler ödeme, kargo, pazaryeri, B2B paneli, headless commerce ve konversiyon optimizasyonu çözümleri sunuyoruz. Mevcut e-ticaretinizi büyütmek veya sıfırdan kurmak için 360 derece destek.</p>',
+longContent: `<h2 id='moduler-yapi'>Modüler E-Ticaret Çözümleri</h2><p>Her e-ticaret projesi farklıdır; ama her başarılı e-ticaret aynı temel modüllerden oluşur. Malatya Reklam olarak modüler yaklaşımla ihtiyacınıza özel paket çıkarıyoruz. Sadece ihtiyaç duyduğunuz modülü ödeyip, büyüdükçe ekleyerek genişletebiliyorsunuz.</p><h3>Temel Modüller</h3><p>Ürün kataloğu (varyant, kombin, fiyat grupları), sepet ve sipariş yönetimi, müşteri hesabı (sipariş geçmişi, adres defteri, favoriler), kupon ve kampanya motoru, stok takibi (multi-warehouse desteği), iade-değişim yönetimi.</p><h3>Pazarlama Modülleri</h3><p>E-posta otomasyonu (sepet terk, post-purchase), SMS marketing, push notification (mobil), referral programı, sadakat puanı, terk edilmiş sepet kurtarma, dinamik fiyatlama.</p><h3>Analitik Modülleri</h3><p>GA4, Meta Pixel, TikTok Pixel, Google Ads, GTM server-side, Hotjar (heatmap), Microsoft Clarity (recording), conversion tracking, ROAS hesaplama.</p><h2 id='odeme-cozumleri'>Detaylı Ödeme Çözümleri</h2><h3>iyzico</h3><p>Türkiye nin en yaygın ödeme altyapısı. Komisyon yüzde 1.49-2.49 arası. Vadeli, taksitli, BKM Express, sanal POS, marketplace modeli. Hızlı entegrasyon, kolay onay süreci.</p><h3>PayTR</h3><p>Komisyon avantajlı (yüzde 1.39-2.49 arası), aboneliklere uygun (recurring), iframe ve API seçenekleri.</p><h3>Param POS</h3><p>Türk bankalarıyla yakın çalışma, kurumsal hesaplara özel.</p><h3>Stripe (Yurt Dışı)</h3><p>USD, EUR, GBP gibi yabancı para tahsilatları için. Türk firmaları için Atlas veya benzeri yapı gerekir.</p><h3>Kapıda Ödeme ve Havale/EFT</h3><p>Geleneksel müşteri için zorunlu. Otomatik banka ekstresi eşleştirmesi yapan modüller.</p><h2 id='kargo-cozumleri'>Detaylı Kargo Çözümleri</h2><p>Aras Kargo (en geniş Türkiye ağı), Yurtiçi Kargo (rekabetçi fiyat), MNG Kargo (hızlı şehir içi), PTT (uzak ilçeler için ekonomik), Sürat Kargo (hassas yük), Tüm Türkiye XL/XXL paket çözümleri (palet ve mobilya). Otomatik etiket basımı, kargo takip linki, iade kodu, talep yönetimi entegre.</p><h2 id='pazaryeri-detayli'>Pazaryeri Tam Entegrasyon Detayları</h2><p>Trendyol, Hepsiburada, n11, Çiçeksepeti, GittiGidiyor, Amazon TR, Etsy. Tek panelden ürün yükleme, stok senkronizasyonu (5-15 dakikada bir), fiyat senkronizasyonu, sipariş otomatik aktarımı, ürün görsel optimizasyonu (her platform farklı boyut zorunluluğu), faturalama, kargo etiketi.</p><h3>Marketplace Manager Paneli</h3><p>Tüm pazaryerlerini tek dashboard dan yönetin: hangi ürünler hangi platformda, hangi fiyatla, hangi stok seviyesinde. Toplu fiyat değişikliği, kampanya yönetimi.</p><h2 id='b2b-modulu'>B2B E-Ticaret Modülü</h2><p>Toptancılar ve bayilik sistemleri için özel: bayi giriş ekranı (KDV siz fiyat görme), bayi grupları (bronze/silver/gold), kredi limiti yönetimi, vade sistemi (30/60/90 gün), bayilere özel kampanyalar, sipariş onay akışı (vadeli sipariş yönetici onayı), dropshipping desteği.</p><h2 id='headless'>Headless ve Composable Commerce</h2><p>Modern e-ticaret yaklaşımı. Backend Shopify Plus veya Saleor, frontend Next.js veya Astro. Maximum performans (Lighthouse 95+), maximum esneklik (her ekranı sıfırdan tasarlama), maximum ölçeklenebilirlik. Yıllık 10M TL+ ciroya sahip markalarla bu yapıya geçiyoruz.</p><h2 id='konversiyon-optimizasyon'>Konversiyon Optimizasyonu (CRO)</h2><p>E-ticaret sitenize 1000 ziyaretçi gelse 1 i alıyorsa (yüzde 0.1), CRO ile bunu yüzde 2-4 e çıkarmak 20-40 kat satış demek. A/B testleri, ürün sayfası optimizasyonu, checkout iyileştirme, mobil UX iyileştirmesi, sosyal kanıt (yorumlar, videolar) ve aciliyet öğeleri ile dönüşümü artırıyoruz.</p>`,
+processSteps: [
+{ step: '1', title: 'Mevcut Durum Analizi', description: 'Site, trafik, dönüşüm oranı, sepet bırakma analizi.' },
+{ step: '2', title: 'Modül Önceliklendirme', description: 'En yüksek ROI getirecek modüllerin sıralanması.' },
+{ step: '3', title: 'Ödeme ve Kargo Sözleşmesi', description: 'iyzico/PayTR ve Aras/Yurtiçi anlaşmaları.' },
+{ step: '4', title: 'Pazaryeri Onboarding', description: 'Trendyol, Hepsiburada, n11 hesap ve entegrasyon.' },
+{ step: '5', title: 'B2B Modül Kurulumu', description: 'Bayi paneli, fiyat grupları, kredi limiti.' },
+{ step: '6', title: 'CRO Çalışmaları', description: 'A/B test, ürün sayfası, checkout iyileştirme.' },
+{ step: '7', title: 'Aylık Performans İncelemesi', description: 'KPI raporu ve aksiyon planı.' }
+],
+pricingFactors: [
+{ factor: 'Modül Sayısı', description: 'Sadece temel mi, pazarlama+B2B+headless dahil mi?' },
+{ factor: 'Pazaryeri Adedi', description: '1 mi, 7 mi pazaryeri entegrasyonu?' },
+{ factor: 'B2B Karmaşıklığı', description: 'Bayi sayısı ve fiyat grubu sayısı.' },
+{ factor: 'Headless Yapı', description: 'Klasik mi, headless commerce mi?' },
+{ factor: 'Ürün Hacmi', description: 'Ürün sayısı ve varyant sayısı.' },
+{ factor: 'CRO Aboneliği', description: 'A/B test ve optimizasyon ek aylık paket.' },
+{ factor: 'Operasyonel Destek', description: 'Stok-kargo-müşteri hizmetleri operasyonu.' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'Mevcut e-ticaretimi nasıl iyileştirebilirsiniz?', a: 'Mevcut sitenizi analiz edip dönüşüm oranı, sepet bırakma, sayfa hızı ve UX problemlerini tespit ediyoruz. CRO ile dönüşümü 2-4 kat artırabiliriz.' },
+{ q: 'Trendyol entegrasyonu kaç günde tamamlanır?', a: 'Standart entegrasyon 5-10 iş günü içinde tamamlanır. XML feed, sipariş aktarımı ve stok senkronizasyonu kurulur.' },
+{ q: 'B2B paneli ne sağlar?', a: 'Bayi giriş ekranı, KDV siz fiyat görme, fiyat grupları, kredi limiti, vade sistemi, sipariş onay akışı ve bayilere özel kampanyalar.' },
+{ q: 'Headless commerce nedir?', a: 'Backend (ürün, sipariş, ödeme) ve frontend (görsel arayüz) ayrılmış mimaridir. Maximum performans ve esneklik sağlar; 10M TL+ ciroya sahip markalar için önerilir.' },
+{ q: 'Çoklu pazaryeri yönetimi nasıl yapılıyor?', a: 'Marketplace Manager paneli ile tek dashboard dan tüm pazaryerlerini yönetiyorsunuz: stok, fiyat, sipariş, kargo. 5-15 dakikada bir senkronizasyon.' },
+{ q: 'CRO çalışması ne kadar sürede sonuç verir?', a: 'İlk A/B test sonuçları 4-6 hafta içinde anlamlı olur. 3 ayda dönüşüm yüzde 25-80 artar.' },
+{ q: 'Operasyonel destek dahil mi?', a: 'Standart pakete teknik destek dahildir. Stok yönetimi, müşteri hizmetleri ve sipariş takibi gibi operasyonel destekler ek aylık pakettir.' },
+{ q: 'Ödeme komisyonları en düşük hangisinde?', a: 'PayTR yüzde 1.39-2.49, iyzico yüzde 1.49-2.49 arası. Marketplace lerin (Trendyol vs.) komisyonu yüzde 9-22 arasındadır.' },
+{ q: 'Hangi pazaryerleri ile entegrasyon yapıyorsunuz?', a: 'Trendyol, Hepsiburada, n11, Çiçeksepeti, GittiGidiyor, Amazon TR ve Etsy. Yurt dışı için Amazon Global, eBay ve Etsy.' },
+{ q: 'Kurulum sonrası bakım nasıl?', a: 'İlk 12 ay teknik destek dahil. Sonrası aylık bakım sözleşmeleri (5.000-25.000 TL/ay) ile yeni özellik geliştirme ve optimizasyon.' }
+],
+relatedKeywords: ['e-ticaret çözümleri','e-ticaret altyapısı','b2b e-ticaret','e-ticaret danışmanlığı','headless commerce','composable commerce','marketplace yönetimi','trendyol entegrasyonu','hepsiburada entegrasyonu','n11 entegrasyonu','e-ticaret modülleri','cro optimizasyonu','e-ticaret pazarlama','online satış','dropshipping'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '108' },
+internalLinks: [
+{ href: '/hizmetler/malatya-eticaret/', text: 'Malatya E-Ticaret' },
+{ href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+{ href: '/hizmetler/google-ads/', text: 'Google Ads' },
+{ href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
+{ href: '/hizmetler/malatya-yazilim/', text: 'Yazılım Geliştirme' },
+{ href: '/iletisim/', text: 'E-Ticaret Çözüm Teklifi' }
+]
 }
 };
 
