@@ -55,8 +55,8 @@ const waMessage = encodeURIComponent(`Merhaba, ${service.title} hizmeti hakkınd
 
 <BaseLayout
   title={`${service.title} Malatya | Malatya Reklam`}
-  keywords={`${service.title.toLowerCase()} malatya, ${service.title.toLowerCase()}, malatya ${service.title.toLowerCase()}, malatya reklam, malatya reklam ajansı, ${categoryLabels[service.category].toLowerCase()} malatya`}
-  description={service.shortDesc}
+      description={service.shortDesc}
+  keywords={service.keywords.join(', ')}
   canonical={serviceUrl}
   jsonLd={pageSchemas}
 >
