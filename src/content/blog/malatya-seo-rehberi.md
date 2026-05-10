@@ -7,6 +7,7 @@ readTime: "8 dk"
 coverEmoji: "🔍"
 seoTitle: "Malatya SEO Rehberi 2025: Yerel İşletmeler İçin Arama Motoru Optimizasyonu"
 seoDescription: "Malatya'da işletmenizi arama sonuçlarında üst sıralara çıkarmanın yolu: yerel SEO, Google My Business, anahtar kelime stratejisi."
+keywords: "malatya seo, malatya seo rehberi, malatya seo hizmeti, yerel seo malatya, google maps malatya, malatya web sitesi seo, malatya reklam ajansı seo"
 ---
 
 Malatya'da bir kuyumcu, restoran ya da hizmet işletmesi işletiyorsanız, müşterilerinizin sizi nasıl bulduğunu hiç düşündünüz mü? Günümüzde insanların %92'si bir hizmet ya da ürün ararken Google'ı kullanıyor. Üstelik aramaların yaklaşık yarısı yerel niyet taşıyor: "Malatya'da en iyi kaymağı", "Battalgazi'de kuyumcu", "Yesılyurt'ta web tasarım" gibi.
