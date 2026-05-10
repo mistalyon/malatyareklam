@@ -14,6 +14,7 @@ const blog = defineCollection({
           draft: z.boolean().default(false),
           seoTitle: z.string().optional(),
           seoDescription: z.string().optional(),
+            keywords: z.string().optional(),
     }),
 });
 
