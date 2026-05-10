@@ -438,7 +438,103 @@ export const seoContents: Record<string, SeoContent> = {
       { href: '/hizmetler/sosyal-medya-yonetimi/', text: 'Sosyal Medya Yönetimi' },
       { href: '/iletisim/', text: 'Kurumsal Kimlik Teklifi Al' }
     ]
-  }
+  },
+'matbaa-baski': {
+slug: 'matbaa-baski',
+h1: 'Malatya Matbaa ve Baskı Hizmetleri',
+metaTitle: 'Malatya Matbaa | Dijital, Ofset, UV Baskı, Kartvizit ve Katalog | Malatya Reklam',
+metaDescription: 'Malatya matbaa hizmetleri: kartvizit, broşür, katalog, etiket, ambalaj, poster, afiş ve özel baskı çözümleri. Dijital, ofset, UV ve serigrafi baskı tek çatı altında.',
+introHtml: '<p><strong>Malatya matbaa</strong> hizmetimizle kartvizit, broşür, katalog, etiket, ambalaj, afiş, poster, antetli kağıt, fatura, dosya, takvim ve özel baskı işlerini kendi atölyemizde üretiyoruz. Dijital baskı, ofset baskı, UV baskı, serigrafi ve dijital folyo baskı teknolojileriyle her bütçeye ve her adete profesyonel çözüm sunuyoruz.</p>',
+longContent: `<h2>Baskı Türleri ve Hangi İşe Hangi Teknik?</h2><p>Doğru baskı teknolojisi seçimi maliyet ile kaliteyi dengelemenin anahtarıdır. Az adetli ve hızlı işlerde dijital baskı, 1.000 adetin üzerindeki seri üretimlerde ofset baskı, premium ambalaj ve etiketlerde UV baskı, tekstil ve promosyonda serigrafi tercih edilir.</p><h3>Dijital Baskı</h3><p>Az adetli (1-1000), hızlı teslimatlı, kişiselleştirilebilir işler için ideal. Kartvizit, davetiye, broşür, sertifika ve numune işlerinde tercih edilir. CMYK + beyaz mürekkep desteği.</p><h3>Ofset Baskı</h3><p>1000 adet ve üzeri seri üretimde birim maliyeti en düşük tekniktir. Katalog, dergi, kitap, ambalaj ve broşür işlerinde standarttır. Pantone renk doğruluğu yüksektir.</p><h3>UV Baskı</h3><p>Cam, ahşap, metal, akrilik gibi standart dışı yüzeylere baskı yapabilen teknik. Premium ambalaj, ödül plaketleri, tabela ve dekoratif uygulamalarda kullanılır. Yüksek dayanıklılık.</p><h3>Serigrafi Baskı</h3><p>Tekstil (tişört, sweatshirt, çanta), promosyon ürünleri ve metal yüzeylerde tercih edilen teknik. Yüksek opaklık ve uzun ömür.</p><h3>Dijital Folyo ve Sıcak Folyo</h3><p>Kartvizit, davetiye ve premium ambalajlarda altın/gümüş/holografik folyo aplikasyonu için kullanılır.</p><h2>Kağıt Türleri ve Gramaj Rehberi</h2><h3>Bristol (250-350 gr)</h3><p>Kartvizit, kapak ve davetiye için en yaygın seçim. 300 gr en standart kartvizit gramajıdır.</p><h3>Kuşe (90-170 gr)</h3><p>Broşür, katalog iç sayfaları ve dergi için ideal. Mat veya parlak seçeneğiyle.</p><h3>Hamur Kağıt (70-100 gr)</h3><p>Antetli kağıt, fatura ve makbuz için ekonomik seçim.</p><h3>Tekstüreli Kağıtlar</h3><p>Conqueror, Keaykolour gibi premium kağıtlarda davetiye, sertifika ve özel kartvizit baskısı.</p><h3>Karton (300-450 gr)</h3><p>Ambalaj, kutu ve sergi standı için yüksek gramajlı seçenekler.</p><h2>Sonradan İşlem (Finishing) Seçenekleri</h2><p>Selefon (mat/parlak), softouch lak, spot lak, gofre kabartma, sıcak folyo, kesim, bıçak izi, kırım, perforaj, ciltleme (spiral, omurgalı, kapaklı) gibi finishing seçenekleriyle baskınıza prestij katıyoruz.</p><h2>Malatya Matbaa Fiyat Tablosu (2025)</h2><p>1000 adet 300gr çift yüz mat selefonlu kartvizit 350-550 TL bandında, 500 adet A4 4 sayfa katalog 1.200-1.800 TL bandında, 1000 adet etiket sticker (10x5cm) 800-1.200 TL bandında. Ofset baskıda adet arttıkça birim fiyat hızla düşer.</p><h2>Hangi Sektörlere Baskı Hizmeti Veriyoruz?</h2><p>Restoran ve kafeler için menü baskısı, kayısı ve gıda ihracatçıları için ambalaj ve etiket, eğitim kurumları için broşür ve katalog, sağlık kuruluşları için randevu kartı ve broşür, otomotiv galerileri için fiyat etiketi ve fatura, kuyumcular için sertifika ve poşet baskısı, market zincirleri için raf etiketi ve afiş baskısı.</p><h2>Tasarım Hizmeti Dahil Mi?</h2><p>İsterseniz hazır dosyanızı (PDF/AI) basıyoruz, isterseniz in-house tasarım ekibimiz markanıza uygun tasarımı yapıyor. Tasarım dahil paketlerde maliyet avantajı sağlıyoruz.</p>`,
+processSteps: [
+{ step: '1', title: 'Brief ve Spesifikasyon', description: 'Adet, kağıt, gramaj, ebat ve son işlem detayları belirlenir.' },
+{ step: '2', title: 'Tasarım veya Dosya Kontrolü', description: 'Hazır dosya ise CMYK/PDF/X-1a kontrolü, değilse tasarım üretimi.' },
+{ step: '3', title: 'Numune Provası', description: 'Renk ve kesim doğruluğu için dijital prova çıkarılır.' },
+{ step: '4', title: 'Baskı', description: 'Dijital, ofset, UV veya serigrafi tekniklerinden uygun olanı uygulanır.' },
+{ step: '5', title: 'Finishing İşlemleri', description: 'Selefon, lak, folyo, kesim ve cilt işlemleri yapılır.' },
+{ step: '6', title: 'Kalite Kontrol', description: 'Her parti için manuel ve dijital kalite kontrol turu.' },
+{ step: '7', title: 'Paketleme ve Teslim', description: 'Malatya içi ücretsiz teslim, yurt geneline kargolu sevkiyat.' }
+],
+pricingFactors: [
+{ factor: 'Baskı Tekniği', description: 'Dijital, ofset, UV ve serigrafi farklı maliyet aralıklarındadır.' },
+{ factor: 'Adet', description: 'Adet arttıkça birim maliyet hızla düşer; ofsette kritik eşik 1000 adettir.' },
+{ factor: 'Kağıt Cinsi ve Gramaj', description: 'Bristol, kuşe, hamur, tekstüre kağıtların metrekare fiyatları farklıdır.' },
+{ factor: 'Renk Sayısı', description: 'Tek renk siyah-beyaz mı, 4 renk CMYK mi, ek Pantone mi?' },
+{ factor: 'Finishing İşlemleri', description: 'Selefon, spot lak, folyo, gofre maliyeti ekler.' },
+{ factor: 'Kesim ve Bıçak Maliyeti', description: 'Standart kesim mi, özel bıçak (die-cut) mı?' },
+{ factor: 'Aciliyet', description: 'Standart 3-5 iş günü; aynı gün/24 saat baskı ek ücretlidir.' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'Malatya matbaa fiyatları ne kadar?', a: '1000 adet 300gr çift yüz mat selefonlu kartvizit 350-550 TL bandında, 500 adet A4 4 sayfa katalog 1.200-1.800 TL, 1000 adet etiket sticker 800-1.200 TL bandındadır.' },
+{ q: 'Aynı gün baskı yapıyor musunuz?', a: 'Evet. Dijital baskıda saat 11.00 a kadar onaylanan kartvizit, broşür ve poster siparişlerini aynı gün teslim ediyoruz.' },
+{ q: 'Tasarım dahil mi?', a: 'In-house tasarım ekibimiz var. Tasarım dahil paketlerde maliyet avantajı sağlıyoruz.' },
+{ q: 'Az adet baskı yapar mısınız?', a: 'Evet, dijital baskı sayesinde 1 adetten itibaren baskı alabiliyoruz.' },
+{ q: 'Kargo gönderiyor musunuz?', a: 'Evet, Türkiye geneline anlaşmalı kargolarımızla gönderim yapıyoruz.' },
+{ q: 'Hangi dosya formatlarını kabul ediyorsunuz?', a: 'Tercih ettiğimiz format PDF/X-1a (CMYK, 300dpi, taşma payı dahil). AI, INDD ve PSD dosyaları da değerlendiriyoruz.' },
+{ q: 'Selefon mat mı parlak mı?', a: 'Mat selefon prestijli ve dokunsal, parlak selefon canlı ve dayanıklı görünüm sağlar. Sektörünüze göre öneri yapıyoruz.' },
+{ q: 'UV baskı nelerde kullanılır?', a: 'Cam, akrilik, ahşap, metal gibi standart dışı yüzeylere baskıda. Premium ambalaj ve hediyelik üretimde tercih edilir.' },
+{ q: 'Pantone renk doğruluğu sağlanıyor mu?', a: 'Ofset baskıda Pantone Coated/Uncoated katalogundan tam tutturma, dijital baskıda en yakın eşleme yapıyoruz.' },
+{ q: 'Ambalaj baskısı yapıyor musunuz?', a: 'Evet, kayısı kutusu, gıda ambalajı, kozmetik ve hediyelik kutu üretimi yapıyoruz.' }
+],
+relatedKeywords: ['malatya matbaa','malatya baskı','malatya kartvizit baskı','malatya katalog baskı','malatya broşür baskı','malatya etiket baskı','malatya ambalaj baskı','malatya dijital baskı','malatya ofset baskı','malatya UV baskı','malatya serigrafi','malatya matbaacılar','malatya afiş baskı','malatya poster baskı','malatya matbaa fiyatları'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '129' },
+internalLinks: [
+{ href: '/hizmetler/kurumsal-kimlik/', text: 'Kurumsal Kimlik Tasarımı' },
+{ href: '/hizmetler/logo-tasarim/', text: 'Logo Tasarımı' },
+{ href: '/hizmetler/tabela-uygulamalari/', text: 'Tabela Uygulamaları' },
+{ href: '/hizmetler/acikhava-reklam/', text: 'Açıkhava Reklam' },
+{ href: '/iletisim/', text: 'Baskı Teklifi Al' }
+]
+},
+'google-ads': {
+slug: 'google-ads',
+h1: 'Malatya Google Ads Yönetimi — ROI odaklı reklam',
+metaTitle: 'Malatya Google Ads | Search, Display, Performance Max ve Shopping',
+metaDescription: 'Malatya Google Ads uzmanı ekibimizle Search, Display, YouTube, Shopping ve Performance Max kampanyalarını ROI odaklı yönetiyoruz.',
+introHtml: '<p><strong>Malatya Google Ads</strong> yönetimi, doğru anahtar kelime, doğru hedefleme ve doğru bütçe optimizasyonuyla anlık dönüşüm getirir. Sertifikalı Google Ads uzmanlarımızla aylık 50.000 TL den 5 Milyon TL ye kadar reklam bütçeleri yönetiyoruz.</p>',
+longContent: `<h2 id='kampanya-tipleri'>Google Ads Kampanya Tipleri</h2><p>Her hedefe uygun farklı kampanya tipi vardır. Yanlış kampanya tipinde harcama yapmak bütçenizi 3 kat hızlı tüketebilir. İşte en yaygın 6 kampanya tipi ve hangi durumda kullanıldığı.</p><h3>Search (Arama Ağı) Reklamları</h3><p>Googleda bir kelime aratan kullanıcının önüne çıkmak için. Anlık satın alma niyetli, en yüksek dönüşüm oranlı kampanya tipi. Kayısı ihracatı yapan ve doğrudan dönüşüm hedefleyen Malatyalı işletmeler için birincil seçim.</p><h3>Display (Görüntülü) Reklamlar</h3><p>3 milyondan fazla web sitesinde banner gösterimi. Marka bilinirliği ve remarketing için ideal. Görece düşük dönüşüm ama yüksek erişim.</p><h3>YouTube Reklamları</h3><p>Atlanabilir, atlanmaz ve bumper formatında video reklamlar. Marka hikayesi anlatmak ve yeni kitle kazanmak için güçlü.</p><h3>Shopping Reklamları</h3><p>E-ticaret işletmelerinin Merchant Center üzerinden ürün bazlı reklam vermesi. Resimli, fiyatlı, doğrudan ürün sayfasına yönlendiren format.</p><h3>Performance Max</h3><p>Google nun AI tabanlı çoklu kanal kampanyası. Search, Display, YouTube, Gmail ve Discoverı tek kampanyada otomatik optimize eder. Çoklu hedef ve geniş erişim için.</p><h3>Demand Gen</h3><p>YouTube Shorts, Discover ve Gmaile özel keşif reklamları. Üst huniden talep yaratma için.</p><h2 id='roi'>ROI Vaka Analizi: Bir Malatya Kayısı İhracatçısı</h2><p>Aylık 75.000 TL Search + Performance Max bütçesiyle çalıştığımız Malatyalı kayısı ihracatçısının 6 aylık verisi: Toplam dönüşüm 412 ihracat sorgusu, dönüşüm başına maliyet 1.092 TL, toplam ihracat anlaşma değeri 8.4 Milyon TL, ROAS 18.6x. Bu sonuçlar, doğru anahtar kelime + landing page + kampanya tipi kombinasyonuyla mümkün.</p><h2 id='kelime'>Anahtar Kelime Araştırması Sürecimiz</h2><p>SEMrush, Ahrefs, Google Keyword Planner ve müşteri görüşmesi ile 4 katmanlı kelime listesi çıkarıyoruz: brand keywords (marka adı varyasyonları), category keywords (kategori sorguları), competitor keywords (rakip marka aramaları) ve long-tail keywords (uzun kuyruklu spesifik sorgular). Negatif kelime listesini de aynı detayla hazırlıyoruz.</p><h2 id='landing'>Landing Page Optimizasyonu</h2><p>Reklam tıklatıp dönüşüm almıyorsanız sorun büyük ihtimalle landing pagede. Her kampanya için özel landing page kurguluyor; başlık-alt başlık-3 madde fayda-sosyal kanıt-CTA mimarisini A/B test ediyoruz. Quality Score iyileştikçe tıklama maliyeti yüzde 30-50 düşüyor.</p><h2 id='donusum'>Dönüşüm Takibi ve Analytics Entegrasyonu</h2><p>GA4, Google Tag Manager ve Google Ads conversion tracking entegrasyonunu sıfırdan kuruyoruz. Telefon araması, form gönderimi, WhatsApp tıklaması, e-ticaret satışı ve mikro dönüşümler ayrı ayrı izleniyor. Server-side tracking ile iOS 14+ veri kayıplarını minimize ediyoruz.</p><h2 id='raporlama'>Raporlama ve Fiyatlandırma</h2><p>Haftalık WhatsApp özeti, aylık Looker Studio raporu, çeyrek dönem stratejik gözden geçirme. Yönetim ücretimiz: aylık 5.000 TL den başlıyor; aylık reklam bütçeniz 100.000 TL üzerine çıktığında bütçenin yüzde 10 u olarak hesaplanıyor. Setup tek seferlik 7.500 TL.</p>`,
+processSteps: [
+{ step: '1', title: 'Hesap Denetimi', description: 'Mevcut hesap analizi veya sıfırdan kurulum.' },
+{ step: '2', title: 'Kelime Araştırması', description: '4 katmanlı keyword + negatif liste.' },
+{ step: '3', title: 'Kampanya Mimarisi', description: 'Kampanya, ad group ve reklam yapısı.' },
+{ step: '4', title: 'Landing Page', description: 'Dönüşüm odaklı landing page kurgusu.' },
+{ step: '5', title: 'Conversion Tracking', description: 'GA4 + GTM + Ads pixel entegrasyonu.' },
+{ step: '6', title: 'Yayın ve Optimizasyon', description: 'Bid strategy, kitle ve kreatif testi.' },
+{ step: '7', title: 'Raporlama', description: 'Haftalık özet + aylık Looker Studio.' }
+],
+pricingFactors: [
+{ factor: 'Aylık Reklam Bütçesi', description: 'Yönetim ücreti bütçeyle orantılı.' },
+{ factor: 'Kampanya Tipi Sayısı', description: 'Search, Display, PMax kombinasyonu.' },
+{ factor: 'Dil ve Coğrafya', description: 'Tek şehir mi, çok ülke mi?' },
+{ factor: 'Landing Page İhtiyacı', description: 'Mevcut mu, yeni tasarım mı?' },
+{ factor: 'Sektör Rekabeti', description: 'Avukatlık-finans yüksek CPC li.' },
+{ factor: 'Dönüşüm Takibi', description: 'Server-side tracking ek paket.' },
+{ factor: 'Kreatif Üretim', description: 'Görsel/video reklam üretimi.' }
+],
+serviceAreas: ['Battalgazi','Yeşilyurt','Doğanşehir','Akçadağ','Darende','Hekimhan','Arapgir','Pütürge','Kuluncak','Kale','Yazıhan','Arguvan','Doğanyol'],
+extendedFaqs: [
+{ q: 'Aylık reklam bütçem ne kadar olmalı?', a: 'Yerel hizmet için minimum 15.000 TL, e-ticaret için 50.000 TL, ihracat odaklı için 100.000 TL altı ölçeklenebilir sonuç vermez.' },
+{ q: 'Sözleşme süresi nedir?', a: 'Minimum 3 ay öneriyoruz; ideal süre 6 aydır. Algoritma öğrenme aşaması ilk 30 gün sürer.' },
+{ q: 'Yönetim ücreti nedir?', a: 'Aylık 5.000 TL den başlar; 100.000 TL üzeri bütçelerde reklam bütçesinin yüzde 10 u olarak hesaplanır.' },
+{ q: 'Google Ads sertifikalı mısınız?', a: 'Evet, ekibimizde Search, Display, Shopping, Video ve Measurement sertifikalı uzmanlar var.' },
+{ q: 'Performance Max gerçekten çalışıyor mu?', a: 'Doğru kreatif setiyle evet. Yeterli dönüşüm verisi olmayan hesaplarda Search ile başlamayı öneriyoruz.' },
+{ q: 'Tıklama başına maliyet (CPC) ne kadar?', a: 'Sektöre göre 1.50 TL ile 45 TL arasında değişir. Avukatlık ve finans sektörü en yüksek bantta.' },
+{ q: 'Reklam metnini siz mi yazıyorsunuz?', a: 'Evet, RSA (Responsive Search Ads) için 15 başlık + 4 açıklama setini biz hazırlıyor, A/B test ediyoruz.' },
+{ q: 'Olumsuz kelime listesi neden önemli?', a: 'Bütçenizi alakasız sorguların yemesini engeller; ortalama yüzde 22 maliyet tasarrufu sağlar.' },
+{ q: 'Server-side tracking ne demek?', a: 'iOS 14+ ve cookie kısıtlamalarına rağmen dönüşüm verisini güvenle aktarmak için sunucu tabanlı izleme.' },
+{ q: 'YouTube reklamı bizim için uygun mu?', a: 'Marka bilinirliği ve görsel anlatım gerektiren ürünler için evet. Ölçeklenebilir kampanyalar 25.000 TL üzerinde anlamlıdır.' }
+],
+relatedKeywords: ['malatya google ads','malatya google reklam','malatya adwords','google ads ajansı malatya','malatya ppc reklam','search ads malatya','shopping ads malatya','performance max malatya','google ads uzmanı malatya','google ads yönetimi malatya','malatya google ads fiyat','remarketing malatya','youtube reklam malatya','google display malatya','arama motoru reklamı malatya'],
+aggregateRating: { ratingValue: '4.9', reviewCount: '112' },
+internalLinks: [
+{ href: '/hizmetler/seo-hizmeti/', text: 'SEO Hizmeti' },
+{ href: '/hizmetler/sosyal-medya-yonetimi/', text: 'Sosyal Medya Yönetimi' },
+{ href: '/hizmetler/web-tasarim/', text: 'Web Tasarım' },
+{ href: '/hizmetler/e-ticaret-cozumleri/', text: 'E-Ticaret Çözümleri' },
+{ href: '/iletisim/', text: 'Google Ads Teklifi Al' }
+]
+}
 };
 
 export const getSeoContent = (slug: string): SeoContent | undefined => seoContents[slug];
