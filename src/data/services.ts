@@ -174,8 +174,8 @@ export const services: Service[] = [
     "slug": "seo-hizmeti",
     "category": "dijital",
     "title": "SEO Hizmeti",
-    "shortDesc": "Googleda üst sıralara çıkmanızı sağlayan profesyonel SEO.",
-    "longDesc": "Teknik SEO, içerik SEOsu ve link inşası ile sitenizi Googleın ilk sayfasına taşıyoruz. Anahtar kelime analizi, rakip analizi ve aylık raporlama dahil.",
+    "shortDesc": "Google'da üst sıralara çıkmanızı sağlayan profesyonel SEO.",
+    "longDesc": "Teknik SEO, içerik SEO'su ve link inşası ile sitenizi Google'ın ilk sayfasına taşıyoruz. Anahtar kelime analizi, rakip analizi ve aylık raporlama dahil.",
     "icon": "search",
     "benefits": [
       "Teknik SEO denetimi ve düzeltmeleri",
