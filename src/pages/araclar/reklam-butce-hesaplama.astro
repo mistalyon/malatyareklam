@@ -1,0 +1,150 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const title = "Reklam Bütçesi Hesaplayıcı | Instagram + Google + YouTube | Malatya Reklam";
+const description = "Aylık ne kadar reklam bütçesi ayırmalısın? Instagram, Google Ads, YouTube ve Facebook reklam maliyetlerini tek araçta karşılaştır. Ücretsiz hesaplayıcı.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Reklam Bütçesi Hesaplayıcı",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": description,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" }
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <section class="bg-gradient-to-br from-apricot-50 to-white py-12 lg:py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="text-center mb-10">
+        <span class="inline-block px-4 py-1.5 bg-apricot-100 text-apricot-700 text-sm font-semibold rounded-full mb-4">Ücretsiz Reklam Bütçesi Aracı</span>
+        <h1 class="text-3xl lg:text-5xl font-bold text-neutral-900 mb-4">Reklam Bütçesi Hesaplayıcı</h1>
+        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+          Instagram, Google Ads, YouTube ve Facebook için aylık bütçe + tahmini sonuç. 30 saniyede karşılaştır.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-md border border-neutral-200">
+          <h2 class="text-xl font-bold text-neutral-900 mb-6">Hedeflerin</h2>
+
+          <div class="space-y-5">
+            <div>
+              <label class="block text-sm font-semibold text-neutral-700 mb-2">Aylık Hedeflenen Müşteri Sayısı</label>
+              <input type="number" id="leads" value="50" min="1" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:border-apricot-500 outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-neutral-700 mb-2">Ortalama Sipariş Değeri (TL)</label>
+              <input type="number" id="aov" value="800" min="50" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:border-apricot-500 outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-neutral-700 mb-2">Sektör</label>
+              <select id="industry" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:border-apricot-500 outline-none">
+                <option value="local">Yerel Hizmet (kafe, kuaför, tabela)</option>
+                <option value="ecommerce">E-ticaret (genel ürün)</option>
+                <option value="b2b">B2B / Hizmet (yazılım, danışmanlık)</option>
+                <option value="health">Sağlık / Hukuk</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-neutral-700 mb-2">Mevcut Web Trafiği (aylık)</label>
+              <select id="traffic" class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:border-apricot-500 outline-none">
+                <option value="0">Site yok / 0-100</option>
+                <option value="500">100-1.000</option>
+                <option value="3000">1.000-5.000</option>
+                <option value="10000">5.000+</option>
+              </select>
+            </div>
+
+            <button id="calc" class="w-full bg-apricot-500 hover:bg-apricot-600 text-white font-bold py-4 rounded-lg transition">Hesapla</button>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-md border border-neutral-200">
+          <h2 class="text-xl font-bold text-neutral-900 mb-6">Tahmini Bütçe Dağılımı</h2>
+          <div id="results" class="space-y-4">
+            <p class="text-neutral-500 text-center py-12">Solda bilgileri doldurup "Hesapla"ya bas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 bg-neutral-50 rounded-xl p-6 text-center">
+        <p class="text-neutral-700 mb-3">Strateji + uygulama desteği ister misin?</p>
+        <a id="wa" href="https://wa.me/905446732202" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg">
+          WhatsApp'tan Strateji Görüşmesi (Ücretsiz)
+        </a>
+      </div>
+
+      <article class="mt-16 prose prose-neutral max-w-none">
+        <h2>Reklam Bütçesi Nasıl Hesaplanır?</h2>
+        <p>Reklam bütçesi belirlerken 3 temel veri lazım: hedef müşteri sayısı, ortalama sipariş değeri ve sektörün CPL (lead başı maliyet) ortalaması. Bu araç tüm bunları birleştirip Instagram, Google Ads, YouTube ve Facebook için ayrı bütçe önerisi sunar.</p>
+        <h3>Sektörlere Göre Tipik CPL (Türkiye 2026)</h3>
+        <ul>
+          <li><strong>Yerel hizmet:</strong> 35-120 TL</li>
+          <li><strong>E-ticaret:</strong> 25-90 TL</li>
+          <li><strong>B2B:</strong> 80-350 TL</li>
+          <li><strong>Sağlık / Hukuk:</strong> 150-600 TL</li>
+        </ul>
+        <h3>Hangi Platforma Ne Kadar?</h3>
+        <p>Genel kural (B2C için): %40 Meta (Instagram + Facebook), %35 Google Ads, %15 YouTube, %10 test. B2B için tersi: %50 Google Ads, %30 LinkedIn, %20 Meta retargeting.</p>
+        <h3>İlgili Araçlar</h3>
+        <ul>
+          <li><a href="/araclar/google-ads-butce-hesaplama/">Google Ads Bütçe Hesaplama</a></li>
+          <li><a href="/araclar/seo-roi-hesaplama/">SEO ROI Hesaplama</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <script is:inline>
+    const $ = (id) => document.getElementById(id);
+    const fmt = (n) => new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 0 }).format(n);
+    $("calc").addEventListener("click", () => {
+      const leads = +$("leads").value;
+      const aov = +$("aov").value;
+      const ind = $("industry").value;
+      const traffic = +$("traffic").value;
+
+      const cplMap = { local: 75, ecommerce: 55, b2b: 180, health: 320 };
+      const cpl = cplMap[ind];
+      const totalBudget = leads * cpl;
+      const revenue = leads * aov;
+
+      const meta = Math.round(totalBudget * 0.40);
+      const google = Math.round(totalBudget * 0.35);
+      const youtube = Math.round(totalBudget * 0.15);
+      const test = Math.round(totalBudget * 0.10);
+
+      const trafficBoost = traffic > 3000 ? "Mevcut trafik güçlü. Retargeting + SEO odaklı çalışırsan %30 daha verimli olur." : "Trafik düşük; ilk ay öğrenme + farkındalık kampanyalarına ağırlık ver.";
+
+      $("results").innerHTML = `
+        <div class="space-y-3">
+          <div class="bg-apricot-50 p-4 rounded-lg">
+            <div class="text-sm text-neutral-600">Önerilen Aylık Toplam Bütçe</div>
+            <div class="text-3xl font-bold text-apricot-600">${fmt(totalBudget)} TL</div>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="bg-pink-50 p-3 rounded"><b class="text-pink-700">Instagram + Facebook</b><br>${fmt(meta)} TL</div>
+            <div class="bg-blue-50 p-3 rounded"><b class="text-blue-700">Google Ads</b><br>${fmt(google)} TL</div>
+            <div class="bg-red-50 p-3 rounded"><b class="text-red-700">YouTube</b><br>${fmt(youtube)} TL</div>
+            <div class="bg-neutral-100 p-3 rounded"><b class="text-neutral-700">Test / Yeni Format</b><br>${fmt(test)} TL</div>
+          </div>
+          <div class="border-t pt-3 mt-3">
+            <div class="flex justify-between text-sm"><span>Tahmini Aylık Gelir</span><b>${fmt(revenue)} TL</b></div>
+            <div class="flex justify-between text-sm mt-1"><span>Tahmini ROAS</span><b>${(revenue/totalBudget).toFixed(1)}x</b></div>
+          </div>
+          <p class="text-xs text-neutral-600 mt-2">${trafficBoost}</p>
+        </div>`;
+
+      const msg = `Merhaba, reklam bütçesi hesaplamasını yaptım: Toplam ${fmt(totalBudget)} TL/ay (${leads} müşteri hedefi, ${ind} sektör). Detaylı strateji konuşalım.`;
+      $("wa").href = `https://wa.me/905446732202?text=${encodeURIComponent(msg)}`;
+    });
+  </script>
+</BaseLayout>
