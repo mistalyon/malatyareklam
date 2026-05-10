@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'SEO ROI Hesaplama Aracı',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY' },
+  description: 'SEO yatırımınızın geri dönüşünü hesaplayın. Trafik, dönüşüm oranı ve ortalama sipariş değeriyle aylık ve yıllık SEO ROI tahmini.',
+};
+---
+
+<BaseLayout
+  title="SEO ROI Hesaplama Aracı 2026 — Yatırımınızın Geri Dönüşünü Anında Görün | Malatya Reklam"
+  description="SEO çalışmasının size kazandıracağı parayı hesaplayın. Aylık trafik, dönüşüm oranı, sepet ortalamasıyla 12 aylık ROI projeksiyonu. Ücretsiz, anlık hesaplayıcı."
+  keywords="seo roi hesaplama, seo yatırım geri dönüşü, seo getiri hesaplayıcı, seo bütçe roi, malatya seo, seo değer mi"
+  jsonLd={jsonLd}
+>
+  <section class="bg-gradient-to-br from-apricot-50 via-white to-orange-50 py-16 lg:py-20">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+      <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Ücretsiz Araç</span>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">SEO ROI Hesaplama Aracı</h1>
+      <p class="text-xl text-neutral-600 leading-relaxed">SEO yatırımınız 12 ay içinde size ne kadar geri dönecek? Mevcut trafik, dönüşüm oranı ve sepet ortalamanızı girin; muhafazakâr ve iyimser senaryolarla net ROI tahmininizi alın.</p>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-3xl">
+      <form id="r-form" class="bg-white rounded-3xl shadow-2xl border border-neutral-100 p-8 lg:p-10 space-y-8">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-bold text-neutral-900 mb-2">Aylık Mevcut Trafik</label>
+            <input type="number" name="traffic" value="500" min="0" step="100" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none" />
+            <p class="text-xs text-neutral-500 mt-1">Şu an aylık kaç ziyaretçi geliyor?</p>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-neutral-900 mb-2">Hedef Aylık Trafik (12 Ay)</label>
+            <input type="number" name="targetTraffic" value="5000" min="0" step="100" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none" />
+            <p class="text-xs text-neutral-500 mt-1">SEO sonrası varmak istediğiniz hedef.</p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-bold text-neutral-900 mb-2">Dönüşüm Oranı (%)</label>
+            <input type="number" name="conv" value="2" min="0" max="100" step="0.1" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none" />
+            <p class="text-xs text-neutral-500 mt-1">Ziyaretçilerin yüzde kaçı müşteri oluyor?</p>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-neutral-900 mb-2">Ortalama Sipariş Değeri (₺)</label>
+            <input type="number" name="aov" value="500" min="0" step="50" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none" />
+            <p class="text-xs text-neutral-500 mt-1">Bir müşterinin ortalama harcaması.</p>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-2">Aylık SEO Yatırımınız (₺)</label>
+          <input type="number" name="cost" value="6000" min="0" step="500" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none" />
+          <p class="text-xs text-neutral-500 mt-1">Aylık SEO bütçeniz (içerik, link building, teknik dahil).</p>
+        </div>
+        <div class="bg-gradient-to-br from-apricot-50 to-orange-50 border-2 border-apricot-200 rounded-2xl p-6 lg:p-8 space-y-4">
+          <div class="text-sm font-bold uppercase tracking-wider text-apricot-700 text-center">12 Aylık ROI Projeksiyonu</div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl p-4 text-center">
+              <div class="text-xs text-neutral-500 mb-1">Ek Yıllık Gelir (Tahmini)</div>
+              <div class="font-display text-2xl font-bold text-emerald-600"><span id="r-rev">0</span> ₺</div>
+            </div>
+            <div class="bg-white rounded-xl p-4 text-center">
+              <div class="text-xs text-neutral-500 mb-1">12 Aylık SEO Maliyeti</div>
+              <div class="font-display text-2xl font-bold text-neutral-900"><span id="r-cost">0</span> ₺</div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-4 text-center">
+            <div class="text-xs text-neutral-500 mb-1">ROI (Geri Dönüş)</div>
+            <div class="font-display text-3xl md:text-4xl font-bold text-apricot-600"><span id="r-roi">0</span>%</div>
+            <div class="text-xs text-neutral-500 mt-1">Başabaş ay: <span id="r-bep" class="font-bold">-</span></div>
+          </div>
+        </div>
+        <a id="r-cta" href="https://wa.me/905555555555" target="_blank" rel="noopener" class="block w-full text-center px-6 py-4 bg-apricot-500 hover:bg-apricot-600 text-white text-lg font-bold rounded-xl transition shadow-lg shadow-apricot-500/30">SEO Stratejiniz İçin Ücretsiz Görüşme →</a>
+        <p class="text-xs text-neutral-500 text-center">SEO sonuçları 4-9 ay arasında belirginleşir. Verilen rakamlar sektör ortalamalarına dayalı tahmindir.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-8 text-center">SEO ROI Nasıl Hesaplanır?</h2>
+      <div class="prose prose-lg max-w-none">
+        <p>SEO ROI hesabı şu basit formüle dayanır: <strong>(Yıllık Ek Gelir - Yıllık SEO Maliyeti) / Yıllık SEO Maliyeti × 100</strong>. Ek gelir ise hedef trafik artışı × dönüşüm oranı × ortalama sipariş değeriyle bulunur.</p>
+        <h3>Realistik Beklentiler</h3>
+        <p>İyi yapılan bir SEO çalışmasında yıllık ROI %200-500 arasında değişir. Yani harcadığınız her 1 ₺, 2-5 ₺ olarak geri döner. Ancak ilk 3-4 ay genelde başabaş altı kalır; gerçek getiri 6. aydan sonra hızlanır.</p>
+        <h3>SEO'nun Reklamlardan Farkı</h3>
+        <p>Google Ads kampanyası kapatıldığında ziyaretçi de durur. SEO'nun kazanımları ise <strong>kalıcıdır</strong>. 1. yıl 100.000 ₺ harcadığınız bir kampanyanın 2. yılı 30.000 ₺'ye sürdürülebilir; trafik kaybı yaşanmaz.</p>
+        <h3>Hangi Sektörlerde ROI Daha Yüksek?</h3>
+        <p>Yüksek sepet değerine sahip B2B hizmetler (yazılım, danışmanlık, kurumsal hizmetler) en yüksek SEO ROI'sini verir. Düşük sepetli e-ticarette ise hacim üzerinden kâr sağlanır. Yerel hizmetler (Malatya web tasarım gibi) ise 6-12 ayda dramatik dönüşüm sağlar çünkü rekabet ulusal büyük markalardan çok daha düşüktür.</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const f = document.getElementById("r-form");
+    const rRev = document.getElementById("r-rev");
+    const rCost = document.getElementById("r-cost");
+    const rRoi = document.getElementById("r-roi");
+    const rBep = document.getElementById("r-bep");
+    const cta = document.getElementById("r-cta");
+    const fmt = (n) => Math.round(n).toLocaleString("tr-TR");
+    function calc() {
+      const d = new FormData(f);
+      const t0 = parseFloat(d.get("traffic"))||0;
+      const t1 = parseFloat(d.get("targetTraffic"))||0;
+      const cv = parseFloat(d.get("conv"))||0;
+      const aov = parseFloat(d.get("aov"))||0;
+      const cost = parseFloat(d.get("cost"))||0;
+      // Ortalama 12 ay boyunca trafik artışı: lineer büyüme varsayımı
+      const avgTraffic = (t0 + t1) / 2;
+      const yearlyExtra = (avgTraffic - t0) * 12 * (cv/100) * aov;
+      const yearlyCost = cost * 12;
+      const roi = yearlyCost > 0 ? ((yearlyExtra - yearlyCost) / yearlyCost) * 100 : 0;
+      // Başabaş ay: birikimli gelir = birikimli maliyet
+      let bep = "12+ ay";
+      let cum = 0;
+      for (let m=1; m<=12; m++) {
+        const tM = t0 + (t1-t0) * (m/12);
+        const monthRev = (tM - t0) * (cv/100) * aov;
+        cum += monthRev;
+        if (cum >= cost*m) { bep = m + ". ay"; break; }
+      }
+      rRev.textContent = fmt(yearlyExtra);
+      rCost.textContent = fmt(yearlyCost);
+      rRoi.textContent = fmt(roi);
+      rBep.textContent = bep;
+      const msg = "Merhaba, SEO ROI hesaplayicisindan geliyorum. Mevcut trafik: " + t0 + ", hedef: " + t1 + ", aylik butce: " + fmt(cost) + " TL. Yillik tahmini ROI: %" + fmt(roi) + ". SEO stratejimi gorusmek istiyorum.";
+      cta.href = "https://wa.me/905555555555?text=" + encodeURIComponent(msg);
+    }
+    f.addEventListener("input", calc);
+    calc();
+  </script>
+</BaseLayout>
