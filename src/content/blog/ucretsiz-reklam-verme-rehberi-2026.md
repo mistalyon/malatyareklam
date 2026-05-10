@@ -1,12 +1,14 @@
 ---
 title: "Ücretsiz Reklam Verme: 17 Gerçek Yöntem + Tuzaklar (2026 Rehberi)"
-description: "Ücretsiz reklam mümkün mü? Google, Instagram, Facebook, YouTube'da gerçekten işe yarayan 17 ücretsiz yöntem, tuzaklar ve ne zaman ücretliye geçmeli — dürüst rehber."
-pubDate: "2026-05-10"
-author: "Malatya Reklam Ekibi"
+excerpt: "Ücretsiz reklam mümkün mü? Google, Instagram, Facebook, YouTube'da gerçekten işe yarayan 17 ücretsiz yöntem, tuzaklar ve ne zaman ücretliye geçmeli — dürüst rehber."
+date: 2026-05-10
 category: "Dijital Pazarlama"
-tags: ["ücretsiz reklam", "google ads", "instagram reklam", "dijital pazarlama"]
-image: "/images/blog/ucretsiz-reklam-rehberi.jpg"
-readingTime: "18 dk"
+readTime: "18 dk"
+coverEmoji: '🎯'
+author: "Malatya Reklam"
+seoTitle: "Ücretsiz Reklam Verme Rehberi 2026 — 17 Gerçek Yöntem + Tuzaklar | Malatya Reklam"
+seoDescription: "Google, Instagram, Facebook, YouTube'da ücretsiz reklam vermenin 17 gerçek yöntemi. Tuzaklar, ne zaman ücretliye geçmeli ve dürüst rehber."
+keywords: "ücretsiz reklam, ücretsiz reklam verme, bedava reklam, google ücretsiz reklam, instagram ücretsiz reklam, ücretsiz reklam siteleri"
 ---
 
 ## Ücretsiz Reklam Gerçekten Mümkün mü?

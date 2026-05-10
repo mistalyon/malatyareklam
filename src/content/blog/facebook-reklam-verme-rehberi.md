@@ -1,12 +1,14 @@
 ---
 title: "Facebook Reklamı Verme Rehberi 2026: Meta Ads, Maliyet, Hedefleme"
-description: "Facebook'a reklam nasıl verilir? Meta Business Suite, kampanya türleri, hedefleme, 2026 maliyeti, A/B test ve sık yapılan hatalar."
-pubDate: "2026-05-10"
-author: "Malatya Reklam Ekibi"
+excerpt: "Facebook'a reklam nasıl verilir? Meta Business Suite, kampanya türleri, hedefleme, 2026 maliyeti, A/B test ve sık yapılan hatalar."
+date: 2026-05-10
 category: "Sosyal Medya"
-tags: ["facebook reklam", "meta ads", "sosyal medya reklamı", "facebook ads"]
-image: "/images/blog/facebook-reklam-rehberi.jpg"
-readingTime: "12 dk"
+readTime: "12 dk"
+coverEmoji: '📘'
+author: "Malatya Reklam"
+seoTitle: "Facebook Reklamı Verme Rehberi 2026 — Meta Ads + Maliyet + Hedefleme | Malatya Reklam"
+seoDescription: "Facebook reklam türleri, Meta Pixel kurulumu, hedefleme, 2026 maliyetleri ve sık yapılan 7 hata."
+keywords: "facebook reklamı verme, facebook reklam, meta ads, ücretsiz facebook reklam, facebook reklam fiyatları, sosyal medya reklamı"
 ---
 
 ## Facebook Reklamı 2026'da Hala Mantıklı mı?

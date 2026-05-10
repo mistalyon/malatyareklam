@@ -1,12 +1,15 @@
 ---
 title: "Malatya İşletmeler İçin Ücretsiz Reklam Yöntemleri (12 Gerçek Taktik)"
-description: "Malatya'da yerel işletmen için tamamen ücretsiz reklam: Google Business, yerel SEO, sosyal medya, Marketplace, etkinlik ve 12 sınanmış taktik."
-pubDate: "2026-05-10"
-author: "Malatya Reklam Ekibi"
+excerpt: "Malatya'da yerel işletmen için tamamen ücretsiz reklam: Google Business, yerel SEO, sosyal medya, Marketplace, etkinlik ve 12 sınanmış taktik."
+date: 2026-05-10
 category: "Yerel Pazarlama"
-tags: ["malatya reklam", "ücretsiz reklam", "yerel pazarlama", "google business"]
-image: "/images/blog/malatya-ucretsiz-reklam.jpg"
-readingTime: "12 dk"
+readTime: "12 dk"
+coverEmoji: '🏪'
+author: "Malatya Reklam"
+seoTitle: "Malatya İşletmeler İçin Ücretsiz Reklam Yöntemleri 2026 — 12 Gerçek Taktik | Malatya Reklam"
+seoDescription: "Malatya'da Google Business, yerel SEO, Instagram organik, Facebook gruplar ve daha fazlasıyla ücretsiz reklam — 12 sınanmış taktik."
+keywords: "malatya ücretsiz reklam, malatya yerel reklam, malatya google business, malatya seo, malatya instagram"
+---
 ---
 
 ## Malatya'da Ücretsiz Reklam Vermek Mümkün mü?

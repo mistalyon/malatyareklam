@@ -1,12 +1,14 @@
 ---
 title: "Google Ads Reklam Verme Rehberi 2026: Maliyet, Kurulum, Optimizasyon"
-description: "Google'a reklam nasıl verilir? 2026'da Google Ads maliyeti, anahtar kelime seçimi, kalite skoru, kampanya türleri — sıfırdan profesyonel kuruluma rehber."
-pubDate: "2026-05-10"
-author: "Malatya Reklam Ekibi"
+excerpt: "Google'a reklam nasıl verilir? 2026'da Google Ads maliyeti, anahtar kelime seçimi, kalite skoru, kampanya türleri — sıfırdan profesyonel kuruluma rehber."
+date: 2026-05-10
 category: "Dijital Pazarlama"
-tags: ["google ads", "google reklam", "ppc reklam", "arama reklamı"]
-image: "/images/blog/google-ads-rehberi.jpg"
-readingTime: "13 dk"
+readTime: "13 dk"
+coverEmoji: '🔎'
+author: "Malatya Reklam"
+seoTitle: "Google Ads Reklam Verme Rehberi 2026 — Kurulum + Maliyet + Optimizasyon | Malatya Reklam"
+seoDescription: "Google'a reklam vermenin tüm adımları: hesap kurulumu, anahtar kelime, kalite skoru, kampanya türleri ve 2026 Türkiye fiyatları."
+keywords: "google ads, google reklam verme, google adwords, ücretsiz google reklam, googleye ilan verme, google reklam fiyatları"
 ---
 
 ## Google Ads Nedir, Neden Kullanılır?

@@ -1,12 +1,14 @@
 ---
 title: "Instagram Reklamı Verme 2026: Adım Adım Rehber + Gerçek Maliyet"
-description: "Instagram'da reklam nasıl verilir? 2026'da gerçek maliyet, Reels Ads, Story Ads, hedefleme, bütçe, Meta Business Suite — sıfırdan zirveye rehber."
-pubDate: "2026-05-10"
-author: "Malatya Reklam Ekibi"
+excerpt: "Instagram'da reklam nasıl verilir? 2026'da gerçek maliyet, Reels Ads, Story Ads, hedefleme, bütçe, Meta Business Suite — sıfırdan zirveye rehber."
+date: 2026-05-10
 category: "Sosyal Medya"
-tags: ["instagram reklamı", "meta ads", "sosyal medya reklamı", "instagram ads"]
-image: "/images/blog/instagram-reklam-rehberi.jpg"
-readingTime: "14 dk"
+readTime: "14 dk"
+coverEmoji: '📸'
+author: "Malatya Reklam"
+seoTitle: "Instagram Reklamı Verme 2026 — Adım Adım + Gerçek Maliyet | Malatya Reklam"
+seoDescription: "Instagram'a reklam nasıl verilir? Reels, Story, Feed Ads, hedefleme, 2026 maliyetleri ve sık yapılan hatalar."
+keywords: "instagram reklamı verme, instagram reklam, instagram ads, meta ads, reels reklam, story reklam, sosyal medya reklamı"
 ---
 
 ## Instagram Reklamı Vermek Mantıklı mı?

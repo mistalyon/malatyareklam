@@ -1,12 +1,15 @@
 ---
 title: "Malatya'da Reklam Veren Firmalar: Ajans Seçimi Rehberi 2026"
-description: "Malatya'da reklam ajansı seçerken nelere dikkat etmeli? Web tasarım, SEO, sosyal medya, tabela ve matbaa hizmetleri için doğru ajansı bulma rehberi."
-pubDate: "2026-05-10"
-author: "Malatya Reklam Ekibi"
+excerpt: "Malatya'da reklam ajansı seçerken nelere dikkat etmeli? Web tasarım, SEO, sosyal medya, tabela ve matbaa hizmetleri için doğru ajansı bulma rehberi."
+date: 2026-05-10
 category: "Reklam Ajansı"
-tags: ["malatya reklam ajansı", "reklam veren firmalar", "ajans seçimi"]
-image: "/images/blog/malatya-reklam-firmalari.jpg"
-readingTime: "10 dk"
+readTime: "10 dk"
+coverEmoji: '🏢'
+author: "Malatya Reklam"
+seoTitle: "Malatya'da Reklam Veren Firmalar — Ajans Seçimi 7 Kritik Kontrol | Malatya Reklam"
+seoDescription: "Malatya'da reklam ajansı seçerken 7 kritik kontrol, tipik fiyatlar, sözleşme tuzakları ve doğru ajansı bulma rehberi."
+keywords: "malatya reklam veren firmalar, malatya reklam ajansı, malatya web tasarım firma, malatya seo ajansı, reklam veren firmalar"
+---
 ---
 
 ## Malatya'da Reklam Veren Firmalar — Neye Göre Seçmeli?

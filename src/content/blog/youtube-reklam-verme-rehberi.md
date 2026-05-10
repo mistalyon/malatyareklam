@@ -1,12 +1,15 @@
 ---
 title: "YouTube Reklam Verme Rehberi 2026: Maliyet, Format, Adım Adım"
-description: "YouTube'a reklam nasıl verilir? Skippable, Bumper, In-Feed reklam türleri, 2026 maliyetleri, hedefleme, video hazırlama ipuçları."
-pubDate: "2026-05-10"
-author: "Malatya Reklam Ekibi"
+excerpt: "YouTube'a reklam nasıl verilir? Skippable, Bumper, In-Feed reklam türleri, 2026 maliyetleri, hedefleme, video hazırlama ipuçları."
+date: 2026-05-10
 category: "Video Reklamcılık"
-tags: ["youtube reklam", "video reklam", "google ads", "youtube ads"]
-image: "/images/blog/youtube-reklam-rehberi.jpg"
-readingTime: "11 dk"
+readTime: "11 dk"
+coverEmoji: '▶️'
+author: "Malatya Reklam"
+seoTitle: "YouTube Reklam Verme Rehberi 2026 — Maliyet, Format, Adım Adım | Malatya Reklam"
+seoDescription: "YouTube reklam türleri, 2026 maliyetleri, video hazırlama ve hedefleme — sıfırdan profesyonel kampanya kurulumu rehberi."
+keywords: "youtube reklam verme, youtube reklam fiyatları, video reklam, youtube ads, bumper ads, skippable ads"
+---
 ---
 
 ## YouTube'a Reklam Vermek Mantıklı mı?
