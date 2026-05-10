@@ -183,6 +183,13 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
+          // www → apex 301 redirect (SEO fix: avoid duplicate content)
+                if (url.hostname === 'www.malatyareklam.com') {
+                        url.hostname = 'malatyareklam.com';
+                                return Response.redirect(url.toString(), 301);
+                                      }
+                                      
+
     if (url.pathname === '/api/contact') {
       return handleContact(request, env);
     }
