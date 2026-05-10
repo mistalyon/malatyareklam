@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Tabela Fiyat Hesaplama Aracı',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY' },
+  description: 'Tabela m² fiyat hesaplama aracı. Kutu harf, pleksi, totem, LED ekran tabela maliyetinizi anında öğrenin.',
+};
+---
+
+<BaseLayout
+  title="Tabela Fiyat Hesaplama Aracı 2026 | Kutu Harf, Pleksi, Totem | Malatya Reklam"
+  description="Tabelanız ne kadar tutar? Tabela tipi, boyut, aydınlatma seçeneklerini girin, m² ve toplam fiyatı anında hesaplayın. 2026 Malatya pazarı verileriyle ücretsiz araç."
+  keywords="tabela fiyat hesaplama, kutu harf metrekare fiyatı, pleksi tabela hesaplayıcı, totem tabela maliyeti, led ekran fiyat 2026, malatya tabela"
+  jsonLd={jsonLd}
+>
+  <section class="bg-gradient-to-br from-apricot-50 via-white to-orange-50 py-16 lg:py-20">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+      <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Ücretsiz Araç</span>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">Tabela Fiyat Hesaplama Aracı</h1>
+      <p class="text-xl text-neutral-600 leading-relaxed">Tabela tipini, en ve boy ölçülerini, aydınlatma ve montaj tercihlerinizi girin; 2026 Malatya pazarı verileriyle metrekare ve toplam tahmini maliyetinizi anında öğrenin.</p>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-3xl">
+      <form id="t-form" class="bg-white rounded-3xl shadow-2xl border border-neutral-100 p-8 lg:p-10 space-y-8">
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">1. Tabela Tipi</label>
+          <select name="type" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none">
+            <option value="kutuharf">Kutu Harf (LED, 3D)</option>
+            <option value="pleksi">Pleksi / Akrilik</option>
+            <option value="isikli">Klasik Işıklı (Kutu)</option>
+            <option value="krom">Krom / Paslanmaz Harf</option>
+            <option value="totem">Totem Tabela</option>
+            <option value="led">LED Ekran (Dijital)</option>
+            <option value="vinil">Vinil / Branda</option>
+          </select>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-bold text-neutral-900 mb-3">2. Genişlik (cm): <span id="w-val" class="text-apricot-600">300</span></label>
+            <input type="range" name="width" min="50" max="1000" value="300" step="10" class="w-full accent-apricot-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-neutral-900 mb-3">3. Yükseklik (cm): <span id="h-val" class="text-apricot-600">80</span></label>
+            <input type="range" name="height" min="20" max="400" value="80" step="10" class="w-full accent-apricot-500" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">4. Aydınlatma</label>
+          <select name="light" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none">
+            <option value="none">Aydınlatmasız</option>
+            <option value="led" selected>LED Aydınlatma</option>
+            <option value="rgb">RGB Renk Değişen LED</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">5. Eklemek İstediğiniz Hizmetler</label>
+          <div class="grid sm:grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="ext" value="montaj" class="accent-apricot-500" checked /> Montaj Dahil</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="ext" value="tasarim" class="accent-apricot-500" /> Grafik Tasarım</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="ext" value="izin" class="accent-apricot-500" /> Belediye İzin Takibi</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="ext" value="garanti" class="accent-apricot-500" /> 5 Yıl Uzatılmış Garanti</label>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-apricot-50 to-orange-50 border-2 border-apricot-200 rounded-2xl p-6 lg:p-8 text-center">
+          <div class="text-sm font-bold uppercase tracking-wider text-apricot-700 mb-2">Tahmini Tabela Maliyeti</div>
+          <div class="font-display text-4xl md:text-5xl font-bold text-neutral-900"><span id="r-min">0</span> ₺ <span class="text-neutral-400">-</span> <span id="r-max">0</span> ₺</div>
+          <div class="text-xs text-neutral-500 mt-3">Alan: <span id="r-area" class="font-bold">2.4</span> m² · m² fiyatı: <span id="r-mp" class="font-bold">0</span> ₺</div>
+        </div>
+        <a id="t-cta" href="https://wa.me/905555555555" target="_blank" rel="noopener" class="block w-full text-center px-6 py-4 bg-apricot-500 hover:bg-apricot-600 text-white text-lg font-bold rounded-xl transition shadow-lg shadow-apricot-500/30">WhatsApp'tan Detaylı Teklif Al →</a>
+        <p class="text-xs text-neutral-500 text-center">Verilen rakamlar 2026 Malatya pazarı tahmini olup, malzeme tipi, montaj zorluğu ve özel taleplere göre değişebilir. Net fiyat için ücretsiz keşif yapıyoruz.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-8 text-center">Tabela Fiyatları Nasıl Belirlenir?</h2>
+      <div class="prose prose-lg max-w-none">
+        <p>Tabela fiyatı dört ana faktörle hesaplanır: <strong>tabela tipi</strong> (kutu harf, pleksi, totem...), <strong>metrekare alan</strong>, <strong>aydınlatma türü</strong> ve <strong>montaj-aksesuar</strong>. Her tabela tipinin kendi metrekare fiyat aralığı vardır ve bu aralık 2026 Malatya pazarı verilerinden alınmıştır.</p>
+        <h3>2026 Tabela Metrekare Fiyat Aralıkları (Malatya)</h3>
+        <ul>
+          <li><strong>Kutu Harf:</strong> 2.500 - 6.000 ₺/m² — Premium 3D görünüm, LED dahil.</li>
+          <li><strong>Pleksi:</strong> 1.200 - 3.000 ₺/m² — Ekonomik, hızlı üretim.</li>
+          <li><strong>Klasik Işıklı:</strong> 800 - 2.000 ₺/m² — En düşük başlangıç maliyeti.</li>
+          <li><strong>Krom Harf:</strong> 4.500 - 9.000 ₺/m² — Premium, kurumsal.</li>
+          <li><strong>Totem:</strong> 6.000 - 18.000 ₺/m² (montaj dahil) — Yol kenarı.</li>
+          <li><strong>LED Ekran:</strong> 35.000 - 90.000 ₺/m² (piksel aralığına göre).</li>
+          <li><strong>Vinil/Branda:</strong> 150 - 400 ₺/m² — Geçici uygulamalar.</li>
+        </ul>
+        <h3>Aydınlatmanın Maliyete Etkisi</h3>
+        <p>LED aydınlatma kutu harf ve pleksi tabelada zaten dahildir. RGB renk değişen LED ise %20-30 ek maliyet getirir ama gece görünürlüğü 3 kat artırır. Aydınlatmasız krom harfler %15 daha ekonomik fakat gece görünmez.</p>
+        <h3>Montaj ve İzin Faktörleri</h3>
+        <p>2 metrenin altında basit cephe tabelaları için montaj ortalama 1.500-3.500 ₺ ek maliyettir. Yüksek bina, totem veya rüzgar yüküne maruz tabelalarda mühendislik ve vinç maliyeti devreye girer. Belediye izin takibi profesyonel yapılırsa süreç 1-3 hafta kısalır.</p>
+        <h3>Tabela Yatırımının Geri Dönüşü</h3>
+        <p>Doğru konumlandırılmış bir tabela yılda binlerce yeni müşteri görmesi sağlar. Ortalama bir mağaza tabelası, müşteri başına maliyet açısından en uygun reklam yatırımıdır; ömrü 7-12 yıl sürer ve hiçbir reklam mecrası bu kadar uzun süreli görünürlük sağlamaz.</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const f = document.getElementById("t-form");
+    const wV = document.getElementById("w-val");
+    const hV = document.getElementById("h-val");
+    const rMin = document.getElementById("r-min");
+    const rMax = document.getElementById("r-max");
+    const rArea = document.getElementById("r-area");
+    const rMp = document.getElementById("r-mp");
+    const cta = document.getElementById("t-cta");
+    const fmt = (n) => Math.round(n).toLocaleString("tr-TR");
+    const tBase = { kutuharf:[2500,6000], pleksi:[1200,3000], isikli:[800,2000], krom:[4500,9000], totem:[6000,18000], led:[35000,90000], vinil:[150,400] };
+    const lightMul = { none: 0.85, led: 1.0, rgb: 1.25 };
+    const extPrice = { montaj: 2500, tasarim: 1500, izin: 1200, garanti: 3000 };
+    function calc() {
+      const d = new FormData(f);
+      const t = d.get("type");
+      const w = parseInt(d.get("width"));
+      const h = parseInt(d.get("height"));
+      const light = d.get("light");
+      const exts = d.getAll("ext");
+      const area = (w * h) / 10000;
+      const [bMin, bMax] = tBase[t];
+      const lm = lightMul[light];
+      const eExtra = exts.reduce((s,e)=>s+(extPrice[e]||0),0);
+      const min = bMin * area * lm + eExtra;
+      const max = bMax * area * lm + eExtra;
+      wV.textContent = w;
+      hV.textContent = h;
+      rArea.textContent = area.toFixed(2);
+      rMp.textContent = fmt(((bMin+bMax)/2)*lm);
+      rMin.textContent = fmt(min);
+      rMax.textContent = fmt(max);
+      const msg = "Merhaba, tabela hesaplayicisindan geliyorum. Tip: " + t + ", " + w + "x" + h + " cm, aydinlatma: " + light + ". Tahmini butce: " + fmt(min) + "-" + fmt(max) + " TL. Detayli teklif almak istiyorum.";
+      cta.href = "https://wa.me/905555555555?text=" + encodeURIComponent(msg);
+    }
+    f.addEventListener("input", calc);
+    calc();
+  </script>
+</BaseLayout>
