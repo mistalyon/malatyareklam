@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Web Tasarım Fiyat Hesaplama Aracı',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY' },
+  description: 'Malatya web tasarım fiyatlarını anında hesaplayın. Kurumsal site, e-ticaret, blog, landing page maliyet tahmini ücretsiz araç.',
+};
+---
+
+<BaseLayout
+  title="Web Tasarım Fiyat Hesaplama Aracı 2026 | Malatya Reklam"
+  description="Web siteniz ne kadar tutar? Sayfa sayısı, e-ticaret, SEO ve özellikleri seçin, anlık fiyat tahmini alın. Malatya için 2026 güncel verilerle ücretsiz hesaplayıcı."
+  keywords="web tasarım fiyat hesaplama, malatya web tasarım fiyatları 2026, site maliyeti hesaplayıcı, e-ticaret site fiyatı, kurumsal web sitesi ne kadar"
+  jsonLd={jsonLd}
+>
+  <section class="bg-gradient-to-br from-apricot-50 via-white to-orange-50 py-16 lg:py-20">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+      <span class="inline-block px-3 py-1 bg-apricot-100 text-apricot-700 text-xs font-bold uppercase tracking-wider rounded-full mb-4">Ücretsiz Araç</span>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">Web Tasarım Fiyat Hesaplama Aracı</h1>
+      <p class="text-xl text-neutral-600 leading-relaxed">Sayfa sayısı, e-ticaret özellikleri, SEO ve tasarım tercihlerinizi girin; Malatya pazarı 2026 verilerine göre anlık fiyat tahmininizi saniyeler içinde alın.</p>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-3xl">
+      <form id="calc-form" class="bg-white rounded-3xl shadow-2xl border border-neutral-100 p-8 lg:p-10 space-y-8">
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">1. Site Tipi</label>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="cursor-pointer"><input type="radio" name="type" value="landing" class="peer sr-only" checked /><div class="p-4 border-2 border-neutral-200 rounded-xl peer-checked:border-apricot-500 peer-checked:bg-apricot-50 transition"><div class="font-bold">Landing Page</div><div class="text-xs text-neutral-500 mt-1">Tek sayfa tanıtım</div></div></label>
+            <label class="cursor-pointer"><input type="radio" name="type" value="kurumsal" class="peer sr-only" /><div class="p-4 border-2 border-neutral-200 rounded-xl peer-checked:border-apricot-500 peer-checked:bg-apricot-50 transition"><div class="font-bold">Kurumsal Web Sitesi</div><div class="text-xs text-neutral-500 mt-1">5-10 sayfa, blog</div></div></label>
+            <label class="cursor-pointer"><input type="radio" name="type" value="eticaret" class="peer sr-only" /><div class="p-4 border-2 border-neutral-200 rounded-xl peer-checked:border-apricot-500 peer-checked:bg-apricot-50 transition"><div class="font-bold">E-Ticaret</div><div class="text-xs text-neutral-500 mt-1">Ödeme, kargo, panel</div></div></label>
+            <label class="cursor-pointer"><input type="radio" name="type" value="ozel" class="peer sr-only" /><div class="p-4 border-2 border-neutral-200 rounded-xl peer-checked:border-apricot-500 peer-checked:bg-apricot-50 transition"><div class="font-bold">Özel Yazılım</div><div class="text-xs text-neutral-500 mt-1">SaaS, panel, B2B</div></div></label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">2. Sayfa Sayısı: <span id="pages-val" class="text-apricot-600">5</span></label>
+          <input type="range" name="pages" min="1" max="50" value="5" class="w-full accent-apricot-500" />
+          <div class="flex justify-between text-xs text-neutral-500 mt-1"><span>1</span><span>25</span><span>50+</span></div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">3. Tasarım Tipi</label>
+          <select name="design" class="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl focus:border-apricot-500 focus:outline-none">
+            <option value="template">Hazır Şablon (Hızlı, Ekonomik)</option>
+            <option value="custom" selected>Özel Tasarım (UI/UX)</option>
+            <option value="premium">Premium Tasarım + Animasyon</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-neutral-900 mb-3">4. Eklemek İstediğiniz Özellikler</label>
+          <div class="grid sm:grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="feat" value="seo" class="accent-apricot-500" /> SEO Optimizasyonu</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="feat" value="blog" class="accent-apricot-500" /> Blog Sistemi</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="feat" value="multilang" class="accent-apricot-500" /> Çoklu Dil</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="feat" value="payment" class="accent-apricot-500" /> Online Ödeme</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="feat" value="crm" class="accent-apricot-500" /> CRM Entegrasyonu</label>
+            <label class="flex items-center gap-2 p-3 border-2 border-neutral-200 rounded-xl hover:bg-neutral-50 cursor-pointer"><input type="checkbox" name="feat" value="hosting" class="accent-apricot-500" /> 1 Yıl Hosting + SSL</label>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-apricot-50 to-orange-50 border-2 border-apricot-200 rounded-2xl p-6 lg:p-8 text-center">
+          <div class="text-sm font-bold uppercase tracking-wider text-apricot-700 mb-2">Tahmini Yatırım</div>
+          <div class="font-display text-4xl md:text-5xl font-bold text-neutral-900"><span id="result-min">9.500</span> ₺ <span class="text-neutral-400">-</span> <span id="result-max">14.500</span> ₺</div>
+          <div class="text-sm text-neutral-600 mt-3">Tahmini teslim süresi: <span id="result-time" class="font-bold">2-4 hafta</span></div>
+        </div>
+        <a id="cta-link" href="https://wa.me/905555555555" target="_blank" rel="noopener" class="block w-full text-center px-6 py-4 bg-apricot-500 hover:bg-apricot-600 text-white text-lg font-bold rounded-xl transition shadow-lg shadow-apricot-500/30">WhatsApp'tan Detaylı Teklif Al →</a>
+        <p class="text-xs text-neutral-500 text-center">Verilen rakamlar 2026 Malatya pazarı tahmini olup, projenin teknik gereksinimlerine göre değişebilir. Net fiyat için ücretsiz keşif görüşmesi yapıyoruz.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-12 lg:py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-8 text-center">Web Tasarım Fiyatları Nasıl Hesaplanır?</h2>
+      <div class="prose prose-lg max-w-none">
+        <p>Malatya'da bir web sitesi yatırımı yaparken fiyatı belirleyen 4 temel etken vardır: <strong>site tipi</strong>, <strong>sayfa sayısı</strong>, <strong>tasarım yaklaşımı</strong> ve <strong>ek özellikler</strong>. Yukarıdaki hesaplayıcımız bu dört değişkeni 2026 Malatya pazarı verileriyle çarparak size tahmini bir aralık sunar.</p>
+        <h3>Site Tipine Göre Ortalama Fiyat Aralıkları (2026)</h3>
+        <ul>
+          <li><strong>Landing Page (Tek Sayfa):</strong> 5.000 ₺ - 12.000 ₺ — Tanıtım, kampanya, mini portfolyo amaçlı.</li>
+          <li><strong>Kurumsal Web Sitesi (5-10 sayfa):</strong> 12.000 ₺ - 25.000 ₺ — Hakkımızda, hizmetler, blog, iletişim.</li>
+          <li><strong>E-Ticaret Sitesi:</strong> 18.000 ₺ - 75.000 ₺ — Ürün yönetimi, ödeme entegrasyonu, kargo, üyelik.</li>
+          <li><strong>Özel Yazılım / SaaS:</strong> 75.000 ₺ ve üzeri — Tamamen özgün backend, panel, raporlama.</li>
+        </ul>
+        <h3>Sayfa Sayısı Maliyeti Nasıl Etkiler?</h3>
+        <p>Her ek sayfa hem tasarım hem içerik üretimi gerektirir. Genel kural: 5 sayfaya kadar paket fiyat, 5-15 arası sayfa başı yaklaşık 800-1.500 ₺ ek maliyet, 15+ sayfa için kademeli indirim uygulanır. Blog sistemi ile dinamik sayfa üretimi tek seferlik yatırımdır.</p>
+        <h3>Hazır Şablon vs Özel Tasarım Farkı</h3>
+        <p>Hazır şablonlar (örneğin WordPress temaları) %30-50 daha ekonomiktir ama benzersizlik sıfırdır ve SEO, hız, güvenlik açısından kısıtlıdır. Özel tasarım uzun vadede markanızı ayrıştırır ve dönüşüm oranını artırır. Premium tasarım ise scroll animasyonları, mikro etkileşimler ve özel illüstrasyonları kapsar.</p>
+        <h3>Ek Özelliklerin Maliyete Etkisi</h3>
+        <p>SEO optimizasyonu (+%15-25), çoklu dil desteği (+%30-40), online ödeme entegrasyonu (+8.000-15.000 ₺), CRM entegrasyonu (+5.000-12.000 ₺) gibi modüller toplam yatırımı doğrudan etkiler. Hangi özelliğin işletmeniz için kritik olduğunu belirlemek için ücretsiz keşif görüşmesi yapıyoruz.</p>
+        <h3>Malatya'da Web Tasarım Yatırımının Geri Dönüşü</h3>
+        <p>Doğru kurgulanmış bir web sitesi 6-12 ay içinde organik aramadan müşteri getirmeye başlar. Ortalama bir kurumsal sitenin 2 yıllık ROI'si %200-400 arasındadır. Yatırımı sadece "site açma" maliyeti değil, pazarlama altyapısı olarak değerlendirin.</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const form = document.getElementById("calc-form");
+    const pagesInput = form.querySelector('input[name="pages"]');
+    const pagesVal = document.getElementById("pages-val");
+    const resultMin = document.getElementById("result-min");
+    const resultMax = document.getElementById("result-max");
+    const resultTime = document.getElementById("result-time");
+    const ctaLink = document.getElementById("cta-link");
+    const fmt = (n) => n.toLocaleString("tr-TR");
+    const featPrice = { seo: 4000, blog: 2500, multilang: 6000, payment: 10000, crm: 8000, hosting: 1800 };
+    const typeBase = { landing: [5000, 12000, "1-2 hafta"], kurumsal: [12000, 25000, "3-5 hafta"], eticaret: [18000, 75000, "5-10 hafta"], ozel: [75000, 250000, "8-16 hafta"] };
+    const designMul = { template: 0.7, custom: 1.0, premium: 1.5 };
+    function calc() {
+      const data = new FormData(form);
+      const t = data.get("type");
+      const pages = parseInt(data.get("pages"));
+      const design = data.get("design");
+      const feats = data.getAll("feat");
+      const [bMin, bMax, time] = typeBase[t];
+      const dm = designMul[design];
+      const pageExtra = Math.max(0, pages - 5) * 1000;
+      const featExtra = feats.reduce((s, f) => s + (featPrice[f] || 0), 0);
+      const min = Math.round((bMin * dm + pageExtra + featExtra) / 100) * 100;
+      const max = Math.round((bMax * dm + pageExtra * 1.4 + featExtra * 1.2) / 100) * 100;
+      pagesVal.textContent = pages;
+      resultMin.textContent = fmt(min);
+      resultMax.textContent = fmt(max);
+      resultTime.textContent = time;
+      const msg = "Merhaba, web tasarim hesaplayicisindan geliyorum. Site tipim: " + t + ", sayfa: " + pages + ", tasarim: " + design + ". Tahmini butce: " + fmt(min) + "-" + fmt(max) + " TL. Detayli teklif almak istiyorum.";
+      ctaLink.href = "https://wa.me/905555555555?text=" + encodeURIComponent(msg);
+    }
+    form.addEventListener("input", calc);
+    calc();
+  </script>
+</BaseLayout>
